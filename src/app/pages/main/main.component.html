@@ -1,0 +1,50 @@
+<div class="letter-container">
+    <div
+      class="letter"
+      *ngFor="let letter of getVisibleLetters(); let i = index; trackBy: trackByFn"
+      [@slideAnimation]
+      [style.background-color]="setBackground(letter)" 
+      [ngClass]="{ active: letter === letters[selectedIndex]}">
+      {{ letter }}
+    </div>
+</div>
+
+<div class="timer-countdown">
+  <div class="frame">
+    <div class="container">
+      <div class="box-4">
+        <div class="loader-4" >
+          <p style="font-weight: bold; color: white; margin-top: 25%;" >{{timeCounter}}</p>
+          <div class="dbl-spin-1"></div>
+          <div class="dbl-spin-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div>
+  {{timeCounter}}
+</div> -->
+
+<div class="question-container">
+  <ng-container *ngIf="this.questions !== [] && this.questions[selectedIndex] && this.questions[selectedIndex]['value']">
+    <h1>{{ this.questions[selectedIndex]['value'] }}</h1>
+  </ng-container>
+</div>
+
+<!-- <button mat-button (click)="startCountdown()">Open dialog</button> -->
+
+  <div class="input-container">
+    <form (submit)="submit()">
+      <mat-form-field>
+        <mat-label>Cevap</mat-label>
+        <input [(ngModel)]="userInput" [ngModelOptions]="{standalone: true}" matInput #first>
+      </mat-form-field>
+      <button mat-raised-button style="margin-bottom: 10%; width: 20% !important; height: 300% !important; color: white; background-color: #2c5d63;">Evet Abi</button>
+    </form>
+  </div>
+
+  <div class="designer">
+    by <a href="https://github.com/fthgcr"> Fatih GOCER</a>
+  </div>

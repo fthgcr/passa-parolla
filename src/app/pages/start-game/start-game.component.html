@@ -1,0 +1,27 @@
+<body>
+  <h2 mat-dialog-title style="color: white;">Nasıl Oynanır?</h2>
+  <mat-dialog-content>
+    <h4>
+      Her karaktere karşılık gelen sorunun cevabını bulmalısın, cevap o karakter
+      ile başlar.
+    </h4>
+    <br />
+    <h4>
+      Örneğin: Bal yapan hayvan? sorusunda aktif karakter A ve bunun cevabı
+      Arı'dır gibi.
+    </h4>
+    <br />
+    <h4>Cevabın 🟩 Doğru ya da 🟥 Yanlış olabilir.</h4>
+    <h4>
+      Eğer cevabı bilmiyorsan 🟨 PAS butonuna bas ya da pas yazıp gönder. Daha
+      sonra o soruya dönebileceksin. Pasladığın soruları süren bitene kadar
+      cevaplayabilirsin.
+    </h4>
+    <br />
+    <h4>Oyunun toplam süresi 5 dakika'dır.</h4>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <!-- <button mat-button mat-dialog-close>No</button> -->
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial style="color: white;">Let's Go</button>
+  </mat-dialog-actions>
+</body>

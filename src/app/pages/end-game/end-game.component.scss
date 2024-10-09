@@ -1,0 +1,46 @@
+$colorGreen: #3baea0;
+$colorYellow: #ffe79a;
+$colorRed: #da5151;
+$colorMix: mix($colorGreen, $colorYellow);
+
+.panel-header {
+  background-color: white;
+}
+
+.panel-header.solved {
+  background-color: $colorGreen;
+}
+
+.panel-header.passed {
+  background-color: $colorYellow;
+}
+
+.panel-header.wrong {
+  background-color: $colorRed;
+}
+
+.panel-header.empty {
+  background-color: white;
+}
+
+:host ::ng-deep .mat-expansion-panel-header:hover {
+  background-color: rgb(26, 23, 168); /* Custom hover background color */
+  //transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+//mat-mdc-dialog-component-host
+
+:host ::ng-deep .mat-mdc-dialog-component-host {
+  background-color: red /* Custom hover background color */
+  //transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+::ng-deep .mat-mdc-dialog-component-host {
+    background-color: blue /* Custom hover background color */
+    //transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.mat-mdc-dialog-component-host {
+    background-color: #3c4f63 /* Custom hover background color */
+    //transition: background-color 0.3s ease; /* Smooth transition */
+}
