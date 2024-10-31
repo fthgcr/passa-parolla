@@ -25,7 +25,7 @@ export class WordsService {
           nestedKey: randomNestedKey,
           value: this.fixValue(words[mainKey][randomNestedKey]),
           situation: 'e',
-          color: "#2c5d63"
+          color: '#2c5d63',
         });
       }
     }
@@ -34,7 +34,7 @@ export class WordsService {
 
   private getRandomKey(keys: string[], words: any, mainKey: any): string {
     const randomIndex = Math.floor(Math.random() * keys.length);
-    if (this.validateValue(words[mainKey][keys[randomIndex]])) {
+    if (this.validateValue(words[mainKey][keys[randomIndex]]) || this.compareWordsAndValues(words[mainKey][keys[randomIndex]], this.lowerCase(keys[randomIndex]))) {
       return keys[randomIndex];
     } else {
       return this.getRandomKey(keys, words, mainKey);
@@ -50,6 +50,20 @@ export class WordsService {
     }
   }
 
+  private compareWordsAndValues(sentence: string, value: string): boolean {
+    const sentenceArray = sentence.split(" ");
+    let isExist : boolean = true;
+    sentenceArray.forEach(s => {
+      s = s.replace(",","");
+      s = this.lowerCase(s);
+      if(this.lowerCase(s.includes(value)) || this.lowerCase(value.includes(s))){
+        isExist = false;
+      }
+    });
+
+    return isExist;
+  }
+
   private fixValue(value: any): string {
     const lastElement = value.charAt(value.length - 1);
     if (lastElement === '.' || lastElement === ':') {
@@ -59,40 +73,65 @@ export class WordsService {
     }
   }
 
-  checkAnswer(input: any, answer: any) : boolean{
+  checkAnswer(input: any, answer: any): boolean {
     input = this.lowerCase(input);
     answer = this.lowerCase(answer);
-    
+
     return input === answer;
   }
 
-  private removeMastar(text : any){
+  private removeMastar(text: any) {
     const lastThreeCharacter = text.slice(-3);
     const lastTwoCharacter = text.slice(-2);
 
-    if(lastTwoCharacter === "ma" || lastTwoCharacter === "me"){
+    if (lastTwoCharacter === 'ma' || lastTwoCharacter === 'me') {
       return text.slice(0, -2);
-    } else if(lastThreeCharacter === "mak" || lastThreeCharacter === "mek"){
+    } else if (lastThreeCharacter === 'mak' || lastThreeCharacter === 'mek') {
       return text.slice(0, -3);
     } else {
       return text;
     }
-  } 
+  }
 
   public lowerCase(text: any): string {
     var string = text.toString();
-    var letters : any = { İ: "i", I: "i", ı: "i", Ş: "s", ş: "s", Ğ: "g", ğ: "g", Ü: "u", ü: "u", Ö: "o", ö: "o", Ç: "c", ç: "c"};
+    var letters: any = {
+      İ: 'i',
+      I: 'i',
+      ı: 'i',
+      Ş: 's',
+      ş: 's',
+      Ğ: 'g',
+      ğ: 'g',
+      Ü: 'u',
+      ü: 'u',
+      Ö: 'o',
+      ö: 'o',
+      Ç: 'c',
+      ç: 'c',
+    };
 
-    string = string.replace(/(([İIıŞşĞğÜüÇçÖö]))/g, function (letter: string | number) {
-      return letters[letter];
-    });
+    string = string.replace(
+      /(([İIıŞşĞğÜüÇçÖö]))/g,
+      function (letter: string | number) {
+        return letters[letter];
+      }
+    );
 
     return this.removeMastar(string.toLowerCase());
   }
 
   private upperCase(text: any): any {
     var string = text.toString();
-    var letters : any = { "i": "I", "ş": "S", "ğ": "G", "ü": "U", "ö": "O", "ç": "C", "ı": "I" };
+    var letters: any = {
+      i: 'I',
+      ş: 'S',
+      ğ: 'G',
+      ü: 'U',
+      ö: 'O',
+      ç: 'C',
+      ı: 'I',
+    };
 
     string = string.replace(/(([iışğüçö]))/g, function (letter: any) {
       return letters[letter];
@@ -100,5 +139,4 @@ export class WordsService {
 
     return string.toUpperCase();
   }
-
 }

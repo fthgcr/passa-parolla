@@ -3,17 +3,15 @@ import {
   trigger,
   transition,
   style,
-  animate,
-  query,
-  stagger,
+  animate
 } from '@angular/animations';
 import { WordsService } from '../../services/words.service';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { EndGameComponent } from '../end-game/end-game.component';
 import {MatSnackBar} from '@angular/material/snack-bar';
-import { interval, Subscription, timer } from 'rxjs';
-import { map, take } from 'rxjs/operators';
 import { StartGameComponent } from '../start-game/start-game.component';
+import { Subject, takeUntil } from 'rxjs';
+import { PyramidService } from '../../services/pyramid.service';
 
 
 @Component({
@@ -38,29 +36,36 @@ import { StartGameComponent } from '../start-game/start-game.component';
     ]),
   ],
 })
-export class MainComponent implements OnInit  {
-  constructor(private service: WordsService) {
-    
-  }
+export class MainComponent implements OnInit {
+  constructor(private service: WordsService, private pyramid: PyramidService) {}
 
   readonly dialog = inject(MatDialog);
   private _snackBar = inject(MatSnackBar);
+  private destroy$ = new Subject<void>();
+  dialogRef: MatDialogRef<any>;
 
   letters: string[] = 'ABCÇDEFGHIJKLMNOÖPRSŞTUÜVYZ'.split('');
   selectedIndex: number = 0;
   timer: number = 300;
   timeCounter : string = "05:00";
   questions: any[] = [];
-
   userInput: String = '';
+  isGameOver: boolean = false;
 
   ngOnInit(): void {
     this.getQuestions();
     this.openStartDialog();
+    //this.test();
+  }
+
+
+  test(){
+    this.pyramid.getJsonData().pipe(takeUntil(this.destroy$)).subscribe((data) => {
+      this.pyramid.organizeWords(data);
+    });
   }
 
   submit() {
-    debugger;
     if (
       this.userInput.length < 1 ||
       this.userInput.replace(/\s+/g, '').length < 1
@@ -68,6 +73,7 @@ export class MainComponent implements OnInit  {
     } else if (this.service.lowerCase(this.questions[this.selectedIndex].mainKey) !== this.service.lowerCase(this.userInput.charAt(0)) && this.service.lowerCase(this.userInput) !== 'pas' && this.service.lowerCase(this.userInput) !== 'bitir') {
       this.openSnackBar(this.questions[this.selectedIndex].mainKey + " Harfi ile Başlıyor Kör Müsün amk", "Tamam Kes!");
     } else if (this.service.lowerCase(this.userInput) === 'pas') {
+      this.passSound();
       this.changeQuestionSituation('p');
     } else if (this.service.lowerCase(this.userInput) === 'bitir') {
       this.endGame();
@@ -79,10 +85,12 @@ export class MainComponent implements OnInit  {
         )
       ) {
         //Answer is true
+        this.correctSound();
         this.questions[this.selectedIndex]['user'] = this.userInput;
         this.changeQuestionSituation('s');
       } else {
         ////Answer is false
+        this.incorrectSound();
         this.questions[this.selectedIndex]['user'] = this.userInput;
         this.changeQuestionSituation('w');
       }
@@ -104,10 +112,15 @@ export class MainComponent implements OnInit  {
   }
 
   endGame() {
+    if(this.isGameOver){
+      return;
+    }
+    this.isGameOver = true;
     const dialogRef = this.dialog.open(EndGameComponent, {
       data: this.questions,
     });
     dialogRef.afterClosed().subscribe((result) => {
+      //window.location.reload();
       window.location.href = 'https://passa-parolla.onrender.com/';
     });
   }
@@ -192,7 +205,13 @@ export class MainComponent implements OnInit  {
       if(this.timer === 0){
         this.endGame();
       } else {
-        this.timeCounter = "0"+(this.timer / 60).toString().charAt(0)+":"+this.timer % 60;
+        if(this.timer % 60 < 10){
+          this.timeCounter = "0"+(this.timer / 60).toString().charAt(0)+":0"+this.timer % 60;
+        } else {
+          this.timeCounter = "0"+(this.timer / 60).toString().charAt(0)+":"+this.timer % 60;
+        }
+          //this.timeCounter = "0"+(this.timer / 60).toString().charAt(0)+":"+this.timer % 60;
+        
         this.startCountdown();
       }
 
@@ -204,10 +223,36 @@ export class MainComponent implements OnInit  {
   }
 
   openStartDialog() {
-    const dialogRef = this.dialog.open(StartGameComponent);
-    dialogRef.afterClosed().subscribe((result) => {
+    this.dialogRef = this.dialog.open(StartGameComponent,{ disableClose: true });
+    this.dialogRef.afterClosed().subscribe((result) => {
       this.startCountdown();
     });
+
   } 
+
+  correctSound(){
+    const audio = new Audio();
+    audio.src = "../assets/sound/correct.mp3";
+    audio.load();
+    audio.play();
+  }
+
+  incorrectSound(){
+    const audio = new Audio();
+    audio.src = "../assets/sound/incorrect.wav";
+    audio.load();
+    audio.play();
+  }
+
+  passSound(){
+    const audio = new Audio();
+    audio.src = "../assets/sound/pass.ogg";
+    audio.load();
+    audio.play();
+  }
+
+  ////
+
+  
 }
 
