@@ -34,7 +34,7 @@ export class WordsService {
 
   private getRandomKey(keys: string[], words: any, mainKey: any): string {
     const randomIndex = Math.floor(Math.random() * keys.length);
-    if (this.validateValue(words[mainKey][keys[randomIndex]]) || this.compareWordsAndValues(words[mainKey][keys[randomIndex]], this.lowerCase(keys[randomIndex]))) {
+    if (this.validateValue(words[mainKey][keys[randomIndex]]) && this.compareWordsAndValues(words[mainKey][keys[randomIndex]], this.lowerCase(keys[randomIndex]))) {
       return keys[randomIndex];
     } else {
       return this.getRandomKey(keys, words, mainKey);
@@ -77,7 +77,7 @@ export class WordsService {
     input = this.lowerCase(input);
     answer = this.lowerCase(answer);
 
-    return input === answer;
+    return input === answer || input.includes(answer) || answer.includes(input);
   }
 
   private removeMastar(text: any) {
