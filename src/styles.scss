@@ -8,19 +8,55 @@ body {
 }
 
 /* Oyun dialoglarının ortak koyu yüzeyi.
-   Daha önce bu, end-game bileşeninin ViewEncapsulation.None stillerinden
-   kazara sızıyordu; artık panelClass ile bilinçli olarak uygulanıyor. */
+
+   ÖNEMLİ: Material'ın kendi dialog stilleri runtime'da <head>'e enjekte edildiği
+   için, aynı specificity'deki global kurallarımızdan SONRA geliyor ve kazanıyordu
+   (yüzey beyaz kalıyor, beyaz metinler görünmez oluyordu). Bu yüzden rengi
+   MDC'nin kendi CSS değişkenleri üzerinden veriyoruz; değişkenler kalıtımla
+   yüzeye iniyor ve enjeksiyon sırasından etkilenmiyor. */
 .game-dialog {
+  .mat-mdc-dialog-container {
+    --mdc-dialog-container-color: #3c4f63;
+    --mdc-dialog-container-shape: 18px;
+    --mdc-dialog-subhead-color: #ffffff;
+    --mdc-dialog-supporting-text-color: #eaf2f4;
+    --mdc-dialog-with-divider-divider-color: rgba(255, 255, 255, 0.12);
+
+    color: #eaf2f4;
+  }
+
   .mat-mdc-dialog-surface {
-    background-color: #3c4f63;
+    /* Değişkeni desteklemeyen/farklı sürümlerde de koyu kalsın diye ikinci savunma */
+    background-color: #3c4f63 !important;
     color: #eaf2f4;
     border-radius: 18px;
     padding: 20px 22px;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
   }
 
-  .mat-mdc-dialog-content {
+  .mat-mdc-dialog-title,
+  .mat-mdc-dialog-content,
+  .mat-mdc-dialog-actions {
     color: inherit;
+    background: transparent;
+  }
+
+  /* Yüzeye zaten padding verdik; içerideki varsayılan padding'i sıfırlıyoruz */
+  .mat-mdc-dialog-title {
+    padding: 0 0 8px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .mat-mdc-dialog-content {
+    padding: 0;
+  }
+
+  .mat-mdc-dialog-actions {
+    padding: 12px 0 0;
+    min-height: 0;
   }
 }
 
