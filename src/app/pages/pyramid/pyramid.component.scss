@@ -30,7 +30,7 @@
   margin: 10px 0 22px;
   letter-spacing: 1px;
   font-weight: 800;
-  font-size: clamp(22px, 2.4vw, 44px);
+  font-size: clamp(22px, 1.5vw, 34px);
 }
 
 .loading {
@@ -55,14 +55,14 @@
 }
 
 .tile {
-  width: clamp(44px, 4vw, 80px);
-  height: clamp(44px, 4vw, 80px);
-  border-radius: clamp(8px, 0.8vw, 14px);
+  width: clamp(42px, 2.3vw, 62px);
+  height: clamp(42px, 2.3vw, 62px);
+  border-radius: clamp(8px, 0.6vw, 12px);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  font-size: clamp(20px, 2vw, 38px);
+  font-size: clamp(19px, 1.1vw, 28px);
   background: #2c3e50;
   border: 2px solid #46617a;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
@@ -129,8 +129,8 @@
 }
 
 .clue {
-  font-size: clamp(18px, 1.6vw, 30px);
-  line-height: 1.4;
+  font-size: clamp(17px, 1.1vw, 24px);
+  line-height: 1.45;
   margin: 0 0 18px;
   min-height: 50px;
 }
@@ -197,10 +197,8 @@
 
 .designer {
   margin-top: auto;
-  padding-top: 24px;
-  font-size: 13px;
-  opacity: 0.7;
-}
-.designer a {
-  color: #cfe9ea;
+  padding-top: clamp(18px, 3vh, 32px);
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
