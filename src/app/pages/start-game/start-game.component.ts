@@ -29,7 +29,19 @@ export class StartGameComponent implements OnInit {
     @Inject(DOCUMENT) private document: Document
   ) {}
 
-  
+  /** Seçilebilir oyun süreleri */
+  readonly durations = [
+    { label: '3 dk', seconds: 180 },
+    { label: '5 dk', seconds: 300 },
+    { label: '7 dk', seconds: 420 },
+  ];
+
+  /** Varsayılan: 5 dakika */
+  selectedSeconds: number = 300;
+
+  selectDuration(seconds: number): void {
+    this.selectedSeconds = seconds;
+  }
 
   ngOnInit(): void {
     if (this.document.defaultView && this.document.defaultView.Audio) {

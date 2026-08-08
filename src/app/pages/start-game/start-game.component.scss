@@ -1,3 +1,32 @@
 h4 {
     color: white;
 }
+
+.duration-picker {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.duration-option {
+    flex: 1;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+
+    &:hover {
+        border-color: rgba(255, 255, 255, 0.7);
+        transform: translateY(-1px);
+    }
+
+    &.selected {
+        background: #3baea0;
+        border-color: #3baea0;
+    }
+}

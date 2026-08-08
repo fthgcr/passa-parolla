@@ -1,4 +1,4 @@
-<body>
+<div class="start-dialog">
   <h2 mat-dialog-title style="color: white;">Nasıl Oynanır?</h2>
   <mat-dialog-content>
     <h4>
@@ -18,10 +18,20 @@
       cevaplayabilirsin.
     </h4>
     <br />
-    <h4>Oyunun toplam süresi 5 dakika'dır.</h4>
+    <h4>Süreni seç:</h4>
+    <div class="duration-picker">
+      <button
+        type="button"
+        *ngFor="let d of durations"
+        class="duration-option"
+        [class.selected]="d.seconds === selectedSeconds"
+        (click)="selectDuration(d.seconds)">
+        {{ d.label }}
+      </button>
+    </div>
   </mat-dialog-content>
   <mat-dialog-actions align="end">
     <!-- <button mat-button mat-dialog-close>No</button> -->
-    <button mat-button [mat-dialog-close]="true" cdkFocusInitial style="color: white;">Let's Go Abe</button>
+    <button mat-button [mat-dialog-close]="selectedSeconds" cdkFocusInitial style="color: white;">Let's Go Abe</button>
   </mat-dialog-actions>
-</body>
+</div>
