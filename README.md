@@ -1,4 +1,9 @@
-# PassaParola
+# Evet Abi
+
+Türkçe kelime oyunu. İki mod var:
+
+- **Passaparola** — A'dan Z'ye her harf için bir soru. Bilemediğine pas de, süre dolmadan çemberi tamamla.
+- **Piramit** — her doğru cevapta bir harf eksilir; tabandaki uzun kelimeden tepedeki üç harfliye tırman.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
 

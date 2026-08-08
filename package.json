@@ -1,5 +1,5 @@
 {
-  "name": "passa-parola",
+  "name": "evet-abi",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:passa-parola": "node dist/passa-parola/server/server.mjs"
+    "serve:ssr:evet-abi": "node dist/evet-abi/server/server.mjs"
   },
   "private": true,
   "dependencies": {

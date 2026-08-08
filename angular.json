@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "passa-parola": {
+    "evet-abi": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/passa-parola",
+            "outputPath": "dist/evet-abi",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "passa-parola:build:production"
+              "buildTarget": "evet-abi:build:production"
             },
             "development": {
-              "buildTarget": "passa-parola:build:development"
+              "buildTarget": "evet-abi:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "passa-parola:build"
+            "buildTarget": "evet-abi:build"
           }
         },
         "test": {
