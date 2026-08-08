@@ -1,46 +1,352 @@
-$colorGreen: #3baea0;
-$colorYellow: #ffe79a;
-$colorRed: #da5151;
-$colorMix: mix($colorGreen, $colorYellow);
+$green: #3baea0;
+$yellow: #ffe79a;
+$red: #da5151;
+$slate: #5b6977;
+$panel: #3c4f63;
+$panelDeep: #34495e;
+$ink: #eaf2f4;
 
-.panel-header {
-  background-color: white;
+:host {
+  display: block;
+  color: $ink;
 }
 
-.panel-header.solved {
-  background-color: $colorGreen;
+.result-dialog {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  max-width: 520px;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
-.panel-header.passed {
-  background-color: $colorYellow;
+/* ---------- Başlık ---------- */
+
+.result-head {
+  text-align: center;
+  padding: 4px 0 14px;
 }
 
-.panel-header.wrong {
-  background-color: $colorRed;
+.eyebrow {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: rgba(234, 242, 244, 0.5);
 }
 
-.panel-header.empty {
-  background-color: white;
+.headline {
+  margin: 6px 0 4px;
+  font-size: 28px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #fff;
 }
 
-:host ::ng-deep .mat-expansion-panel-header:hover {
-  background-color: rgb(26, 23, 168); /* Custom hover background color */
-  //transition: background-color 0.3s ease; /* Smooth transition */
+.subline {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(234, 242, 244, 0.62);
 }
 
-//mat-mdc-dialog-component-host
+/* ---------- Skor şeridi ---------- */
 
-:host ::ng-deep .mat-mdc-dialog-component-host {
-  background-color: red /* Custom hover background color */
-  //transition: background-color 0.3s ease; /* Smooth transition */
+.score-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
 }
 
-::ng-deep .mat-mdc-dialog-component-host {
-    background-color: blue /* Custom hover background color */
-    //transition: background-color 0.3s ease; /* Smooth transition */
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 4px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-top: 2px solid transparent;
+
+  .num {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+  }
+
+  .cap {
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    color: rgba(234, 242, 244, 0.55);
+  }
+
+  &.solved {
+    border-top-color: $green;
+    .num { color: $green; }
+  }
+  &.wrong {
+    border-top-color: $red;
+    .num { color: #ff8a8a; }
+  }
+  &.passed {
+    border-top-color: $yellow;
+    .num { color: $yellow; }
+  }
+  &.empty {
+    border-top-color: $slate;
+    .num { color: rgba(234, 242, 244, 0.75); }
+  }
 }
 
-.mat-mdc-dialog-component-host {
-    background-color: #3c4f63 /* Custom hover background color */
-    //transition: background-color 0.3s ease; /* Smooth transition */
+/* ---------- Başarı oranı ---------- */
+
+.rate-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.rate-bar {
+  flex: 1;
+  display: flex;
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+
+  .fill {
+    display: block;
+    height: 100%;
+    transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+
+    &.solved { background: $green; }
+    &.wrong { background: $red; }
+    &.passed { background: $yellow; }
+  }
+}
+
+.rate-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: $green;
+  min-width: 42px;
+  text-align: right;
+}
+
+/* ---------- Gövde ---------- */
+
+.result-body {
+  padding: 0 !important;
+  max-height: 52vh;
+  overflow-y: auto;
+}
+
+/* ---------- A-Z ızgarası ---------- */
+
+.letter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(38px, 1fr));
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.cell {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+  &.solved {
+    background: $green;
+    color: #06312c;
+  }
+  &.wrong {
+    background: $red;
+    color: #3b0d0d;
+  }
+  &.passed {
+    background: $yellow;
+    /* Sarı üstünde beyaz okunmuyordu — koyu metin kullanıyoruz */
+    color: #4a3c10;
+  }
+  &.empty {
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(234, 242, 244, 0.6);
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: #fff;
+  }
+
+  &.active {
+    border-color: #fff;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.16);
+    transform: translateY(-2px);
+  }
+}
+
+/* ---------- Detay paneli ---------- */
+
+.detail {
+  border-radius: 14px;
+  padding: 14px 16px;
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  animation: detailIn 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes detailIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.detail-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+
+  &.solved { background: $green; color: #06312c; }
+  &.wrong { background: $red; color: #3b0d0d; }
+  &.passed { background: $yellow; color: #4a3c10; }
+  &.empty { background: rgba(255, 255, 255, 0.12); color: $ink; }
+}
+
+.status {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: rgba(234, 242, 244, 0.55);
+}
+
+.question-text {
+  margin: 0 0 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.answers {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.answer {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0;
+
+  dt {
+    flex-shrink: 0;
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: rgba(234, 242, 244, 0.45);
+    min-width: 96px;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  &.correct dd { color: $green; }
+  &.given dd { color: #ff9d9d; }
+  &.given.muted dd {
+    color: rgba(234, 242, 244, 0.5);
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+.hint {
+  text-align: center;
+  font-size: 13px;
+  color: rgba(234, 242, 244, 0.45);
+  padding: 20px 0;
+  margin: 0;
+}
+
+/* ---------- Aksiyonlar ---------- */
+
+.result-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 16px 0 4px !important;
+  margin: 0;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease, border-color 0.2s ease;
+
+  &:hover { transform: translateY(-1px); }
+
+  &.ghost {
+    background: transparent;
+    color: rgba(234, 242, 244, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:hover {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.45);
+    }
+  }
+
+  &.primary {
+    background: $green;
+    color: #06312c;
+
+    &:hover { background: lighten($green, 6%); }
+  }
+}
+
+/* ---------- Dar ekran ---------- */
+
+@media (max-width: 480px) {
+  .headline { font-size: 23px; }
+  .stat .num { font-size: 19px; }
+  .letter-grid { grid-template-columns: repeat(auto-fill, minmax(32px, 1fr)); }
+  .answer {
+    flex-direction: column;
+    gap: 2px;
+    dt { min-width: 0; }
+  }
 }

@@ -7,6 +7,27 @@ body {
     background-color: #34495e;
 }
 
+/* Oyun dialoglarının ortak koyu yüzeyi.
+   Daha önce bu, end-game bileşeninin ViewEncapsulation.None stillerinden
+   kazara sızıyordu; artık panelClass ile bilinçli olarak uygulanıyor. */
+.game-dialog {
+  .mat-mdc-dialog-surface {
+    background-color: #3c4f63;
+    color: #eaf2f4;
+    border-radius: 18px;
+    padding: 20px 22px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  }
+
+  .mat-mdc-dialog-content {
+    color: inherit;
+  }
+}
+
+.cdk-overlay-dark-backdrop {
+  background: rgba(20, 29, 38, 0.72);
+}
+
 /* Ortak imza rozeti (tüm sayfalarda aynı görünür) */
 .gh-badge {
   display: inline-flex;

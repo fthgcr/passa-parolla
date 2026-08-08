@@ -1,38 +1,109 @@
-<body>
-  <h2 mat-dialog-title style="color: white;">Cevaplar</h2>
-  <mat-dialog-content class="mat-typography">
-    <mat-accordion class="example-headers-align" multi>
-      <!-- #enddocregion multi -->
-      <mat-expansion-panel *ngFor="let question of questions" style="margin-bottom: 8px; background-color: #5b6977; color: white;">
-        <mat-expansion-panel-header
-          class="panel-header"
-          [style.background-color]="question.color"
-          (mouseenter)="hoverElement()"
-          (mouseleave)="hoverElement()"
+<div class="result-dialog">
+  <header class="result-head">
+    <p class="eyebrow">Oyun Bitti</p>
+    <h2 class="headline">{{ headline }}</h2>
+    <p class="subline">{{ subline }}</p>
+  </header>
+
+  <section class="score-strip" aria-label="Skor özeti">
+    <div class="stat solved">
+      <span class="num">{{ correctCount }}</span>
+      <span class="cap">Doğru</span>
+    </div>
+    <div class="stat wrong">
+      <span class="num">{{ wrongCount }}</span>
+      <span class="cap">Yanlış</span>
+    </div>
+    <div class="stat passed">
+      <span class="num">{{ passCount }}</span>
+      <span class="cap">Pas</span>
+    </div>
+    <div class="stat empty">
+      <span class="num">{{ emptyCount }}</span>
+      <span class="cap">Boş</span>
+    </div>
+  </section>
+
+  <section class="rate-row">
+    <div
+      class="rate-bar"
+      role="progressbar"
+      [attr.aria-valuenow]="successRate"
+      aria-valuemin="0"
+      aria-valuemax="100">
+      <span class="fill solved" [style.width.%]="(correctCount / total) * 100"></span>
+      <span class="fill wrong" [style.width.%]="(wrongCount / total) * 100"></span>
+      <span class="fill passed" [style.width.%]="(passCount / total) * 100"></span>
+    </div>
+    <span class="rate-value">%{{ successRate }}</span>
+  </section>
+
+  <mat-dialog-content class="result-body">
+    <div class="letter-grid" role="list">
+      <button
+        type="button"
+        role="listitem"
+        class="cell"
+        *ngFor="let question of questions; let i = index; trackBy: trackByIndex"
+        [id]="'result-cell-' + i"
+        [ngClass]="{
+          solved: question.situation === 's',
+          wrong: question.situation === 'w',
+          passed: question.situation === 'p',
+          empty: question.situation === 'e',
+          active: selectedIndex === i
+        }"
+        [attr.aria-pressed]="selectedIndex === i"
+        [attr.aria-label]="question.mainKey + ' — ' + situationLabel(question.situation)"
+        [title]="situationLabel(question.situation)"
+        (click)="select(i)"
+        (keydown)="onGridKeydown($event, i)">
+        {{ question.mainKey }}
+      </button>
+    </div>
+
+    <div class="detail" *ngIf="selectedQuestion as q">
+      <div class="detail-head">
+        <span
+          class="badge"
           [ngClass]="{
-            solved: 's' === question.situation,
-            passed: 'p' === question.situation,
-            empty: 'e' === question.situation,
-            wrong: 'w' === question.situation
-          }"
-        >
-          <mat-panel-title style="color: white; font-size: larger;"> {{ question.mainKey }} </mat-panel-title>
-          <!-- <mat-panel-description>
-              Type your name and age
-              
-            </mat-panel-description>  -->
-        </mat-expansion-panel-header>
-        <br />
-        <p>Soru : {{ question.value }}</p>
-        <p>Doğru Cevap : {{ question.nestedKey }}</p>
-        <p>Senin Cevabın : {{ question.user }}</p>
-      </mat-expansion-panel>
-    </mat-accordion>
+            solved: q.situation === 's',
+            wrong: q.situation === 'w',
+            passed: q.situation === 'p',
+            empty: q.situation === 'e'
+          }">
+          {{ q.mainKey }}
+        </span>
+        <span class="status">{{ situationLabel(q.situation) }}</span>
+      </div>
+
+      <p class="question-text">{{ q.value }}</p>
+
+      <dl class="answers">
+        <div class="answer correct">
+          <dt>Doğru cevap</dt>
+          <dd>{{ q.nestedKey }}</dd>
+        </div>
+        <div class="answer given" *ngIf="q.user">
+          <dt>Senin cevabın</dt>
+          <dd>{{ q.user }}</dd>
+        </div>
+        <div class="answer given muted" *ngIf="!q.user">
+          <dt>Senin cevabın</dt>
+          <dd>{{ q.situation === 'p' ? 'Pas geçtin' : 'Cevaplamadın' }}</dd>
+        </div>
+      </dl>
+    </div>
+
+    <p class="hint" *ngIf="!selectedQuestion">
+      Detayını görmek için bir harfe dokun.
+    </p>
   </mat-dialog-content>
-  <mat-dialog-actions align="end">
-    <!-- <button mat-button mat-dialog-close>Cancel</button> -->
-    <button mat-button [mat-dialog-close]="true" cdkFocusInitial style="color: white;">
+
+  <mat-dialog-actions class="result-actions">
+    <button type="button" class="btn ghost" (click)="goToMenu()">Ana Menü</button>
+    <button type="button" class="btn primary" cdkFocusInitial (click)="restart()">
       Yeniden Başla
     </button>
   </mat-dialog-actions>
-</body>
+</div>
