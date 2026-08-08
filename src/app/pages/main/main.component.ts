@@ -92,6 +92,11 @@ export class MainComponent implements OnInit, OnDestroy {
   isGameOver: boolean = false;
 
   ngOnInit(): void {
+    // Sunucuda (SSR/prerender) HTTP ve dialog çalıştırmıyoruz:
+    // göreli URL'ler Node tarafında çözülemediği için build sırasında hata veriyordu.
+    if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
     this.getQuestions();
     this.openStartDialog();
     //this.test();

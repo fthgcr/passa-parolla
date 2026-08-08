@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, PLATFORM_ID, inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import {
   trigger,
   transition,
@@ -94,7 +95,13 @@ export class PyramidComponent implements OnInit {
     private snack: MatSnackBar
   ) {}
 
+  private platformId = inject(PLATFORM_ID);
+
   ngOnInit(): void {
+    // SSR/prerender sırasında göreli URL ile HTTP isteği atılamaz.
+    if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
     this.http.get<Pyramid[]>('/assets/words/pyramids.json').subscribe({
       next: (data) => {
         this.pool = data || [];
