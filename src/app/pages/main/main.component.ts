@@ -3,7 +3,8 @@ import {
   trigger,
   transition,
   style,
-  animate
+  animate,
+  keyframes
 } from '@angular/animations';
 import { WordsService } from '../../services/words.service';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
@@ -19,18 +20,42 @@ import { PyramidService } from '../../services/pyramid.service';
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
   animations: [
+    // Harf carousel: sağdan yaylanarak girer, sola süzülerek çıkar
     trigger('slideAnimation', [
       transition(':enter', [
-        style({ opacity: 0, transform: 'translateX(20px)' }),
+        style({ opacity: 0, transform: 'translateX(45px) scale(0.4)' }),
         animate(
-          '300ms ease-out',
-          style({ opacity: 1, transform: 'translateX(0)' })
+          '450ms cubic-bezier(0.34, 1.56, 0.64, 1)',
+          style({ opacity: 1, transform: 'translateX(0) scale(1)' })
         ),
       ]),
       transition(':leave', [
         animate(
-          '300ms ease-in',
-          style({ opacity: 0, transform: 'translateX(-20px)' })
+          '280ms cubic-bezier(0.4, 0, 1, 1)',
+          style({ opacity: 0, transform: 'translateX(-45px) scale(0.4)' })
+        ),
+      ]),
+    ]),
+    // Soru metni her değişimde aşağıdan yumuşakça belirir
+    trigger('questionAnimation', [
+      transition('* => *', [
+        style({ opacity: 0, transform: 'translateY(18px)' }),
+        animate(
+          '400ms 80ms cubic-bezier(0.22, 1, 0.36, 1)',
+          style({ opacity: 1, transform: 'translateY(0)' })
+        ),
+      ]),
+    ]),
+    // Sayaç her saniye hafifçe nabız atar
+    trigger('tickAnimation', [
+      transition('* => *', [
+        animate(
+          '600ms ease-out',
+          keyframes([
+            style({ transform: 'scale(1)', offset: 0 }),
+            style({ transform: 'scale(1.18)', offset: 0.3 }),
+            style({ transform: 'scale(1)', offset: 1 }),
+          ])
         ),
       ]),
     ]),
@@ -60,9 +85,8 @@ export class MainComponent implements OnInit {
 
 
   test(){
-    this.pyramid.getJsonData().pipe(takeUntil(this.destroy$)).subscribe((data) => {
-      this.pyramid.organizeWords(data);
-    });
+    const a = this.service.compareWordsAndValues("Üç tepe noktası, üç açısı, üç kenarı olan geometri biçimi, müselles:", "üçgen");
+    console.log("a : " + a);
   }
 
   submit() {
@@ -162,23 +186,18 @@ export class MainComponent implements OnInit {
   }
 
   findNextQuestion() {
-    debugger;
-    if (this.selectedIndex === this.letters.length - 1) {
-      this.selectedIndex = -1;
-      this.findNextQuestion();
-    } else {
-      for (let index = this.selectedIndex + 1; index < 27; index++) {
-        if (index === this.selectedIndex) {
-          break;
-        } else if (
-          this.questions[index].situation === 'e' ||
-          this.questions[index].situation === 'p'
-        ) {
-          this.selectedIndex = index;
-          break;
-        }
+    const total = this.letters.length;
+    // Geçerli konumdan itibaren, dönerek bir sonraki boş ('e') veya paslı ('p') soruyu bul
+    for (let step = 1; step <= total; step++) {
+      const index = (this.selectedIndex + step) % total;
+      const situation = this.questions[index]?.situation;
+      if (situation === 'e' || situation === 'p') {
+        this.selectedIndex = index;
+        return;
       }
     }
+    // Boş/paslı soru kalmadı → oyun biter
+    this.endGame();
   }
 
   previous(): void {

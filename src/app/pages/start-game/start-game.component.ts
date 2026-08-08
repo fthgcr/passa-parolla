@@ -43,7 +43,8 @@ export class StartGameComponent implements OnInit {
       const audio = new Audio();
       audio.src = '../assets/sound/opening.mp3';
       audio.load();
-      audio.play();
+      audio.play()
+      .then;
     }, 1500);
   }
 }

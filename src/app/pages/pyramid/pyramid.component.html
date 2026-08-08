@@ -1,0 +1,52 @@
+<div class="pyramid-page">
+  <a class="mode-link" routerLink="/">← Passaparola</a>
+
+  <h2 class="title">🔺 Piramit</h2>
+
+  <div class="loading" *ngIf="loading">Yükleniyor…</div>
+  <div class="loading" *ngIf="!loading && !pyramid">Piramit verisi bulunamadı.</div>
+
+  <ng-container *ngIf="pyramid">
+    <!-- Piramit gövdesi: tepe (kısa) üstte, taban (uzun) altta -->
+    <div class="pyramid">
+      <div
+        class="row"
+        *ngFor="let level of displayRows; let d = index"
+        [ngClass]="rowState(realIndex(d))"
+        [@rowPulse]="rowState(realIndex(d))">
+        <div class="tile" *ngFor="let ch of tilesFor(realIndex(d))" [@tileIn]>
+          {{ ch }}
+        </div>
+      </div>
+    </div>
+
+    <!-- İpucu ve giriş -->
+    <div class="panel" *ngIf="!won" [@shake]="shakeState">
+      <div class="clue-label">{{ current?.letters?.length }} harf</div>
+      <p class="clue">{{ current?.clue }}</p>
+      <form (submit)="submit(); $event.preventDefault()">
+        <input
+          [(ngModel)]="userInput"
+          [ngModelOptions]="{ standalone: true }"
+          class="answer-input"
+          autocomplete="off"
+          placeholder="Cevabın…"
+          #ans
+          autofocus />
+        <div class="buttons">
+          <button type="submit" class="btn primary">Onayla</button>
+          <button type="button" class="btn ghost" (click)="reveal()">Gör / Geç</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Kazanma ekranı -->
+    <div class="panel win" *ngIf="won">
+      <h3>🎉 Piramit tamamlandı!</h3>
+      <p>{{ solvedCount }} / {{ levels.length }} kelimeyi bildin.</p>
+      <button class="btn primary" (click)="newPyramid()">Yeni Piramit</button>
+    </div>
+  </ng-container>
+
+  <div class="designer">by <a href="https://github.com/fthgcr">Fatih GOCER</a></div>
+</div>

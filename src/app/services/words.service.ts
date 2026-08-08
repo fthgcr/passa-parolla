@@ -33,13 +33,16 @@ export class WordsService {
   }
 
   private getRandomKey(keys: string[], words: any, mainKey: any): string {
-    const randomIndex = Math.floor(Math.random() * keys.length);
-    if (this.validateValue(words[mainKey][keys[randomIndex]]) && this.compareWordsAndValues(words[mainKey][keys[randomIndex]], this.lowerCase(keys[randomIndex]))) {
-      return keys[randomIndex];
-    } else {
-      return this.getRandomKey(keys, words, mainKey);
+    // Anahtarları karıştırıp ilk uygun kelimeyi seç (özyineleme yerine sonlu döngü)
+    const shuffled = [...keys].sort(() => Math.random() - 0.5);
+    for (const key of shuffled) {
+      const value = words[mainKey][key];
+      if (this.validateValue(value) && this.compareWordsAndValues(value, this.lowerCase(key))) {
+        return key;
+      }
     }
-    //return keys[randomIndex];
+    // Hiç uygun kelime yoksa: en azından geçerli olan ilkini, o da yoksa ilk anahtarı döndür
+    return shuffled.find((k) => this.validateValue(words[mainKey][k])) ?? keys[0];
   }
 
   private validateValue(value: String): boolean {
@@ -50,13 +53,13 @@ export class WordsService {
     }
   }
 
-  private compareWordsAndValues(sentence: string, value: string): boolean {
+  public compareWordsAndValues(sentence: string, value: string): boolean {
     const sentenceArray = sentence.split(" ");
     let isExist : boolean = true;
     sentenceArray.forEach(s => {
       s = s.replace(",","");
       s = this.lowerCase(s);
-      if(this.lowerCase(s.includes(value)) || this.lowerCase(value.includes(s))){
+      if(s.length > 0 && (s.includes(value) || value.includes(s))){
         isExist = false;
       }
     });
@@ -77,7 +80,7 @@ export class WordsService {
     input = this.lowerCase(input);
     answer = this.lowerCase(answer);
 
-    return input === answer || input.includes(answer) || answer.includes(input);
+    return input === answer;
   }
 
   private removeMastar(text: any) {

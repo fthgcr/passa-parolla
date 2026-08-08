@@ -1,3 +1,5 @@
+<a class="mode-link" routerLink="/piramit">🔺 Piramit Modu</a>
+
 <div class="letter-container">
     <div
       class="letter"
@@ -14,7 +16,7 @@
     <div class="container">
       <div class="box-4">
         <div class="loader-4" >
-          <p style="font-weight: bold; color: white; margin-top: 25%;" >{{timeCounter}}</p>
+          <p [@tickAnimation]="timeCounter" style="font-weight: bold; color: white; margin-top: 25%;" >{{timeCounter}}</p>
           <div class="dbl-spin-1"></div>
           <div class="dbl-spin-2"></div>
         </div>
@@ -29,7 +31,7 @@
 
 <div class="question-container">
   <ng-container *ngIf="this.questions !== [] && this.questions[selectedIndex] && this.questions[selectedIndex]['value']">
-    <h1>{{ this.questions[selectedIndex]['value'] }}</h1>
+    <h1 [@questionAnimation]="selectedIndex">{{ this.questions[selectedIndex]['value'] }}</h1>
   </ng-container>
 </div>
 

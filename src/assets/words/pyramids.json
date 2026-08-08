@@ -1,0 +1,5576 @@
+[
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "meridyen",
+        "clue": "Ekvatoru dik olarak kestiği ve iki kutup noktasından geçerek dünyayı çevrelediği varsayılan daire",
+        "letters": "YNERİEMD",
+        "removed": "R"
+      },
+      {
+        "word": "deneyim",
+        "clue": "Tecrübe",
+        "letters": "YNEİEMD",
+        "removed": "Y"
+      },
+      {
+        "word": "medeni",
+        "clue": "Kentlileşmiş, kırsallıktan kurtulmuş, uygar",
+        "letters": "NEİEMD",
+        "removed": "E"
+      },
+      {
+        "word": "demin",
+        "clue": "Az önce",
+        "letters": "NİEMD",
+        "removed": "D"
+      },
+      {
+        "word": "meni",
+        "clue": "Döl suyu, bel suyu, atmık, sperma",
+        "letters": "NİEM",
+        "removed": "İ"
+      },
+      {
+        "word": "nem",
+        "clue": "Havada bulunan su buharı",
+        "letters": "NEM",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "reklamcı",
+        "clue": "Reklâm işi ile uğraşan kimse",
+        "letters": "ERAMKLIC",
+        "removed": "C"
+      },
+      {
+        "word": "meraklı",
+        "clue": "Her şeyi anlamak ve bilmek isteyen, mütecessis",
+        "letters": "ERAMKLI",
+        "removed": "I"
+      },
+      {
+        "word": "reklam",
+        "clue": "Bir şeyi halka tanıtmak, beğendirmek ve böylelikle sürümünü sağlamak için denenen her türlü yol",
+        "letters": "ERAMKL",
+        "removed": "L"
+      },
+      {
+        "word": "krema",
+        "clue": "Bir çeşit yumurtalı süt tatlısı",
+        "letters": "ERAMK",
+        "removed": "A"
+      },
+      {
+        "word": "krem",
+        "clue": "Tene yumuşaklık vermek veya güneş, yağmur gibi dış etkilerden korunmak için sürülen güzel kokulu merhem",
+        "letters": "ERMK",
+        "removed": "R"
+      },
+      {
+        "word": "kem",
+        "clue": "Noksan, eksik",
+        "letters": "EMK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "tanışmak",
+        "clue": "Birbirini tanır duruma gelmek",
+        "letters": "TMNKAAIŞ",
+        "removed": "Ş"
+      },
+      {
+        "word": "tanımak",
+        "clue": "Daha önce görülen, bilinen bir kimse veya şeyle karşılaşıldığında, bunun kim veya ne olduğunu hatırlatmak",
+        "letters": "TMNKAAI",
+        "removed": "I"
+      },
+      {
+        "word": "katman",
+        "clue": "Birbiri üzerinde bulunan yassıca maddelerin her biri, tabaka",
+        "letters": "TMNKAA",
+        "removed": "M"
+      },
+      {
+        "word": "kanat",
+        "clue": "Kuşlarda ve böceklerde uçmayı sağlayan organ",
+        "letters": "TNKAA",
+        "removed": "N"
+      },
+      {
+        "word": "atak",
+        "clue": "Düşüncesizce her işe atılan, cür'etkâr",
+        "letters": "TKAA",
+        "removed": "A"
+      },
+      {
+        "word": "kat",
+        "clue": "Bir yapıda iki döşeme arasında yer alan daire veya odaların bütünü",
+        "letters": "TKA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "abartmak",
+        "clue": "Bir şeyi olduğundan büyük veya çok göstererek anlatmak, mübalâğa etmek",
+        "letters": "AAMRATKB",
+        "removed": "B"
+      },
+      {
+        "word": "taramak",
+        "clue": "Bir şeyin tellerini birbirinden ayırıp karışıklığını gidermek",
+        "letters": "AAMRATK",
+        "removed": "T"
+      },
+      {
+        "word": "aramak",
+        "clue": "Birini veya bir şeyi bulmaya çalışmak",
+        "letters": "AAMRAK",
+        "removed": "A"
+      },
+      {
+        "word": "rakam",
+        "clue": "Sayıları göstermek için kullanılan işaretlerden her biri",
+        "letters": "AMRAK",
+        "removed": "M"
+      },
+      {
+        "word": "arka",
+        "clue": "Bir şeyin temel tutulan yüzünün tam ters yanı",
+        "letters": "ARAK",
+        "removed": "A"
+      },
+      {
+        "word": "kar",
+        "clue": "Havada beyaz ve hafif billûrlar biçiminde donarak yağan su buharı",
+        "letters": "RAK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "titremek",
+        "clue": "Küçük ve hızlı salınım hareketleri yapmak",
+        "letters": "ERMİTKET",
+        "removed": "T"
+      },
+      {
+        "word": "eritmek",
+        "clue": "Erimesini sağlamak, erimesine yol açmak",
+        "letters": "ERMİKET",
+        "removed": "E"
+      },
+      {
+        "word": "termik",
+        "clue": "Isı ile, sıcaklıkla ilgili, ısıl",
+        "letters": "RMİKET",
+        "removed": "K"
+      },
+      {
+        "word": "terim",
+        "clue": "Bir bilim, sanat, meslek dalıyla veya bir konu ile ilgili özel ve belirli bir kavramı karşılayan kelime, ıstılah",
+        "letters": "RMİET",
+        "removed": "İ"
+      },
+      {
+        "word": "mert",
+        "clue": "Yiğit",
+        "letters": "RMET",
+        "removed": "M"
+      },
+      {
+        "word": "ter",
+        "clue": "Derinin gözeneklerinden sızan, kendine özgü bir kokusu olan, yapışkan, renksiz, tuzlu sıvı",
+        "letters": "RET",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "işletmek",
+        "clue": "İşlemesini sağlamak, çalıştırmak",
+        "letters": "İEŞTMKEL",
+        "removed": "Ş"
+      },
+      {
+        "word": "metelik",
+        "clue": "On para değerinde olan sikke",
+        "letters": "İETMKEL",
+        "removed": "T"
+      },
+      {
+        "word": "melike",
+        "clue": "Kadın hükümdar, padişah karısı",
+        "letters": "İEMKEL",
+        "removed": "İ"
+      },
+      {
+        "word": "melek",
+        "clue": "Tanrı ile insan arasında aracılık yaptığına ve nurdan olduğuna inanılan manevî varlık",
+        "letters": "EMKEL",
+        "removed": "M"
+      },
+      {
+        "word": "leke",
+        "clue": "Kirliliği gösteren iz",
+        "letters": "EKEL",
+        "removed": "E"
+      },
+      {
+        "word": "kel",
+        "clue": "Vücudun kıllı yerlerinde üreyen bir tür mantarın, kılların dökülmesine yol açtığı bulaşıcı bir hastalık",
+        "letters": "KEL",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "beslemek",
+        "clue": "Yiyecek ve içeceğini sağlamak",
+        "letters": "ESEEBKLM",
+        "removed": "K"
+      },
+      {
+        "word": "besmele",
+        "clue": "\"Acıyan ve esirgeyen Tanrı'nın adı ile\" anlamına gelen ve bir işe başlarken söylenilen Arapça bismillahirrahmanirrahim sözünün kısaltması",
+        "letters": "ESEEBLM",
+        "removed": "B"
+      },
+      {
+        "word": "mesele",
+        "clue": "Sorun",
+        "letters": "ESEELM",
+        "removed": "E"
+      },
+      {
+        "word": "mesel",
+        "clue": "Örnek alınacak söz",
+        "letters": "SEELM",
+        "removed": "M"
+      },
+      {
+        "word": "sele",
+        "clue": "Yayvan sepet",
+        "letters": "SEEL",
+        "removed": "E"
+      },
+      {
+        "word": "sel",
+        "clue": "Sürekli yağmurlardan veya eriyen karlardan oluşan, geçtiği yerlere zarar veren taşkın su",
+        "letters": "SEL",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "tükenmek",
+        "clue": "Bitmek, sona ermek, artık kalmamak",
+        "letters": "TEÜKEMKN",
+        "removed": "K"
+      },
+      {
+        "word": "tünemek",
+        "clue": "(kuşlar, evcil kanatlılar) Uyumak için bir dala veya sırığa konmak",
+        "letters": "TEÜEMKN",
+        "removed": "Ü"
+      },
+      {
+        "word": "kement",
+        "clue": "Hayvanları yakalamak için kullanılan, ucu ilmikli, kaygan uzun ip",
+        "letters": "TEEMKN",
+        "removed": "N"
+      },
+      {
+        "word": "etmek",
+        "clue": "Bir işi yapmak",
+        "letters": "TEEMK",
+        "removed": "M"
+      },
+      {
+        "word": "kete",
+        "clue": "Yağlı, mayalı veya mayasız hamurdan yapılan, külde pişirilen çörek",
+        "letters": "TEEK",
+        "removed": "E"
+      },
+      {
+        "word": "tek",
+        "clue": "Eşi olmayan, biricik, yegâne",
+        "letters": "TEK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "yollamak",
+        "clue": "Göndermek",
+        "letters": "KLYAOLAM",
+        "removed": "L"
+      },
+      {
+        "word": "oylamak",
+        "clue": "Oya koymak veya oya sunmak",
+        "letters": "KYAOLAM",
+        "removed": "A"
+      },
+      {
+        "word": "yolmak",
+        "clue": "Çekerek yerinden çıkarmak, çekip koparmak",
+        "letters": "KYOLAM",
+        "removed": "M"
+      },
+      {
+        "word": "kolay",
+        "clue": "Sıkıntı çekmeden, yorulmadan yapılabilen, emeksiz, zahmetsiz, güç ve zor karşıtı",
+        "letters": "KYOLA",
+        "removed": "K"
+      },
+      {
+        "word": "olay",
+        "clue": "Ortaya çıkan, oluşan durum, ilgiyi çeken veya çekebilecek nitelikte olan her türlü iş, hâdise, vak'a",
+        "letters": "YOLA",
+        "removed": "L"
+      },
+      {
+        "word": "oya",
+        "clue": "Genellikle ipek ibrişim kullanarak iğne, mekik, tığ veya firkete ile yapılan ince dantel",
+        "letters": "YOA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "bitirmek",
+        "clue": "Bitmesini sağlamak,sona erdirmek, tüketmek, tamamlamak, sonuçlandırmak",
+        "letters": "RKBİETMİ",
+        "removed": "B"
+      },
+      {
+        "word": "kiremit",
+        "clue": "Yapıların çatılarını örtmekte kullanılan, yan yana dizilerek, suyu aşağıya geçirmeden dışarı akıtacak biçimde yapılmış, kızıl toprağın renginde, pişmiş balçık levha",
+        "letters": "RKİETMİ",
+        "removed": "İ"
+      },
+      {
+        "word": "termik",
+        "clue": "Isı ile, sıcaklıkla ilgili, ısıl",
+        "letters": "RKETMİ",
+        "removed": "R"
+      },
+      {
+        "word": "itmek",
+        "clue": "Bir şeyi güç uygulayarak ileri götürmek",
+        "letters": "KETMİ",
+        "removed": "M"
+      },
+      {
+        "word": "etik",
+        "clue": "Töre bilimi, ahlâk bilimi",
+        "letters": "KETİ",
+        "removed": "K"
+      },
+      {
+        "word": "eti",
+        "clue": "Hitit",
+        "letters": "ETİ",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "uslanmak",
+        "clue": "Yadırganan, ayıplanan davranışlardan vazgeçmek, davranışlarına düzen vermek",
+        "letters": "USLKAMNA",
+        "removed": "L"
+      },
+      {
+        "word": "usanmak",
+        "clue": "Tekrarlanması, uzun sürmesi dolayısıyla bir şeyden hoşlanılmaz veya sıkılır duruma gelmek, bıkmak, bezmek",
+        "letters": "USKAMNA",
+        "removed": "A"
+      },
+      {
+        "word": "sunmak",
+        "clue": "Bir büyüğe veya nezaket gereğince bir kimseye bir şeyi vermek, yollamak, göndermek, takdim etmek",
+        "letters": "USKMNA",
+        "removed": "N"
+      },
+      {
+        "word": "muska",
+        "clue": "İçinde dinî ve büyüleyici bir gücün saklı olduğu sanılan, taşıyanı, takanı veya sahip olanı zararlı etkilerden koruyup iyilik getirdiğine inanılan bir nesne veya yazılı kâğıt, hamaylı",
+        "letters": "USKMA",
+        "removed": "S"
+      },
+      {
+        "word": "kamu",
+        "clue": "Hep, bütün",
+        "letters": "UKMA",
+        "removed": "A"
+      },
+      {
+        "word": "kum",
+        "clue": "Silisli kütlelerin, kayaların, doğal etkenlerle parçalanarak ufalanmasından oluşan ufak, sert taneciklerin bütünü",
+        "letters": "UKM",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "yaratmak",
+        "clue": "(Allah) Olmayan bir şeyi var etmek",
+        "letters": "AAYTKRMA",
+        "removed": "Y"
+      },
+      {
+        "word": "taramak",
+        "clue": "Bir şeyin tellerini birbirinden ayırıp karışıklığını gidermek",
+        "letters": "AATKRMA",
+        "removed": "T"
+      },
+      {
+        "word": "makara",
+        "clue": "Üzerine iplik, tel, şerit gibi şeyler sarılan, kenarları çıkıntılı, ekseni boyunca delik silindir",
+        "letters": "AAKRMA",
+        "removed": "A"
+      },
+      {
+        "word": "rakam",
+        "clue": "Sayıları göstermek için kullanılan işaretlerden her biri",
+        "letters": "AKRMA",
+        "removed": "A"
+      },
+      {
+        "word": "mark",
+        "clue": "Alman para birimi",
+        "letters": "KRMA",
+        "removed": "M"
+      },
+      {
+        "word": "kar",
+        "clue": "Havada beyaz ve hafif billûrlar biçiminde donarak yağan su buharı",
+        "letters": "KRA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "yatırmak",
+        "clue": "Bir kimsenin bir yere yatmasını sağlamak",
+        "letters": "ARKTIMYA",
+        "removed": "T"
+      },
+      {
+        "word": "ayırmak",
+        "clue": "Bölmek",
+        "letters": "ARKIMYA",
+        "removed": "I"
+      },
+      {
+        "word": "yarmak",
+        "clue": "Uzunlamasına bölüp ayırmak",
+        "letters": "ARKMYA",
+        "removed": "Y"
+      },
+      {
+        "word": "marka",
+        "clue": "Resim veya harfle yapılan işaret",
+        "letters": "ARKMA",
+        "removed": "M"
+      },
+      {
+        "word": "arka",
+        "clue": "Bir şeyin temel tutulan yüzünün tam ters yanı",
+        "letters": "ARKA",
+        "removed": "A"
+      },
+      {
+        "word": "kar",
+        "clue": "Havada beyaz ve hafif billûrlar biçiminde donarak yağan su buharı",
+        "letters": "RKA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "menenjit",
+        "clue": "Ateş, şiddetli baş ağrısı, kusma, ense katılaşması, sayıklama gibi belirtilerle ortaya çıkan beyin zarları iltihabı",
+        "letters": "JTNMENEİ",
+        "removed": "J"
+      },
+      {
+        "word": "temenni",
+        "clue": "Dileme, dilek",
+        "letters": "TNMENEİ",
+        "removed": "E"
+      },
+      {
+        "word": "minnet",
+        "clue": "Yapılan bir iyiliğe karşı kendini borçlu sayma, gönül borcu",
+        "letters": "TNMNEİ",
+        "removed": "N"
+      },
+      {
+        "word": "nimet",
+        "clue": "İyilik, lütuf, ihsan",
+        "letters": "TMNEİ",
+        "removed": "T"
+      },
+      {
+        "word": "emin",
+        "clue": "İnanılır, güvenilir",
+        "letters": "MNEİ",
+        "removed": "İ"
+      },
+      {
+        "word": "nem",
+        "clue": "Havada bulunan su buharı",
+        "letters": "MNE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "mağfiret",
+        "clue": "Af, bağışlama",
+        "letters": "EFRTMĞAİ",
+        "removed": "Ğ"
+      },
+      {
+        "word": "marifet",
+        "clue": "Ustalık, hüner, uzmanlık",
+        "letters": "EFRTMAİ",
+        "removed": "M"
+      },
+      {
+        "word": "tarife",
+        "clue": "Fiyat gösteren çizelge",
+        "letters": "EFRTAİ",
+        "removed": "İ"
+      },
+      {
+        "word": "etraf",
+        "clue": "Yanlar, taraflar",
+        "letters": "EFRTA",
+        "removed": "F"
+      },
+      {
+        "word": "erat",
+        "clue": "Erden başgedikliye kadar askerlere verilen genel ad",
+        "letters": "ERTA",
+        "removed": "E"
+      },
+      {
+        "word": "art",
+        "clue": "Arka, geri",
+        "letters": "RTA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "getirmek",
+        "clue": "Gelmesini sağlamak",
+        "letters": "GİTREEMK",
+        "removed": "G"
+      },
+      {
+        "word": "eritmek",
+        "clue": "Erimesini sağlamak, erimesine yol açmak",
+        "letters": "İTREEMK",
+        "removed": "E"
+      },
+      {
+        "word": "termik",
+        "clue": "Isı ile, sıcaklıkla ilgili, ısıl",
+        "letters": "İTREMK",
+        "removed": "K"
+      },
+      {
+        "word": "terim",
+        "clue": "Bir bilim, sanat, meslek dalıyla veya bir konu ile ilgili özel ve belirli bir kavramı karşılayan kelime, ıstılah",
+        "letters": "İTREM",
+        "removed": "İ"
+      },
+      {
+        "word": "mert",
+        "clue": "Yiğit",
+        "letters": "TREM",
+        "removed": "M"
+      },
+      {
+        "word": "ter",
+        "clue": "Derinin gözeneklerinden sızan, kendine özgü bir kokusu olan, yapışkan, renksiz, tuzlu sıvı",
+        "letters": "TRE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "ayakaltı",
+        "clue": "Gelip geçenlerin çok olduğu yer",
+        "letters": "AAYILATK",
+        "removed": "I"
+      },
+      {
+        "word": "yatalak",
+        "clue": "İnme veya sakatlık gibi bir sebeple yataktan kalkamayan (kimse)",
+        "letters": "AAYLATK",
+        "removed": "T"
+      },
+      {
+        "word": "yalaka",
+        "clue": "Dalkavuk",
+        "letters": "AAYLAK",
+        "removed": "A"
+      },
+      {
+        "word": "yalak",
+        "clue": "Hayvanların su içtikleri taş veya ağaçtan oyma kap",
+        "letters": "AYLAK",
+        "removed": "L"
+      },
+      {
+        "word": "yaka",
+        "clue": "Giysilerin boyna gelen, boynu çeviren bölümü",
+        "letters": "AYAK",
+        "removed": "A"
+      },
+      {
+        "word": "yak",
+        "clue": "Tibet'te, Asya'nın bazı yörelerinde yabanî veya evcil olarak yaşayan, kılları uzun öküz türü (Bos grunniens)",
+        "letters": "YAK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "kaçınmak",
+        "clue": "Herhangi bir işi yapmaktan veya özverili davranmaktan geri durmak, imtina etmek",
+        "letters": "NÇMIKAKA",
+        "removed": "Ç"
+      },
+      {
+        "word": "kınamak",
+        "clue": "Yapılan bir işin kötü olduğunu belirtir bir biçimde söz söylemek, ayıplamak, takbih etmek",
+        "letters": "NMIKAKA",
+        "removed": "I"
+      },
+      {
+        "word": "kanmak",
+        "clue": "Söylenilen sözün, anlatılan konunun doğruluğuna inanmak",
+        "letters": "NMKAKA",
+        "removed": "K"
+      },
+      {
+        "word": "anmak",
+        "clue": "Birini veya bir şeyi akla getirerek sözünü etmek veya onu düşünmek, zikretmek, hatırlamak",
+        "letters": "NMAKA",
+        "removed": "M"
+      },
+      {
+        "word": "kana",
+        "clue": "Geminin çektiği suyu göstermek için baş ve kıç bodoslamaları üzerine konulan işaretler",
+        "letters": "NAKA",
+        "removed": "K"
+      },
+      {
+        "word": "ana",
+        "clue": "Çocuğu olan kadın, anne",
+        "letters": "NAA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "sulanmak",
+        "clue": "Sulu duruma gelmek",
+        "letters": "LAAMUKSN",
+        "removed": "L"
+      },
+      {
+        "word": "usanmak",
+        "clue": "Tekrarlanması, uzun sürmesi dolayısıyla bir şeyden hoşlanılmaz veya sıkılır duruma gelmek, bıkmak, bezmek",
+        "letters": "AAMUKSN",
+        "removed": "U"
+      },
+      {
+        "word": "sanmak",
+        "clue": "Bir şeyin olma veya olmama ihtimalini kabul etmekle birlikte, olabileceğine daha çok inanmak, zannetmek",
+        "letters": "AAMKSN",
+        "removed": "K"
+      },
+      {
+        "word": "saman",
+        "clue": "Türlü ekinlerin taneleri ayrıldıktan sonra, harmanda kalan parçalanmış sapları",
+        "letters": "AAMSN",
+        "removed": "N"
+      },
+      {
+        "word": "masa",
+        "clue": "Bir destek üzerine oturtulmuş bir tabladan oluşan mobilya",
+        "letters": "AAMS",
+        "removed": "M"
+      },
+      {
+        "word": "asa",
+        "clue": "Bazı ülkelerde, hükümdarların, mareşallerin, din adamlarının güç sembolü olarak, törenlerde taşıdıkları bir tür ağaç veya metalden değnek",
+        "letters": "AAS",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "neşriyat",
+        "clue": "Yayın",
+        "letters": "EŞNYTRİA",
+        "removed": "R"
+      },
+      {
+        "word": "şeytani",
+        "clue": "Şeytanca",
+        "letters": "EŞNYTİA",
+        "removed": "İ"
+      },
+      {
+        "word": "şeytan",
+        "clue": "Din kitaplarına göre isyancı meleklerin, kötü ruhların başı olarak nitelenen varlık",
+        "letters": "EŞNYTA",
+        "removed": "Ş"
+      },
+      {
+        "word": "tenya",
+        "clue": "Şerit",
+        "letters": "ENYTA",
+        "removed": "N"
+      },
+      {
+        "word": "ayet",
+        "clue": "Kur'an surelerini oluşturan cümlelerden her biri",
+        "letters": "EYTA",
+        "removed": "E"
+      },
+      {
+        "word": "tay",
+        "clue": "Üç yaşına kadar olan at yavrusu",
+        "letters": "YTA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "oynatmak",
+        "clue": "Oynamasını sağlamak",
+        "letters": "MONTAYKA",
+        "removed": "A"
+      },
+      {
+        "word": "yontmak",
+        "clue": "Bir şeye istenilen biçimi vermek için dış bölümünü keskin bir araçla biçmek, kesmek",
+        "letters": "MONTYKA",
+        "removed": "T"
+      },
+      {
+        "word": "kamyon",
+        "clue": "Motorlu büyük yük taşıtı",
+        "letters": "MONYKA",
+        "removed": "N"
+      },
+      {
+        "word": "oymak",
+        "clue": "Keskin, sivri uçlu bir cisimle bir şeyi yontarak veya delerek çukur oluşturmak",
+        "letters": "MOYKA",
+        "removed": "K"
+      },
+      {
+        "word": "mayo",
+        "clue": "Genellikle denize girerken ten üzerine giyilen, vücudun gerekli kısımlarını sıkıca örten giysi",
+        "letters": "MOYA",
+        "removed": "M"
+      },
+      {
+        "word": "oya",
+        "clue": "Genellikle ipek ibrişim kullanarak iğne, mekik, tığ veya firkete ile yapılan ince dantel",
+        "letters": "OYA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "terminal",
+        "clue": "Otobüs, uçak gibi taşıtların yolcularını ilk aldığı veya son bıraktığı yer",
+        "letters": "NEİALMTR",
+        "removed": "T"
+      },
+      {
+        "word": "mineral",
+        "clue": "Normal sıcaklıkta doğada katı durumda birtakım maddelerle karışık veya birleşik olarak bulunan veya kimyasal yollarla elde edilen inorganik madde",
+        "letters": "NEİALMR",
+        "removed": "L"
+      },
+      {
+        "word": "minare",
+        "clue": "Namaz vaktinin geldiğini bildirmek için müezzinin çıkıp ezan okuduğu, bir veya birkaç şerefeli, çoğunlukla taştan, yüksek ve ince yapı",
+        "letters": "NEİAMR",
+        "removed": "A"
+      },
+      {
+        "word": "imren",
+        "clue": "Görülen bir şeyi veya benzerini edinme isteği, gıpta",
+        "letters": "NEİMR",
+        "removed": "R"
+      },
+      {
+        "word": "emin",
+        "clue": "İnanılır, güvenilir",
+        "letters": "NEİM",
+        "removed": "İ"
+      },
+      {
+        "word": "men",
+        "clue": "Yasaklama, izin vermeme",
+        "letters": "NEM",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "tükenmez",
+        "clue": "Tükenmeyen, bitmeyen",
+        "letters": "KÜNMETZE",
+        "removed": "Z"
+      },
+      {
+        "word": "tünemek",
+        "clue": "(kuşlar, evcil kanatlılar) Uyumak için bir dala veya sırığa konmak",
+        "letters": "KÜNMETE",
+        "removed": "Ü"
+      },
+      {
+        "word": "kement",
+        "clue": "Hayvanları yakalamak için kullanılan, ucu ilmikli, kaygan uzun ip",
+        "letters": "KNMETE",
+        "removed": "M"
+      },
+      {
+        "word": "etken",
+        "clue": "Etki yapan (her şey), müessir, faktör",
+        "letters": "KNETE",
+        "removed": "N"
+      },
+      {
+        "word": "teke",
+        "clue": "Keçinin erkeği",
+        "letters": "KETE",
+        "removed": "E"
+      },
+      {
+        "word": "tek",
+        "clue": "Eşi olmayan, biricik, yegâne",
+        "letters": "KTE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "seremoni",
+        "clue": "Tören",
+        "letters": "SOERNİEM",
+        "removed": "O"
+      },
+      {
+        "word": "seminer",
+        "clue": "Bir konu ile ilgili bilgi vermek ve bu bilgiler üzerinde tartışmak amacıyla birkaç yetkilinin yönetimi altında düzenlenen toplantı",
+        "letters": "SERNİEM",
+        "removed": "N"
+      },
+      {
+        "word": "mesire",
+        "clue": "Gezinti yeri, gezilecek yer",
+        "letters": "SERİEM",
+        "removed": "E"
+      },
+      {
+        "word": "resim",
+        "clue": "Varlıkların, doğadaki görünüşlerinin kalem, fırça gibi araçlarla kâğıt, bez vb. üzerinde yapılan biçimleri",
+        "letters": "SRİEM",
+        "removed": "M"
+      },
+      {
+        "word": "seri",
+        "clue": "Herhangi bir bakımdan bir bütün oluşturan şeylerin tümü, dizi",
+        "letters": "SRİE",
+        "removed": "İ"
+      },
+      {
+        "word": "ser",
+        "clue": "Baş, kafa (bazı birleşik kelimelerde) Başkan, reis",
+        "letters": "SRE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "sakınmak",
+        "clue": "Herhangi bir korku veya düşünce ile bir şeyi yapmaktan uzak durmak, içtinap etmek",
+        "letters": "MAIKNKSA",
+        "removed": "S"
+      },
+      {
+        "word": "kınamak",
+        "clue": "Yapılan bir işin kötü olduğunu belirtir bir biçimde söz söylemek, ayıplamak, takbih etmek",
+        "letters": "MAIKNKA",
+        "removed": "I"
+      },
+      {
+        "word": "kanmak",
+        "clue": "Söylenilen sözün, anlatılan konunun doğruluğuna inanmak",
+        "letters": "MAKNKA",
+        "removed": "K"
+      },
+      {
+        "word": "anmak",
+        "clue": "Birini veya bir şeyi akla getirerek sözünü etmek veya onu düşünmek, zikretmek, hatırlamak",
+        "letters": "MANKA",
+        "removed": "M"
+      },
+      {
+        "word": "kana",
+        "clue": "Geminin çektiği suyu göstermek için baş ve kıç bodoslamaları üzerine konulan işaretler",
+        "letters": "ANKA",
+        "removed": "K"
+      },
+      {
+        "word": "ana",
+        "clue": "Çocuğu olan kadın, anne",
+        "letters": "ANA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "değinmek",
+        "clue": "Bir konuyu ele alarak ondan kısaca söz etmek, dokunmak, temas etmek",
+        "letters": "EDKMEĞİN",
+        "removed": "Ğ"
+      },
+      {
+        "word": "edinmek",
+        "clue": "Kendini (bir şeye) sahip kılmak, kendine sağlamak, iktisap etmek",
+        "letters": "EDKMEİN",
+        "removed": "K"
+      },
+      {
+        "word": "medeni",
+        "clue": "Kentlileşmiş, kırsallıktan kurtulmuş, uygar",
+        "letters": "EDMEİN",
+        "removed": "E"
+      },
+      {
+        "word": "demin",
+        "clue": "Az önce",
+        "letters": "DMEİN",
+        "removed": "D"
+      },
+      {
+        "word": "meni",
+        "clue": "Döl suyu, bel suyu, atmık, sperma",
+        "letters": "MEİN",
+        "removed": "İ"
+      },
+      {
+        "word": "men",
+        "clue": "Yasaklama, izin vermeme",
+        "letters": "MEN",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "tanınmak",
+        "clue": "Kim olduğu bilinmek",
+        "letters": "AKNMTIAN",
+        "removed": "N"
+      },
+      {
+        "word": "tanımak",
+        "clue": "Daha önce görülen, bilinen bir kimse veya şeyle karşılaşıldığında, bunun kim veya ne olduğunu hatırlatmak",
+        "letters": "AKMTIAN",
+        "removed": "A"
+      },
+      {
+        "word": "mantık",
+        "clue": "Doğru düşünme sanatı ve bilimi",
+        "letters": "KMTIAN",
+        "removed": "K"
+      },
+      {
+        "word": "tanım",
+        "clue": "Bir varlığa, bir şeye özgü niteliklerin belirtilmesi, bir kelimeyi belirleyen, açıklayan anlam, tarif",
+        "letters": "MTIAN",
+        "removed": "M"
+      },
+      {
+        "word": "anıt",
+        "clue": "Önemli bir olayı veya büyük bir kişinin gelecek kuşaklarca tarih boyunca anılması için yapılan, göze çarpacak büyüklükte, sembol niteliğinde yapı, abide",
+        "letters": "TIAN",
+        "removed": "I"
+      },
+      {
+        "word": "ant",
+        "clue": "Tanrı'yı veya kutsal bilinen bir kişiyi, bir şeyi tanık göstererek bir olayı doğrulama, yemin",
+        "letters": "TAN",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "soyunmak",
+        "clue": "Üstündeki giysilerin bir bölümünü veya tümünü çıkarmak",
+        "letters": "YOAMNSKU",
+        "removed": "M"
+      },
+      {
+        "word": "okyanus",
+        "clue": "Kıtaları birbirinden ayıran engin, açık deniz, ana deniz, umman",
+        "letters": "YOANSKU",
+        "removed": "A"
+      },
+      {
+        "word": "yoksun",
+        "clue": "Belli bir şeyden kendisinde olmayan, belli bir şeyin yokluğunu çeken, mahrum",
+        "letters": "YONSKU",
+        "removed": "S"
+      },
+      {
+        "word": "koyun",
+        "clue": "Geviş getirenlerden, eti, sütü, yapağısı ve derisi için yetiştirilen evcil hayvan (Ovis aries)",
+        "letters": "YONKU",
+        "removed": "N"
+      },
+      {
+        "word": "oyuk",
+        "clue": "Oyulmuş, içi boş ve çukur olan",
+        "letters": "YOKU",
+        "removed": "U"
+      },
+      {
+        "word": "koy",
+        "clue": "Denizin, gölün küçük girintiler biçiminde karaya doğru sokulduğu yer, küçük körfez",
+        "letters": "YOK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "dinlemek",
+        "clue": "İşitmek için kulak vermek",
+        "letters": "NMLİEKED",
+        "removed": "N"
+      },
+      {
+        "word": "dilemek",
+        "clue": "Birinden bir şeyin yapılmasını istemek, rica etmek, arzu etmek",
+        "letters": "MLİEKED",
+        "removed": "E"
+      },
+      {
+        "word": "demlik",
+        "clue": "Çayın demlendiği kap",
+        "letters": "MLİKED",
+        "removed": "M"
+      },
+      {
+        "word": "delik",
+        "clue": "Dar, küçük açıklık; dar, küçük çukur",
+        "letters": "LİKED",
+        "removed": "K"
+      },
+      {
+        "word": "deli",
+        "clue": "Aklını yitirmiş olan, aklî dengesi bozulmuş olan, mecnun",
+        "letters": "LİED",
+        "removed": "D"
+      },
+      {
+        "word": "ile",
+        "clue": "Kelimenin sonuna geldiğinde birliktelik, işteşlik, beraberlik, araç, sebep veya durum anlatan cümleler yapmaya yarar",
+        "letters": "LİE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "aksırmak",
+        "clue": "Burun zarlarının gıcıklanması ile solunum kaslarının birdenbire kasılması üzerine, ağız ve burundan hızlı, gürültülü soluk boşaltmak, hapşırmak",
+        "letters": "KASMRIKA",
+        "removed": "I"
+      },
+      {
+        "word": "sarkmak",
+        "clue": "Aşağıya doğru uzanmak",
+        "letters": "KASMRKA",
+        "removed": "R"
+      },
+      {
+        "word": "kasmak",
+        "clue": "Kısaltmak",
+        "letters": "KASMKA",
+        "removed": "M"
+      },
+      {
+        "word": "aksak",
+        "clue": "Aksayan, hafifçe topallayan",
+        "letters": "KASKA",
+        "removed": "K"
+      },
+      {
+        "word": "kasa",
+        "clue": "Para veya değerli eşya saklamaya yarayan çelik dolap",
+        "letters": "ASKA",
+        "removed": "K"
+      },
+      {
+        "word": "asa",
+        "clue": "Bazı ülkelerde, hükümdarların, mareşallerin, din adamlarının güç sembolü olarak, törenlerde taşıdıkları bir tür ağaç veya metalden değnek",
+        "letters": "ASA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "eksilmek",
+        "clue": "Azalmak, az duruma gelmek",
+        "letters": "MLEİKSKE",
+        "removed": "K"
+      },
+      {
+        "word": "iskemle",
+        "clue": "Arkalıksız sandalye",
+        "letters": "MLEİSKE",
+        "removed": "S"
+      },
+      {
+        "word": "kelime",
+        "clue": "Anlamı olan ses veya ses birliği, söz, sözcük",
+        "letters": "MLEİKE",
+        "removed": "İ"
+      },
+      {
+        "word": "melek",
+        "clue": "Tanrı ile insan arasında aracılık yaptığına ve nurdan olduğuna inanılan manevî varlık",
+        "letters": "MLEKE",
+        "removed": "M"
+      },
+      {
+        "word": "elek",
+        "clue": "Taneli veya un gibi toz durumunda olan şeyleri yabancı maddelerden ayıklamak veya incesini kabasından ayırmak için kullanılan tahta bir kasnak ve tek tarafa gerilmiş, gözenekli tel, kıl, bez vb. ile yapılan araç",
+        "letters": "LEKE",
+        "removed": "E"
+      },
+      {
+        "word": "kel",
+        "clue": "Vücudun kıllı yerlerinde üreyen bir tür mantarın, kılların dökülmesine yol açtığı bulaşıcı bir hastalık",
+        "letters": "LKE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "beklenti",
+        "clue": "Bir olgunun sonunda gerçekleşmesi beklenen şey",
+        "letters": "TBNEİELK",
+        "removed": "B"
+      },
+      {
+        "word": "iletken",
+        "clue": "Akım, ısı, ses vb. geçiren (madde), nakil, yalıtkan karşıtı",
+        "letters": "TNEİELK",
+        "removed": "E"
+      },
+      {
+        "word": "telkin",
+        "clue": "(bir duyguyu, bir düşünceyi) Aşılama",
+        "letters": "TNİELK",
+        "removed": "L"
+      },
+      {
+        "word": "tekin",
+        "clue": "Boş, içinde kimse bulunmayan",
+        "letters": "TNİEK",
+        "removed": "N"
+      },
+      {
+        "word": "etki",
+        "clue": "Bir kimse veya nesnenin başka bir kişi veya şey üzerindeki gücü, tesir",
+        "letters": "TİEK",
+        "removed": "K"
+      },
+      {
+        "word": "eti",
+        "clue": "Hitit",
+        "letters": "TİE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "ıslanmak",
+        "clue": "Islak duruma gelmek",
+        "letters": "LAKMNAIS",
+        "removed": "L"
+      },
+      {
+        "word": "sınamak",
+        "clue": "Değerini anlamak, gerekli niteliği taşıyıp taşımadığını bulmak için birini, bir nesneyi veya bir düşünceyi yoklamak, denemek, tecrübe etmek",
+        "letters": "AKMNAIS",
+        "removed": "I"
+      },
+      {
+        "word": "sanmak",
+        "clue": "Bir şeyin olma veya olmama ihtimalini kabul etmekle birlikte, olabileceğine daha çok inanmak, zannetmek",
+        "letters": "AKMNAS",
+        "removed": "N"
+      },
+      {
+        "word": "makas",
+        "clue": "Bir eksen çevresinde dönebilecek biçimde çapraz eklemlenmiş, birbirine bakan yüzleri keskin iki çelik lâmadan oluşmuş, arasına yerleştirilen herhangi bir şeyi kesmeye yarayan araç",
+        "letters": "AKMAS",
+        "removed": "M"
+      },
+      {
+        "word": "saka",
+        "clue": "Evlere, çeşmeden su taşımayı iş edinmiş olan kimse",
+        "letters": "AKAS",
+        "removed": "K"
+      },
+      {
+        "word": "asa",
+        "clue": "Bazı ülkelerde, hükümdarların, mareşallerin, din adamlarının güç sembolü olarak, törenlerde taşıdıkları bir tür ağaç veya metalden değnek",
+        "letters": "AAS",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "mektepli",
+        "clue": "Okula giden (kimse), öğrenci",
+        "letters": "LKPTMEİE",
+        "removed": "P"
+      },
+      {
+        "word": "metelik",
+        "clue": "On para değerinde olan sikke",
+        "letters": "LKTMEİE",
+        "removed": "T"
+      },
+      {
+        "word": "melike",
+        "clue": "Kadın hükümdar, padişah karısı",
+        "letters": "LKMEİE",
+        "removed": "İ"
+      },
+      {
+        "word": "eklem",
+        "clue": "Vücut kemiklerinin uç uca veya kenar kenara gelip birleştiği yer, mafsal",
+        "letters": "LKMEE",
+        "removed": "M"
+      },
+      {
+        "word": "elek",
+        "clue": "Taneli veya un gibi toz durumunda olan şeyleri yabancı maddelerden ayıklamak veya incesini kabasından ayırmak için kullanılan tahta bir kasnak ve tek tarafa gerilmiş, gözenekli tel, kıl, bez vb. ile yapılan araç",
+        "letters": "LKEE",
+        "removed": "E"
+      },
+      {
+        "word": "kel",
+        "clue": "Vücudun kıllı yerlerinde üreyen bir tür mantarın, kılların dökülmesine yol açtığı bulaşıcı bir hastalık",
+        "letters": "LKE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "yatışmak",
+        "clue": "Hızı, etkisi azalmak, aşırılığı geçmek",
+        "letters": "ITŞKMAAY",
+        "removed": "Y"
+      },
+      {
+        "word": "taşımak",
+        "clue": "Bir şeyi bir yerden alıp başka bir yere götürmek",
+        "letters": "ITŞKMAA",
+        "removed": "I"
+      },
+      {
+        "word": "taşmak",
+        "clue": "Sıvı maddeler, içinde bulundukları kaba sığmayacak kadar çoğalma ve kabarma yüzünden kenarları aşmak",
+        "letters": "TŞKMAA",
+        "removed": "T"
+      },
+      {
+        "word": "akşam",
+        "clue": "Gündüzün son ve gecenin ilk saatleri",
+        "letters": "ŞKMAA",
+        "removed": "M"
+      },
+      {
+        "word": "şaka",
+        "clue": "Güldürmek, eğlendirmek amacıyla karşısındakini kırmadan yapılan hareket veya söylenen söz, lâtife",
+        "letters": "ŞKAA",
+        "removed": "A"
+      },
+      {
+        "word": "şak",
+        "clue": "Enlice bir şeyle vurulduğunda çıkan sesi anlatır",
+        "letters": "ŞKA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "tarihsel",
+        "clue": "Tarihî",
+        "letters": "HTİSRLEA",
+        "removed": "H"
+      },
+      {
+        "word": "resital",
+        "clue": "Tek bir sanatçının tek bir çalgı ile verdiği konser",
+        "letters": "TİSRLEA",
+        "removed": "A"
+      },
+      {
+        "word": "steril",
+        "clue": "Verimsiz, kısır",
+        "letters": "TİSRLE",
+        "removed": "S"
+      },
+      {
+        "word": "litre",
+        "clue": "Sıvıları ölçmede kullanılan, bir desimetre küp hacminde ölçü birimi",
+        "letters": "TİRLE",
+        "removed": "R"
+      },
+      {
+        "word": "elti",
+        "clue": "Kardeş karılarından her birinin ötekine göre adı",
+        "letters": "TİLE",
+        "removed": "T"
+      },
+      {
+        "word": "ile",
+        "clue": "Kelimenin sonuna geldiğinde birliktelik, işteşlik, beraberlik, araç, sebep veya durum anlatan cümleler yapmaya yarar",
+        "letters": "İLE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "otlanmak",
+        "clue": "(hayvan) Otlamak",
+        "letters": "AKMANLOT",
+        "removed": "M"
+      },
+      {
+        "word": "lokanta",
+        "clue": "Kazanç amacıyla açılmış, para karşılığında yemek yenilen yer, restoran",
+        "letters": "AKANLOT",
+        "removed": "T"
+      },
+      {
+        "word": "olanak",
+        "clue": "Yararlanılan uygun şart, imkân",
+        "letters": "AKANLO",
+        "removed": "O"
+      },
+      {
+        "word": "kanal",
+        "clue": "Bazı bölgeleri sulamak, kurutmak amacıyla veya gemilerin işlemesine elverişli, insan eliyle açılmış su yolu",
+        "letters": "AKANL",
+        "removed": "L"
+      },
+      {
+        "word": "kana",
+        "clue": "Geminin çektiği suyu göstermek için baş ve kıç bodoslamaları üzerine konulan işaretler",
+        "letters": "AKAN",
+        "removed": "K"
+      },
+      {
+        "word": "ana",
+        "clue": "Çocuğu olan kadın, anne",
+        "letters": "AAN",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "sanatkar",
+        "clue": "Sanatçı",
+        "letters": "SAKTANRA",
+        "removed": "S"
+      },
+      {
+        "word": "nakarat",
+        "clue": "Bir şarkıda her kıtadan sonra tekrarlanan ve bestesi değişmeyen parça",
+        "letters": "AKTANRA",
+        "removed": "A"
+      },
+      {
+        "word": "kantar",
+        "clue": "Ağırlık sıfırken yatay duran bir kaldıraç koluna dik olarak tutturulmuş bir ibrenin sapmasıyla kütleleri tartan araç",
+        "letters": "KTANRA",
+        "removed": "R"
+      },
+      {
+        "word": "kanat",
+        "clue": "Kuşlarda ve böceklerde uçmayı sağlayan organ",
+        "letters": "KTANA",
+        "removed": "A"
+      },
+      {
+        "word": "tank",
+        "clue": "Zırhlı ve silâhlı, tekerlekleri paletli, motorlu savaş taşıtı",
+        "letters": "KTNA",
+        "removed": "T"
+      },
+      {
+        "word": "kan",
+        "clue": "Atardamar ve toplardamarların içinde dolaşarak hücrelerde özümleme, yadımlama görevlerini sağlayan plâzma ve yuvarlardan oluşmuş kırmızı renkli sıvı",
+        "letters": "KNA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "mezarlık",
+        "clue": "Mezarların bulunduğu yer, kabristan, gömütlük, sinlik",
+        "letters": "KAZLIERM",
+        "removed": "Z"
+      },
+      {
+        "word": "meraklı",
+        "clue": "Her şeyi anlamak ve bilmek isteyen, mütecessis",
+        "letters": "KALIERM",
+        "removed": "I"
+      },
+      {
+        "word": "reklam",
+        "clue": "Bir şeyi halka tanıtmak, beğendirmek ve böylelikle sürümünü sağlamak için denenen her türlü yol",
+        "letters": "KALERM",
+        "removed": "R"
+      },
+      {
+        "word": "kalem",
+        "clue": "Yazmak, çizmek gibi işlerde kullanılan çeşitli biçimlerde araç",
+        "letters": "KALEM",
+        "removed": "K"
+      },
+      {
+        "word": "elma",
+        "clue": "Gülgillerden, çiçekleri pembe veya beyaz bir ağaç (Pirus malus)",
+        "letters": "ALEM",
+        "removed": "M"
+      },
+      {
+        "word": "ela",
+        "clue": "Gözde sarıya çalar kestane rengi",
+        "letters": "ALE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "nevresim",
+        "clue": "Torba biçiminde dikilmiş yorgan çarşafı",
+        "letters": "REİEVMNS",
+        "removed": "V"
+      },
+      {
+        "word": "seminer",
+        "clue": "Bir konu ile ilgili bilgi vermek ve bu bilgiler üzerinde tartışmak amacıyla birkaç yetkilinin yönetimi altında düzenlenen toplantı",
+        "letters": "REİEMNS",
+        "removed": "N"
+      },
+      {
+        "word": "mesire",
+        "clue": "Gezinti yeri, gezilecek yer",
+        "letters": "REİEMS",
+        "removed": "E"
+      },
+      {
+        "word": "resim",
+        "clue": "Varlıkların, doğadaki görünüşlerinin kalem, fırça gibi araçlarla kâğıt, bez vb. üzerinde yapılan biçimleri",
+        "letters": "RİEMS",
+        "removed": "M"
+      },
+      {
+        "word": "reis",
+        "clue": "Başkan, ser",
+        "letters": "RİES",
+        "removed": "İ"
+      },
+      {
+        "word": "ser",
+        "clue": "Baş, kafa (bazı birleşik kelimelerde) Başkan, reis",
+        "letters": "RES",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "yoklamak",
+        "clue": "El ile dokunarak incelemek",
+        "letters": "ALOYAKKM",
+        "removed": "K"
+      },
+      {
+        "word": "oylamak",
+        "clue": "Oya koymak veya oya sunmak",
+        "letters": "ALOYAKM",
+        "removed": "A"
+      },
+      {
+        "word": "yolmak",
+        "clue": "Çekerek yerinden çıkarmak, çekip koparmak",
+        "letters": "LOYAKM",
+        "removed": "Y"
+      },
+      {
+        "word": "olmak",
+        "clue": "Varlık kazanmak, meydana gelmek, vuku bulmak",
+        "letters": "LOAKM",
+        "removed": "K"
+      },
+      {
+        "word": "mola",
+        "clue": "Yorgunluğu gidermek için duraklama",
+        "letters": "LOAM",
+        "removed": "O"
+      },
+      {
+        "word": "mal",
+        "clue": "Bir kimsenin veya bir tüzel kişinin mülkiyeti altında bulunan, taşınır veya taşınmaz varlıkların bütünü",
+        "letters": "LAM",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "paylamak",
+        "clue": "Birine kusurundan ötürü sert sözler söylemek, azarlamak",
+        "letters": "AKALAMYP",
+        "removed": "P"
+      },
+      {
+        "word": "yalamak",
+        "clue": "Bir şeyin üzerinden dilini sürüp geçirmek",
+        "letters": "AKALAMY",
+        "removed": "M"
+      },
+      {
+        "word": "yalaka",
+        "clue": "Dalkavuk",
+        "letters": "AKALAY",
+        "removed": "A"
+      },
+      {
+        "word": "yalak",
+        "clue": "Hayvanların su içtikleri taş veya ağaçtan oyma kap",
+        "letters": "KALAY",
+        "removed": "L"
+      },
+      {
+        "word": "yaka",
+        "clue": "Giysilerin boyna gelen, boynu çeviren bölümü",
+        "letters": "KAAY",
+        "removed": "A"
+      },
+      {
+        "word": "yak",
+        "clue": "Tibet'te, Asya'nın bazı yörelerinde yabanî veya evcil olarak yaşayan, kılları uzun öküz türü (Bos grunniens)",
+        "letters": "KAY",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "türetmek",
+        "clue": "Oluşturmak, ortaya çıkarmak, yaratmak, meydana çıkarmak",
+        "letters": "METKRTÜE",
+        "removed": "T"
+      },
+      {
+        "word": "üretmek",
+        "clue": "Aynı türden canlıları çoğaltmak",
+        "letters": "MEKRTÜE",
+        "removed": "T"
+      },
+      {
+        "word": "üremek",
+        "clue": "Canlılar için, doğup çoğalmak",
+        "letters": "MEKRÜE",
+        "removed": "Ü"
+      },
+      {
+        "word": "kemer",
+        "clue": "Bele dolayarak toka ile tutturulan, kumaş, deri veya metalden yapılan bel bağı",
+        "letters": "MEKRE",
+        "removed": "E"
+      },
+      {
+        "word": "krem",
+        "clue": "Tene yumuşaklık vermek veya güneş, yağmur gibi dış etkilerden korunmak için sürülen güzel kokulu merhem",
+        "letters": "MKRE",
+        "removed": "R"
+      },
+      {
+        "word": "kem",
+        "clue": "Noksan, eksik",
+        "letters": "MKE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "kumarbaz",
+        "clue": "Kumarcı",
+        "letters": "KZUAABMR",
+        "removed": "Z"
+      },
+      {
+        "word": "kumbara",
+        "clue": "Para biriktirmek için kullanılan, bozuk veya kâğıt para atılan deliği olan, metal, toprak, plâstikten yapılmış küçük kap",
+        "letters": "KUAABMR",
+        "removed": "A"
+      },
+      {
+        "word": "kambur",
+        "clue": "Bel kemiğinin, göğüs kemiğinin eğrilmesi veya raşitizm sonucu sırtta ve göğüste oluşan tümsek",
+        "letters": "KUABMR",
+        "removed": "B"
+      },
+      {
+        "word": "kumar",
+        "clue": "Ortaya para koyarak oynanan talih oyunu",
+        "letters": "KUAMR",
+        "removed": "R"
+      },
+      {
+        "word": "kuma",
+        "clue": "Aynı erkekle evli olan kadınların birbirine göre adı, ortak",
+        "letters": "KUAM",
+        "removed": "A"
+      },
+      {
+        "word": "kum",
+        "clue": "Silisli kütlelerin, kayaların, doğal etkenlerle parçalanarak ufalanmasından oluşan ufak, sert taneciklerin bütünü",
+        "letters": "KUM",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "sekreter",
+        "clue": "Özel veya kamu kuruluşlarında haberleşmeyi sağlayan, yazışma yapabilen görevli, yazman, kâtip",
+        "letters": "TRSEREEK",
+        "removed": "R"
+      },
+      {
+        "word": "teskere",
+        "clue": "Sedye",
+        "letters": "TSEREEK",
+        "removed": "E"
+      },
+      {
+        "word": "ekstre",
+        "clue": "Hesap özeti veya dökümü",
+        "letters": "TSREEK",
+        "removed": "T"
+      },
+      {
+        "word": "keser",
+        "clue": "Tahta, ağaç yontmaya yarayan, kısa saplı, bir yanı keskin ağızlı, öteki yanı çivi çakmaya uygun çelik araç",
+        "letters": "SREEK",
+        "removed": "R"
+      },
+      {
+        "word": "kese",
+        "clue": "Cepte taşınan, içine para, tütün gibi şeyler konulan, kumaştan veya örgüden küçük torba",
+        "letters": "SEEK",
+        "removed": "E"
+      },
+      {
+        "word": "sek",
+        "clue": "İçine su, başka bir içki veya bir sıvı karıştırılmamış (içki)",
+        "letters": "SEK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "takriben",
+        "clue": "Aşağı yukarı, yaklaşık olarak",
+        "letters": "ABNRİTEK",
+        "removed": "N"
+      },
+      {
+        "word": "bakteri",
+        "clue": "Toprakta, suda, canlılarda bulunan, çürüme, mayalanma veya hastalıklara yol açan, küresel, silindirimsi, kıvrık biçimde olan, bölünerek çoğalan, klorofilsiz, tek hücre canlı",
+        "letters": "ABRİTEK",
+        "removed": "A"
+      },
+      {
+        "word": "tekbir",
+        "clue": "Müslümanlıkta Tanrı'nın büyüklüğünü, yüceliğini anmak için söylenen ve Allahuekber sözü ile başlayan duanın adı",
+        "letters": "BRİTEK",
+        "removed": "K"
+      },
+      {
+        "word": "ibret",
+        "clue": "Yanlış, kötü davranışlardan sakınmayı sağlayan olgu veya bu gibi olgulardan alınması gereken sonuç, ders",
+        "letters": "BRİTE",
+        "removed": "T"
+      },
+      {
+        "word": "ibre",
+        "clue": "Ölçü aletlerinde sayı veya işaret göstermeye yarayan hareketli iğne",
+        "letters": "BRİE",
+        "removed": "E"
+      },
+      {
+        "word": "bir",
+        "clue": "Sayıların ilki",
+        "letters": "BRİ",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "oyalamak",
+        "clue": "Belirli bir süre birinin dikkat ve ilgisini başka bir şey üzerine çekmek, meşgul etmek",
+        "letters": "YAOAMAKL",
+        "removed": "A"
+      },
+      {
+        "word": "oylamak",
+        "clue": "Oya koymak veya oya sunmak",
+        "letters": "YOAMAKL",
+        "removed": "A"
+      },
+      {
+        "word": "yolmak",
+        "clue": "Çekerek yerinden çıkarmak, çekip koparmak",
+        "letters": "YOMAKL",
+        "removed": "Y"
+      },
+      {
+        "word": "lokma",
+        "clue": "Ağza bir defada alınıp götürülen yiyecek parçası, sokum",
+        "letters": "OMAKL",
+        "removed": "K"
+      },
+      {
+        "word": "mola",
+        "clue": "Yorgunluğu gidermek için duraklama",
+        "letters": "OMAL",
+        "removed": "O"
+      },
+      {
+        "word": "mal",
+        "clue": "Bir kimsenin veya bir tüzel kişinin mülkiyeti altında bulunan, taşınır veya taşınmaz varlıkların bütünü",
+        "letters": "MAL",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "yalanmak",
+        "clue": "Kendini yalamak",
+        "letters": "LNAAYMKA",
+        "removed": "N"
+      },
+      {
+        "word": "yalamak",
+        "clue": "Bir şeyin üzerinden dilini sürüp geçirmek",
+        "letters": "LAAYMKA",
+        "removed": "M"
+      },
+      {
+        "word": "yalaka",
+        "clue": "Dalkavuk",
+        "letters": "LAAYKA",
+        "removed": "A"
+      },
+      {
+        "word": "yalak",
+        "clue": "Hayvanların su içtikleri taş veya ağaçtan oyma kap",
+        "letters": "LAYKA",
+        "removed": "L"
+      },
+      {
+        "word": "yaka",
+        "clue": "Giysilerin boyna gelen, boynu çeviren bölümü",
+        "letters": "AYKA",
+        "removed": "A"
+      },
+      {
+        "word": "yak",
+        "clue": "Tibet'te, Asya'nın bazı yörelerinde yabanî veya evcil olarak yaşayan, kılları uzun öküz türü (Bos grunniens)",
+        "letters": "YKA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "yanaşmak",
+        "clue": "Bir şeyin, bir kimsenin yanına gelmek",
+        "letters": "MKNAYAŞA",
+        "removed": "N"
+      },
+      {
+        "word": "yaşamak",
+        "clue": "Canlılığını, hayatını sürdürmek; sağ olmak",
+        "letters": "MKAYAŞA",
+        "removed": "A"
+      },
+      {
+        "word": "yaşmak",
+        "clue": "Kadınların ferace ile birlikte kullandıkları, gözleri açıkta bırakan, ince yüz örtüsü",
+        "letters": "MKYAŞA",
+        "removed": "Y"
+      },
+      {
+        "word": "akşam",
+        "clue": "Gündüzün son ve gecenin ilk saatleri",
+        "letters": "MKAŞA",
+        "removed": "M"
+      },
+      {
+        "word": "şaka",
+        "clue": "Güldürmek, eğlendirmek amacıyla karşısındakini kırmadan yapılan hareket veya söylenen söz, lâtife",
+        "letters": "KAŞA",
+        "removed": "A"
+      },
+      {
+        "word": "şak",
+        "clue": "Enlice bir şeyle vurulduğunda çıkan sesi anlatır",
+        "letters": "KŞA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "şefkatli",
+        "clue": "Acıyarak ve koruyarak sevecenlikle ve içtenlikle davranan, sevecen, müşfik",
+        "letters": "İEAFKLTŞ",
+        "removed": "K"
+      },
+      {
+        "word": "şeftali",
+        "clue": "Gülgillerden, ılıman bölgelerde yetişen, 8-10 m yükseklikte, pembe renkli bir ağaç (Persica vulgaris)",
+        "letters": "İEAFLTŞ",
+        "removed": "Ş"
+      },
+      {
+        "word": "latife",
+        "clue": "Şaka",
+        "letters": "İEAFLT",
+        "removed": "A"
+      },
+      {
+        "word": "telif",
+        "clue": "Uzlaştırma",
+        "letters": "İEFLT",
+        "removed": "T"
+      },
+      {
+        "word": "file",
+        "clue": "Yün, pamuk vb. ipliklerden düğümlerle oluşmuş ağ",
+        "letters": "İEFL",
+        "removed": "E"
+      },
+      {
+        "word": "lif",
+        "clue": "Çok ince ve uzun parça",
+        "letters": "İFL",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "teşkilat",
+        "clue": "Ortak bir gaye etrafında bir araya gelmiş kurumların veya kişilerin oluşturduğu kuruluş",
+        "letters": "LŞTTKİAE",
+        "removed": "Ş"
+      },
+      {
+        "word": "atletik",
+        "clue": "Atletleri ilgilendiren",
+        "letters": "LTTKİAE",
+        "removed": "T"
+      },
+      {
+        "word": "kalite",
+        "clue": "Bir şeyin iyi veya kötü olma özelliği, nitelik",
+        "letters": "LTKİAE",
+        "removed": "E"
+      },
+      {
+        "word": "katil",
+        "clue": "İnsan öldüren kimse, cani",
+        "letters": "LTKİA",
+        "removed": "L"
+      },
+      {
+        "word": "atik",
+        "clue": "Çabuk davranan, çevik",
+        "letters": "TKİA",
+        "removed": "K"
+      },
+      {
+        "word": "ait",
+        "clue": "İlgilendiren, ilişkin, ilişik, ilgili, için, -e düşen",
+        "letters": "TİA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "temkinli",
+        "clue": "Davranışlarında ölçülü olan",
+        "letters": "LMEİNKİT",
+        "removed": "M"
+      },
+      {
+        "word": "nitelik",
+        "clue": "Bir şeyin nasıl olduğunu belirten, onu başka şeylerden ayıran özellik, vasıf, keyfiyet",
+        "letters": "LEİNKİT",
+        "removed": "İ"
+      },
+      {
+        "word": "telkin",
+        "clue": "(bir duyguyu, bir düşünceyi) Aşılama",
+        "letters": "LENKİT",
+        "removed": "L"
+      },
+      {
+        "word": "etnik",
+        "clue": "Kavimle ilgili, budunsal, kavmî",
+        "letters": "ENKİT",
+        "removed": "N"
+      },
+      {
+        "word": "etik",
+        "clue": "Töre bilimi, ahlâk bilimi",
+        "letters": "EKİT",
+        "removed": "İ"
+      },
+      {
+        "word": "tek",
+        "clue": "Eşi olmayan, biricik, yegâne",
+        "letters": "EKT",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "savunmak",
+        "clue": "Herhangi bir saldırıya karşı koymak, saldırıya karşı korumak, müdafaa etmek",
+        "letters": "ASKANMVU",
+        "removed": "V"
+      },
+      {
+        "word": "usanmak",
+        "clue": "Tekrarlanması, uzun sürmesi dolayısıyla bir şeyden hoşlanılmaz veya sıkılır duruma gelmek, bıkmak, bezmek",
+        "letters": "ASKANMU",
+        "removed": "A"
+      },
+      {
+        "word": "sunmak",
+        "clue": "Bir büyüğe veya nezaket gereğince bir kimseye bir şeyi vermek, yollamak, göndermek, takdim etmek",
+        "letters": "SKANMU",
+        "removed": "N"
+      },
+      {
+        "word": "sumak",
+        "clue": "Antep fıstığıgillerden, sıcak bölgelerde yetişen, kabuğu hekimlikte, yaprakları dericilikte kullanılan bir ağaç, somak (Rhus coriafia)",
+        "letters": "SKAMU",
+        "removed": "S"
+      },
+      {
+        "word": "kuma",
+        "clue": "Aynı erkekle evli olan kadınların birbirine göre adı, ortak",
+        "letters": "KAMU",
+        "removed": "A"
+      },
+      {
+        "word": "kum",
+        "clue": "Silisli kütlelerin, kayaların, doğal etkenlerle parçalanarak ufalanmasından oluşan ufak, sert taneciklerin bütünü",
+        "letters": "KMU",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 6,
+    "levels": [
+      {
+        "word": "yitirmek",
+        "clue": "Ne olduğunu, nerede bulunduğunu bilememek, kaybetmek",
+        "letters": "YEKRTİMİ",
+        "removed": "Y"
+      },
+      {
+        "word": "kiremit",
+        "clue": "Yapıların çatılarını örtmekte kullanılan, yan yana dizilerek, suyu aşağıya geçirmeden dışarı akıtacak biçimde yapılmış, kızıl toprağın renginde, pişmiş balçık levha",
+        "letters": "EKRTİMİ",
+        "removed": "İ"
+      },
+      {
+        "word": "termik",
+        "clue": "Isı ile, sıcaklıkla ilgili, ısıl",
+        "letters": "EKRTMİ",
+        "removed": "M"
+      },
+      {
+        "word": "tekir",
+        "clue": "Postu siyah çubuklarla ve beneklerle süslü, kül renginde veya boz olan (kedi)",
+        "letters": "EKRTİ",
+        "removed": "T"
+      },
+      {
+        "word": "erik",
+        "clue": "Gülgillerden, beyaz çiçekli bir ağaç (Ğrunus domestica)",
+        "letters": "EKRİ",
+        "removed": "E"
+      },
+      {
+        "word": "kir",
+        "clue": "Herhangi bir şeyin veya vücudun üzerinde oluşan, biriken pislik",
+        "letters": "KRİ",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "kiremit",
+        "clue": "Yapıların çatılarını örtmekte kullanılan, yan yana dizilerek, suyu aşağıya geçirmeden dışarı akıtacak biçimde yapılmış, kızıl toprağın renginde, pişmiş balçık levha",
+        "letters": "İTKMEİR",
+        "removed": "İ"
+      },
+      {
+        "word": "termik",
+        "clue": "Isı ile, sıcaklıkla ilgili, ısıl",
+        "letters": "TKMEİR",
+        "removed": "R"
+      },
+      {
+        "word": "itmek",
+        "clue": "Bir şeyi güç uygulayarak ileri götürmek",
+        "letters": "TKMEİ",
+        "removed": "M"
+      },
+      {
+        "word": "etki",
+        "clue": "Bir kimse veya nesnenin başka bir kişi veya şey üzerindeki gücü, tesir",
+        "letters": "TKEİ",
+        "removed": "K"
+      },
+      {
+        "word": "eti",
+        "clue": "Hitit",
+        "letters": "TEİ",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "jelatin",
+        "clue": "Daha çok hekimlik ve fotoğrafçılıkta kullanılan, hayvanların kemik ve kıkırdak gibi dokularından veya bitkisel yosunlardan elde edilen saydam, renksiz, kokusuz bir madde",
+        "letters": "TNELJAİ",
+        "removed": "J"
+      },
+      {
+        "word": "taneli",
+        "clue": "Tanelerden oluşmuş",
+        "letters": "TNELAİ",
+        "removed": "İ"
+      },
+      {
+        "word": "lanet",
+        "clue": "Tanrı'nın sevgi ve ilgisinden mahrum olma, beddua",
+        "letters": "TNELA",
+        "removed": "N"
+      },
+      {
+        "word": "tela",
+        "clue": "Kumaşla astar arasına konularak giysinin dik durmasını sağlayan kolalı bez",
+        "letters": "TELA",
+        "removed": "T"
+      },
+      {
+        "word": "ela",
+        "clue": "Gözde sarıya çalar kestane rengi",
+        "letters": "ELA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "şantiye",
+        "clue": "Yapı gereçlerinin yığılıp saklandığı veya işlendiği yer",
+        "letters": "YTŞENİA",
+        "removed": "İ"
+      },
+      {
+        "word": "şeytan",
+        "clue": "Din kitaplarına göre isyancı meleklerin, kötü ruhların başı olarak nitelenen varlık",
+        "letters": "YTŞENA",
+        "removed": "Ş"
+      },
+      {
+        "word": "tenya",
+        "clue": "Şerit",
+        "letters": "YTENA",
+        "removed": "N"
+      },
+      {
+        "word": "ayet",
+        "clue": "Kur'an surelerini oluşturan cümlelerden her biri",
+        "letters": "YTEA",
+        "removed": "E"
+      },
+      {
+        "word": "yat",
+        "clue": "Kalkan ve zırh gibi korunma aracı",
+        "letters": "YTA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "yontmak",
+        "clue": "Bir şeye istenilen biçimi vermek için dış bölümünü keskin bir araçla biçmek, kesmek",
+        "letters": "ANYKTMO",
+        "removed": "M"
+      },
+      {
+        "word": "katyon",
+        "clue": "Bir çözeltinin elektrolizi sırasında katotta toplanan iyon, artın",
+        "letters": "ANYKTO",
+        "removed": "Y"
+      },
+      {
+        "word": "nokta",
+        "clue": "Çok küçük boyutlarda işaret, benek",
+        "letters": "ANKTO",
+        "removed": "N"
+      },
+      {
+        "word": "kota",
+        "clue": "Bir ülkede kontenjan sisteminden ithal edilecek malların çeşitlerini ve çeşit oranlarını veya miktarlarını gösteren liste",
+        "letters": "AKTO",
+        "removed": "A"
+      },
+      {
+        "word": "kot",
+        "clue": "Giysi yapılan bir tür pamuklu kumaş",
+        "letters": "KTO",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "mekanik",
+        "clue": "Kuvvetlerin maddeler ve hareketler üzerine etkisini inceleyen fizik dalı",
+        "letters": "EMAKKNİ",
+        "removed": "K"
+      },
+      {
+        "word": "makine",
+        "clue": "Herhangi bir enerji türünü başka bir enerjiye dönüştürmek veya belli bir etki oluşturmak için birleştirilmiş aletler bütünü",
+        "letters": "EMAKNİ",
+        "removed": "E"
+      },
+      {
+        "word": "imkan",
+        "clue": "Yararlanılan uygun şart veya durum, olanak",
+        "letters": "MAKNİ",
+        "removed": "M"
+      },
+      {
+        "word": "ikna",
+        "clue": "Bir konuda birinin inanmasını sağlama, inandırma, kandırma",
+        "letters": "AKNİ",
+        "removed": "K"
+      },
+      {
+        "word": "ani",
+        "clue": "Bir anda oluveren, apansız",
+        "letters": "ANİ",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "şarıltı",
+        "clue": "Şarıldayan şeyin çıkardığı ses, şarıldama sesi",
+        "letters": "RIŞLATI",
+        "removed": "I"
+      },
+      {
+        "word": "şartlı",
+        "clue": "Şarta bağlı, koşullu",
+        "letters": "RŞLATI",
+        "removed": "L"
+      },
+      {
+        "word": "tıraş",
+        "clue": "(sakal, bıyık, kıl için) Dibinden kesme, kazıma, yülüme",
+        "letters": "RŞATI",
+        "removed": "T"
+      },
+      {
+        "word": "şıra",
+        "clue": "Henüz mayalanmamış üzüm suyu",
+        "letters": "RŞAI",
+        "removed": "Ş"
+      },
+      {
+        "word": "arı",
+        "clue": "Temiz, münezzeh",
+        "letters": "RAI",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "nakliye",
+        "clue": "Taşıma işi",
+        "letters": "LYNAEKİ",
+        "removed": "L"
+      },
+      {
+        "word": "kinaye",
+        "clue": "Düşünüleni, dolaylı olarak anlatan söz",
+        "letters": "YNAEKİ",
+        "removed": "K"
+      },
+      {
+        "word": "enayi",
+        "clue": "Fazla bön, avanak, et kafalı, budala",
+        "letters": "YNAEİ",
+        "removed": "A"
+      },
+      {
+        "word": "yeni",
+        "clue": "Kullanılmamış olan",
+        "letters": "YNEİ",
+        "removed": "İ"
+      },
+      {
+        "word": "yen",
+        "clue": "Giysi kolu",
+        "letters": "YNE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "oturmak",
+        "clue": "Vücudun belden yukarısı dik duracak biçimde ağırlığı kaba etlere vererek bir yere yerleşmek",
+        "letters": "KTOUARM",
+        "removed": "A"
+      },
+      {
+        "word": "tomruk",
+        "clue": "Kesilmiş ağacın silindir biçimindeki gövdesi",
+        "letters": "KTOURM",
+        "removed": "T"
+      },
+      {
+        "word": "moruk",
+        "clue": "Yaşlı erkek, baba",
+        "letters": "KOURM",
+        "removed": "M"
+      },
+      {
+        "word": "koru",
+        "clue": "Bakımlı küçük orman",
+        "letters": "KOUR",
+        "removed": "O"
+      },
+      {
+        "word": "kur",
+        "clue": "Yabancı paraların ulusal para cinsinden değeri",
+        "letters": "KUR",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "dilemek",
+        "clue": "Birinden bir şeyin yapılmasını istemek, rica etmek, arzu etmek",
+        "letters": "KEDİMLE",
+        "removed": "E"
+      },
+      {
+        "word": "demlik",
+        "clue": "Çayın demlendiği kap",
+        "letters": "KDİMLE",
+        "removed": "M"
+      },
+      {
+        "word": "dilek",
+        "clue": "Bir kimsenin dilediği şey, istek, talep, rica, murat",
+        "letters": "KDİLE",
+        "removed": "D"
+      },
+      {
+        "word": "ilke",
+        "clue": "Temel düşünce, temel inanç, umde, unsur, prensip",
+        "letters": "KİLE",
+        "removed": "K"
+      },
+      {
+        "word": "ile",
+        "clue": "Kelimenin sonuna geldiğinde birliktelik, işteşlik, beraberlik, araç, sebep veya durum anlatan cümleler yapmaya yarar",
+        "letters": "İLE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "yalamak",
+        "clue": "Bir şeyin üzerinden dilini sürüp geçirmek",
+        "letters": "AYLAKMA",
+        "removed": "M"
+      },
+      {
+        "word": "yalaka",
+        "clue": "Dalkavuk",
+        "letters": "AYLAKA",
+        "removed": "A"
+      },
+      {
+        "word": "kalay",
+        "clue": "Atom numarası 50, atom ağırlığı 118,7 olan, gümüş beyazlığında 232°C' de eriyen, 7,29 yoğunluğunda, kolay işlenebilen, yumuşak bir element. Kısaltması Sn",
+        "letters": "YLAKA",
+        "removed": "L"
+      },
+      {
+        "word": "yaka",
+        "clue": "Giysilerin boyna gelen, boynu çeviren bölümü",
+        "letters": "YAKA",
+        "removed": "A"
+      },
+      {
+        "word": "kay",
+        "clue": "Yağmur, yaz yağmuru",
+        "letters": "YKA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "tersine",
+        "clue": "Beklenilenin, umulanın aksine, karşıt olarak, bilakis, aksine",
+        "letters": "EERNİTS",
+        "removed": "N"
+      },
+      {
+        "word": "ertesi",
+        "clue": "Bir günün, bir haftanın, bir ayın, bir yılın ardından gelen günü, haftayı, ayı, mevsimi veya yılı gösterir",
+        "letters": "EERİTS",
+        "removed": "E"
+      },
+      {
+        "word": "tesir",
+        "clue": "Etki",
+        "letters": "ERİTS",
+        "removed": "T"
+      },
+      {
+        "word": "seri",
+        "clue": "Herhangi bir bakımdan bir bütün oluşturan şeylerin tümü, dizi",
+        "letters": "ERİS",
+        "removed": "İ"
+      },
+      {
+        "word": "ser",
+        "clue": "Baş, kafa (bazı birleşik kelimelerde) Başkan, reis",
+        "letters": "ERS",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "tetanos",
+        "clue": "İnsan ve hayvan vücuduna açık yaralardan giren, genellikle toprakta, gübrede yaşayan bir basilin yol açtığı, kasların sürekli ağrılı kasılmasıyla kendini gösteren ateşli ve tehlikeli bir hastalık, kazıklı humma",
+        "letters": "TEAONST",
+        "removed": "T"
+      },
+      {
+        "word": "senato",
+        "clue": "Eski Roma'da özellikle soylulardan oluşan yöneticiler meclisi",
+        "letters": "EAONST",
+        "removed": "O"
+      },
+      {
+        "word": "saten",
+        "clue": "Atlas",
+        "letters": "EANST",
+        "removed": "S"
+      },
+      {
+        "word": "tane",
+        "clue": "Herhangi bir sayıda olan (şey), adet",
+        "letters": "EANT",
+        "removed": "A"
+      },
+      {
+        "word": "ten",
+        "clue": "İnsan vücudunun dış yüzü",
+        "letters": "ENT",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "klarnet",
+        "clue": "Tahtadan, metal perdeli, orkestrada önemli yeri olan bir üflemeli çalgı",
+        "letters": "TLANEKR",
+        "removed": "L"
+      },
+      {
+        "word": "nektar",
+        "clue": "Yunan mitolojisinde, içenleri ölümsüzlüğe kavuşturan tanrı içkisi",
+        "letters": "TANEKR",
+        "removed": "N"
+      },
+      {
+        "word": "raket",
+        "clue": "Pingpong, tenis gibi oyunlarda topa vurmak için kullanılan, oval tahta bir kasnağa gerilmiş bir ağla veya lâstikle kaplanmış olan, uzunca saplı araç, vuraç",
+        "letters": "TAEKR",
+        "removed": "A"
+      },
+      {
+        "word": "terk",
+        "clue": "Bırakma, ayrılma",
+        "letters": "TEKR",
+        "removed": "K"
+      },
+      {
+        "word": "ter",
+        "clue": "Derinin gözeneklerinden sızan, kendine özgü bir kokusu olan, yapışkan, renksiz, tuzlu sıvı",
+        "letters": "TER",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "kolonya",
+        "clue": "Hafif kokulu tuvalet ispirtosu",
+        "letters": "YLNAKOO",
+        "removed": "O"
+      },
+      {
+        "word": "kalyon",
+        "clue": "Yelkenle ve kürekle yol alan savaş gemilerinin en büyüğü",
+        "letters": "YLNAKO",
+        "removed": "N"
+      },
+      {
+        "word": "kolay",
+        "clue": "Sıkıntı çekmeden, yorulmadan yapılabilen, emeksiz, zahmetsiz, güç ve zor karşıtı",
+        "letters": "YLAKO",
+        "removed": "K"
+      },
+      {
+        "word": "olay",
+        "clue": "Ortaya çıkan, oluşan durum, ilgiyi çeken veya çekebilecek nitelikte olan her türlü iş, hâdise, vak'a",
+        "letters": "YLAO",
+        "removed": "A"
+      },
+      {
+        "word": "yol",
+        "clue": "Karada, havada, suda bir yerden bir yere gitmek için aşılan uzaklık, tarik",
+        "letters": "YLO",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "pısırık",
+        "clue": "Tutuk, sünepe, aşırı çekingen, yüreksiz ve beceriksiz",
+        "letters": "IIIPSRK",
+        "removed": "P"
+      },
+      {
+        "word": "ısırık",
+        "clue": "Isırılan yerde kalan iz",
+        "letters": "IIISRK",
+        "removed": "I"
+      },
+      {
+        "word": "kısır",
+        "clue": "(insan ve hayvan için) Üreme imkânı olmayan, döl vermeyen",
+        "letters": "IISRK",
+        "removed": "R"
+      },
+      {
+        "word": "sıkı",
+        "clue": "Dar",
+        "letters": "IISK",
+        "removed": "I"
+      },
+      {
+        "word": "sık",
+        "clue": "Benzerleri veya parçaları arasında çok az aralık bulunan, seyrek karşıtı",
+        "letters": "ISK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "gerilla",
+        "clue": "Düzensiz çete",
+        "letters": "LGALİER",
+        "removed": "L"
+      },
+      {
+        "word": "galeri",
+        "clue": "Bir yapının birçok bölümlerini aynı katta birbirine bağlayan içten veya dıştan yapılmış geniş geçit",
+        "letters": "GALİER",
+        "removed": "A"
+      },
+      {
+        "word": "gelir",
+        "clue": "Bir kimseye veya topluluğa belli zamanlarda, belli yerlerden gelen para, varidat",
+        "letters": "GLİER",
+        "removed": "L"
+      },
+      {
+        "word": "geri",
+        "clue": "Arka, bir şeyin sonra gelen bölümü; art, alt taraf, ileri karşıtı",
+        "letters": "GİER",
+        "removed": "E"
+      },
+      {
+        "word": "gri",
+        "clue": "Kül rengi, boz",
+        "letters": "GİR",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "keramet",
+        "clue": "Ermiş kimselerin gösterdiklerine inanılan, doğaüstü, şaşkınlık uyandırıcı durum",
+        "letters": "EATREMK",
+        "removed": "E"
+      },
+      {
+        "word": "market",
+        "clue": "Alıcının kendi işini kendisinin gördüğü, daha çok her türlü yiyecek maddesinin ve mutfak gerecinin satıldığı dükkân",
+        "letters": "ATREMK",
+        "removed": "R"
+      },
+      {
+        "word": "maket",
+        "clue": "Yapı, heykel gibi şeylerin taslak durumundaki küçük örneği",
+        "letters": "ATEMK",
+        "removed": "K"
+      },
+      {
+        "word": "tema",
+        "clue": "Aslî konu",
+        "letters": "ATEM",
+        "removed": "E"
+      },
+      {
+        "word": "mat",
+        "clue": "Satranç oyununda taraflardan birinin yenilgisi",
+        "letters": "ATM",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "veliaht",
+        "clue": "Bir hükümdarın ölümünden veya tahttan çekilmesinden sonra tahta geçmeye aday olan kimse",
+        "letters": "ETİLHVA",
+        "removed": "E"
+      },
+      {
+        "word": "tahvil",
+        "clue": "Değiştirme, çevirme, döndürme, dönüştürme",
+        "letters": "TİLHVA",
+        "removed": "V"
+      },
+      {
+        "word": "talih",
+        "clue": "Rastlantıları düzenlediğine ve insanlara iyi veya kötü durumlar hazırladığına inanılan tabiatüstü güç, kut, şans, baht, felek",
+        "letters": "TİLHA",
+        "removed": "T"
+      },
+      {
+        "word": "ilah",
+        "clue": "Tanrı",
+        "letters": "İLHA",
+        "removed": "H"
+      },
+      {
+        "word": "ali",
+        "clue": "Kişi adı olarak aşağıdaki deyimlerde geçer",
+        "letters": "İLA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "uyanmak",
+        "clue": "Uyku durumundan çıkmak",
+        "letters": "AKYAUNM",
+        "removed": "U"
+      },
+      {
+        "word": "manyak",
+        "clue": "Maniye (I) uğramış (hasta)",
+        "letters": "AKYANM",
+        "removed": "Y"
+      },
+      {
+        "word": "anmak",
+        "clue": "Birini veya bir şeyi akla getirerek sözünü etmek veya onu düşünmek, zikretmek, hatırlamak",
+        "letters": "AKANM",
+        "removed": "M"
+      },
+      {
+        "word": "kana",
+        "clue": "Geminin çektiği suyu göstermek için baş ve kıç bodoslamaları üzerine konulan işaretler",
+        "letters": "AKAN",
+        "removed": "A"
+      },
+      {
+        "word": "kan",
+        "clue": "Atardamar ve toplardamarların içinde dolaşarak hücrelerde özümleme, yadımlama görevlerini sağlayan plâzma ve yuvarlardan oluşmuş kırmızı renkli sıvı",
+        "letters": "KAN",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "taşımak",
+        "clue": "Bir şeyi bir yerden alıp başka bir yere götürmek",
+        "letters": "IAŞTAKM",
+        "removed": "I"
+      },
+      {
+        "word": "taşmak",
+        "clue": "Sıvı maddeler, içinde bulundukları kaba sığmayacak kadar çoğalma ve kabarma yüzünden kenarları aşmak",
+        "letters": "AŞTAKM",
+        "removed": "T"
+      },
+      {
+        "word": "akşam",
+        "clue": "Gündüzün son ve gecenin ilk saatleri",
+        "letters": "AŞAKM",
+        "removed": "M"
+      },
+      {
+        "word": "şaka",
+        "clue": "Güldürmek, eğlendirmek amacıyla karşısındakini kırmadan yapılan hareket veya söylenen söz, lâtife",
+        "letters": "AŞAK",
+        "removed": "A"
+      },
+      {
+        "word": "kaş",
+        "clue": "Gözlerin üzerinde kemerli birer çizgi oluşturan kısa kıllar",
+        "letters": "ŞAK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "denetim",
+        "clue": "Denetlemek işi, murakabe, kontrol",
+        "letters": "İNETDME",
+        "removed": "T"
+      },
+      {
+        "word": "medeni",
+        "clue": "Kentlileşmiş, kırsallıktan kurtulmuş, uygar",
+        "letters": "İNEDME",
+        "removed": "E"
+      },
+      {
+        "word": "demin",
+        "clue": "Az önce",
+        "letters": "İNDME",
+        "removed": "D"
+      },
+      {
+        "word": "emin",
+        "clue": "İnanılır, güvenilir",
+        "letters": "İNME",
+        "removed": "İ"
+      },
+      {
+        "word": "nem",
+        "clue": "Havada bulunan su buharı",
+        "letters": "NME",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "şeytani",
+        "clue": "Şeytanca",
+        "letters": "TEAYİNŞ",
+        "removed": "İ"
+      },
+      {
+        "word": "şeytan",
+        "clue": "Din kitaplarına göre isyancı meleklerin, kötü ruhların başı olarak nitelenen varlık",
+        "letters": "TEAYNŞ",
+        "removed": "Ş"
+      },
+      {
+        "word": "tenya",
+        "clue": "Şerit",
+        "letters": "TEAYN",
+        "removed": "Y"
+      },
+      {
+        "word": "tane",
+        "clue": "Herhangi bir sayıda olan (şey), adet",
+        "letters": "TEAN",
+        "removed": "E"
+      },
+      {
+        "word": "tan",
+        "clue": "Güneş doğmadan önceki alaca karanlık",
+        "letters": "TAN",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "cesaret",
+        "clue": "Güç veya tehlikeli bir işe girişirken kişinin kendinde bulduğu güven; yüreklilik, yiğitlik, yürek ve göz pekliği",
+        "letters": "SARCEET",
+        "removed": "C"
+      },
+      {
+        "word": "esaret",
+        "clue": "Kölelik, tutsaklık, esirlik",
+        "letters": "SAREET",
+        "removed": "E"
+      },
+      {
+        "word": "teras",
+        "clue": "Taraça",
+        "letters": "SARET",
+        "removed": "E"
+      },
+      {
+        "word": "star",
+        "clue": "Sinema, tiyatro veya müzikhol sanatçısı, yıldız",
+        "letters": "SART",
+        "removed": "S"
+      },
+      {
+        "word": "art",
+        "clue": "Arka, geri",
+        "letters": "ART",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "oylamak",
+        "clue": "Oya koymak veya oya sunmak",
+        "letters": "YOAMAKL",
+        "removed": "A"
+      },
+      {
+        "word": "yolmak",
+        "clue": "Çekerek yerinden çıkarmak, çekip koparmak",
+        "letters": "YOMAKL",
+        "removed": "L"
+      },
+      {
+        "word": "oymak",
+        "clue": "Keskin, sivri uçlu bir cisimle bir şeyi yontarak veya delerek çukur oluşturmak",
+        "letters": "YOMAK",
+        "removed": "K"
+      },
+      {
+        "word": "mayo",
+        "clue": "Genellikle denize girerken ten üzerine giyilen, vücudun gerekli kısımlarını sıkıca örten giysi",
+        "letters": "YOMA",
+        "removed": "M"
+      },
+      {
+        "word": "oya",
+        "clue": "Genellikle ipek ibrişim kullanarak iğne, mekik, tığ veya firkete ile yapılan ince dantel",
+        "letters": "YOA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "yaradan",
+        "clue": "Tanrı",
+        "letters": "AANYDAR",
+        "removed": "A"
+      },
+      {
+        "word": "radyan",
+        "clue": "Bir dairede yarıçap uzunluğundaki yay parçasını gören merkez açıya eşit açı ölçme birimi",
+        "letters": "ANYDAR",
+        "removed": "D"
+      },
+      {
+        "word": "ayran",
+        "clue": "Süt veya yoğurt yayıkta çalkalanarak yağı alındıktan sonra kalan sulu bölüm",
+        "letters": "ANYAR",
+        "removed": "N"
+      },
+      {
+        "word": "yara",
+        "clue": "Keskin bir şeyle, bir vuruşla vücutta oluşan derin kesik veya zedelenme",
+        "letters": "AYAR",
+        "removed": "A"
+      },
+      {
+        "word": "ray",
+        "clue": "Tren, tramvay gibi taşıtlarda tekerleklerin üzerinde hareket ettiği demir yol",
+        "letters": "YAR",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "ilişmek",
+        "clue": "Hafifçe dokunmak, takılmak",
+        "letters": "ŞLMEİKİ",
+        "removed": "M"
+      },
+      {
+        "word": "şikeli",
+        "clue": "Danışıklı (spor karşılaşması)",
+        "letters": "ŞLEİKİ",
+        "removed": "İ"
+      },
+      {
+        "word": "klişe",
+        "clue": "Baskıda kullanılmak amacıyla, üzerine kabartma resim, şekil, yazı çıkarılmış metal levha",
+        "letters": "ŞLEKİ",
+        "removed": "Ş"
+      },
+      {
+        "word": "ilke",
+        "clue": "Temel düşünce, temel inanç, umde, unsur, prensip",
+        "letters": "LEKİ",
+        "removed": "E"
+      },
+      {
+        "word": "ilk",
+        "clue": "Zaman, sıra, yer ve önem bakımından ötekilerden önce gelen, son karşıtı",
+        "letters": "LKİ",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "yatalak",
+        "clue": "İnme veya sakatlık gibi bir sebeple yataktan kalkamayan (kimse)",
+        "letters": "AYTAKLA",
+        "removed": "T"
+      },
+      {
+        "word": "yalaka",
+        "clue": "Dalkavuk",
+        "letters": "AYAKLA",
+        "removed": "A"
+      },
+      {
+        "word": "kalay",
+        "clue": "Atom numarası 50, atom ağırlığı 118,7 olan, gümüş beyazlığında 232°C' de eriyen, 7,29 yoğunluğunda, kolay işlenebilen, yumuşak bir element. Kısaltması Sn",
+        "letters": "YAKLA",
+        "removed": "L"
+      },
+      {
+        "word": "yaka",
+        "clue": "Giysilerin boyna gelen, boynu çeviren bölümü",
+        "letters": "YAKA",
+        "removed": "A"
+      },
+      {
+        "word": "kay",
+        "clue": "Yağmur, yaz yağmuru",
+        "letters": "YKA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "ihtilal",
+        "clue": "Bir devletin siyasî, sosyal ve iktisadî yapısını veya yönetim düzenini değiştirmek amacıyla hukuk kurallarına ve kanunlara uymaksızın cebir ve kuvvet kullanarak yapılan geniş halk hareketi, devrim",
+        "letters": "LTLİHİA",
+        "removed": "İ"
+      },
+      {
+        "word": "tahlil",
+        "clue": "Çeşitli yönlerden veya maddelerden oluşan bir şeyi çözümleme",
+        "letters": "LTLHİA",
+        "removed": "L"
+      },
+      {
+        "word": "ithal",
+        "clue": "İçine alma",
+        "letters": "TLHİA",
+        "removed": "İ"
+      },
+      {
+        "word": "halt",
+        "clue": "Bir şeyi başka bir şeyle karıştırma",
+        "letters": "TLHA",
+        "removed": "H"
+      },
+      {
+        "word": "alt",
+        "clue": "Bir şeyin yere bakan yanı, üst karşıtı",
+        "letters": "TLA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "serpmek",
+        "clue": "Bir şeyi dağılacak biçimde dökmek, saçmak",
+        "letters": "EKPSREM",
+        "removed": "M"
+      },
+      {
+        "word": "eksper",
+        "clue": "Bilirkişi, uzman",
+        "letters": "EKPSRE",
+        "removed": "P"
+      },
+      {
+        "word": "keser",
+        "clue": "Tahta, ağaç yontmaya yarayan, kısa saplı, bir yanı keskin ağızlı, öteki yanı çivi çakmaya uygun çelik araç",
+        "letters": "EKSRE",
+        "removed": "R"
+      },
+      {
+        "word": "kese",
+        "clue": "Cepte taşınan, içine para, tütün gibi şeyler konulan, kumaştan veya örgüden küçük torba",
+        "letters": "EKSE",
+        "removed": "E"
+      },
+      {
+        "word": "sek",
+        "clue": "İçine su, başka bir içki veya bir sıvı karıştırılmamış (içki)",
+        "letters": "KSE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "işkembe",
+        "clue": "Gevişgetirenlerin ilk ve en büyük mide bölümü",
+        "letters": "MKEBİEŞ",
+        "removed": "B"
+      },
+      {
+        "word": "işemek",
+        "clue": "İdrar torbasında biriken idrarı dışarı atmak, çiş yapmak",
+        "letters": "MKEİEŞ",
+        "removed": "İ"
+      },
+      {
+        "word": "eşmek",
+        "clue": "Toprağı veya toprak gibi yumuşak bir şeyi biraz kazmak",
+        "letters": "MKEEŞ",
+        "removed": "M"
+      },
+      {
+        "word": "eşek",
+        "clue": "Atgillerden, uzun kulaklı binek ve hizmet hayvam, merkep (Equus asinus)",
+        "letters": "KEEŞ",
+        "removed": "E"
+      },
+      {
+        "word": "keş",
+        "clue": "Yağı alınmış sütten veya yoğurttan yapılan peynir",
+        "letters": "KEŞ",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "nakarat",
+        "clue": "Bir şarkıda her kıtadan sonra tekrarlanan ve bestesi değişmeyen parça",
+        "letters": "AAAKNTR",
+        "removed": "R"
+      },
+      {
+        "word": "kanaat",
+        "clue": "Elindekinden hoşnut olma durumu, kanıklık, yeter bulma, yetinme, fazlasını istememe, doyum",
+        "letters": "AAAKNT",
+        "removed": "A"
+      },
+      {
+        "word": "kanat",
+        "clue": "Kuşlarda ve böceklerde uçmayı sağlayan organ",
+        "letters": "AAKNT",
+        "removed": "N"
+      },
+      {
+        "word": "atak",
+        "clue": "Düşüncesizce her işe atılan, cür'etkâr",
+        "letters": "AAKT",
+        "removed": "K"
+      },
+      {
+        "word": "ata",
+        "clue": "Baba",
+        "letters": "AAT",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "usanmak",
+        "clue": "Tekrarlanması, uzun sürmesi dolayısıyla bir şeyden hoşlanılmaz veya sıkılır duruma gelmek, bıkmak, bezmek",
+        "letters": "ANMAKSU",
+        "removed": "U"
+      },
+      {
+        "word": "sanmak",
+        "clue": "Bir şeyin olma veya olmama ihtimalini kabul etmekle birlikte, olabileceğine daha çok inanmak, zannetmek",
+        "letters": "ANMAKS",
+        "removed": "S"
+      },
+      {
+        "word": "anmak",
+        "clue": "Birini veya bir şeyi akla getirerek sözünü etmek veya onu düşünmek, zikretmek, hatırlamak",
+        "letters": "ANMAK",
+        "removed": "M"
+      },
+      {
+        "word": "kana",
+        "clue": "Geminin çektiği suyu göstermek için baş ve kıç bodoslamaları üzerine konulan işaretler",
+        "letters": "ANAK",
+        "removed": "A"
+      },
+      {
+        "word": "kan",
+        "clue": "Atardamar ve toplardamarların içinde dolaşarak hücrelerde özümleme, yadımlama görevlerini sağlayan plâzma ve yuvarlardan oluşmuş kırmızı renkli sıvı",
+        "letters": "NAK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "tanımak",
+        "clue": "Daha önce görülen, bilinen bir kimse veya şeyle karşılaşıldığında, bunun kim veya ne olduğunu hatırlatmak",
+        "letters": "MATAKIN",
+        "removed": "A"
+      },
+      {
+        "word": "mantık",
+        "clue": "Doğru düşünme sanatı ve bilimi",
+        "letters": "MTAKIN",
+        "removed": "K"
+      },
+      {
+        "word": "mantı",
+        "clue": "İçine kıyma konularak küçük bohçalar biçiminde dürülmüş hamur parçalarıyla hazırlanan yemek",
+        "letters": "MTAIN",
+        "removed": "M"
+      },
+      {
+        "word": "anıt",
+        "clue": "Önemli bir olayı veya büyük bir kişinin gelecek kuşaklarca tarih boyunca anılması için yapılan, göze çarpacak büyüklükte, sembol niteliğinde yapı, abide",
+        "letters": "TAIN",
+        "removed": "I"
+      },
+      {
+        "word": "ant",
+        "clue": "Tanrı'yı veya kutsal bilinen bir kişiyi, bir şeyi tanık göstererek bir olayı doğrulama, yemin",
+        "letters": "TAN",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "nargile",
+        "clue": "Tömbeki denilen bir cins tütünün dumanının sudan geçirilerek içilmesini sağlayan araç",
+        "letters": "İENLARG",
+        "removed": "N"
+      },
+      {
+        "word": "galeri",
+        "clue": "Bir yapının birçok bölümlerini aynı katta birbirine bağlayan içten veya dıştan yapılmış geniş geçit",
+        "letters": "İELARG",
+        "removed": "A"
+      },
+      {
+        "word": "gelir",
+        "clue": "Bir kimseye veya topluluğa belli zamanlarda, belli yerlerden gelen para, varidat",
+        "letters": "İELRG",
+        "removed": "L"
+      },
+      {
+        "word": "geri",
+        "clue": "Arka, bir şeyin sonra gelen bölümü; art, alt taraf, ileri karşıtı",
+        "letters": "İERG",
+        "removed": "E"
+      },
+      {
+        "word": "gri",
+        "clue": "Kül rengi, boz",
+        "letters": "İRG",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "müşteri",
+        "clue": "Erendiz, Jüpiter",
+        "letters": "İMRTÜŞE",
+        "removed": "Ş"
+      },
+      {
+        "word": "üretim",
+        "clue": "İnsanların, toplumun varlığı ve gelişmesi için gerekli olan nesneleri sağlamak üzere, amaçlı etkinlikleriyle doğal çevrelerini değiştirmeleri, istihsal",
+        "letters": "İMRTÜE",
+        "removed": "E"
+      },
+      {
+        "word": "mürit",
+        "clue": "Bir tarikat şeyhine bağlanarak ondan tasavvufun yollarını öğrenen, onun doğrultusunda ilerleyen kimse",
+        "letters": "İMRTÜ",
+        "removed": "Ü"
+      },
+      {
+        "word": "ritm",
+        "clue": "Olayların düzenli aralıklarla tekrarlanması niteliği, dizem, tartım",
+        "letters": "İMRT",
+        "removed": "R"
+      },
+      {
+        "word": "tim",
+        "clue": "Bir silâhı, bir telsiz istasyonunu vb. yi çalıştırmak için kurulan topluluk",
+        "letters": "İMT",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "marifet",
+        "clue": "Ustalık, hüner, uzmanlık",
+        "letters": "TMEARİF",
+        "removed": "M"
+      },
+      {
+        "word": "tarife",
+        "clue": "Fiyat gösteren çizelge",
+        "letters": "TEARİF",
+        "removed": "E"
+      },
+      {
+        "word": "iftar",
+        "clue": "Oruç açma, oruç bozma",
+        "letters": "TARİF",
+        "removed": "T"
+      },
+      {
+        "word": "arif",
+        "clue": "Çok anlayışlı ve sezgili (kimse), varışlı",
+        "letters": "ARİF",
+        "removed": "İ"
+      },
+      {
+        "word": "far",
+        "clue": "Taşıtların ön bölümünde bulunan, kısa ve uzun mesafeyi aydınlatmaya yarayan ışık düzeneği",
+        "letters": "ARF",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "tahmini",
+        "clue": "Oranlamaya, tahmine göre, kararlama, aşağı yukarı",
+        "letters": "TAİNHMİ",
+        "removed": "İ"
+      },
+      {
+        "word": "tahmin",
+        "clue": "Yaklaşık olarak değerlendirme, oranlama",
+        "letters": "TANHMİ",
+        "removed": "M"
+      },
+      {
+        "word": "tahin",
+        "clue": "Öğütülmüş susamın koyu sıvı durumu",
+        "letters": "TANHİ",
+        "removed": "H"
+      },
+      {
+        "word": "inat",
+        "clue": "Bir konuda direnme, ayak direme, diretme, direnim",
+        "letters": "TANİ",
+        "removed": "İ"
+      },
+      {
+        "word": "ant",
+        "clue": "Tanrı'yı veya kutsal bilinen bir kişiyi, bir şeyi tanık göstererek bir olayı doğrulama, yemin",
+        "letters": "TAN",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "resesif",
+        "clue": "Çekinik",
+        "letters": "EFRİSSE",
+        "removed": "S"
+      },
+      {
+        "word": "seferi",
+        "clue": "Yolculukla ilgili olan",
+        "letters": "EFRİSE",
+        "removed": "İ"
+      },
+      {
+        "word": "sefer",
+        "clue": "Yolculuk",
+        "letters": "EFRSE",
+        "removed": "R"
+      },
+      {
+        "word": "esef",
+        "clue": "Acınma, yerinme",
+        "letters": "EFSE",
+        "removed": "S"
+      },
+      {
+        "word": "efe",
+        "clue": "Yiğit, özellikle Batı Anadolu köy yiğidi, zeybek",
+        "letters": "EFE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "plakacı",
+        "clue": "Plâka yapıp satan kimse",
+        "letters": "CLKAPIA",
+        "removed": "C"
+      },
+      {
+        "word": "kapalı",
+        "clue": "Kapanmış olan, açılmamış, mestur",
+        "letters": "LKAPIA",
+        "removed": "A"
+      },
+      {
+        "word": "kalıp",
+        "clue": "Bir şeye biçim vermeye veya eski biçimini korumaya yarayan araç",
+        "letters": "LKPIA",
+        "removed": "L"
+      },
+      {
+        "word": "kapı",
+        "clue": "Bir yere girip çıkarken geçilen ve açılıp kapanma düzeni olan duvar veya bölme açıklığı",
+        "letters": "KPIA",
+        "removed": "I"
+      },
+      {
+        "word": "kap",
+        "clue": "İçi gaz, sıvı veya katı herhangi bir maddeyi alabilen oyuk nesne",
+        "letters": "KPA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "kestane",
+        "clue": "Kayıngillerden, ılıman iklimlerde yetişen, 25-30 m kadar boylanabilen, kerestesi doğramacılıkta kullanılan bir orman ağacı (Castanea sativa)",
+        "letters": "KNESTAE",
+        "removed": "E"
+      },
+      {
+        "word": "sekant",
+        "clue": "Kesen",
+        "letters": "KNSTAE",
+        "removed": "S"
+      },
+      {
+        "word": "anket",
+        "clue": "Soruşturma, sormaca",
+        "letters": "KNTAE",
+        "removed": "K"
+      },
+      {
+        "word": "tane",
+        "clue": "Herhangi bir sayıda olan (şey), adet",
+        "letters": "NTAE",
+        "removed": "A"
+      },
+      {
+        "word": "net",
+        "clue": "Bütün çizgileri belirgin olan, gözün bütün ayrıntılarıyla algıladığı iyi görünen (şey)",
+        "letters": "NTE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "yakinen",
+        "clue": "(bilgi, bilme için) Sağlam olarak, iyice",
+        "letters": "İEANKNY",
+        "removed": "N"
+      },
+      {
+        "word": "kinaye",
+        "clue": "Düşünüleni, dolaylı olarak anlatan söz",
+        "letters": "İEAKNY",
+        "removed": "K"
+      },
+      {
+        "word": "enayi",
+        "clue": "Fazla bön, avanak, et kafalı, budala",
+        "letters": "İEANY",
+        "removed": "A"
+      },
+      {
+        "word": "yeni",
+        "clue": "Kullanılmamış olan",
+        "letters": "İENY",
+        "removed": "İ"
+      },
+      {
+        "word": "yen",
+        "clue": "Giysi kolu",
+        "letters": "ENY",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "iktidar",
+        "clue": "Bir işi yapabilme gücü, erk, kudret",
+        "letters": "TKİRDİA",
+        "removed": "İ"
+      },
+      {
+        "word": "takdir",
+        "clue": "Beğenme, beğenip belirtme, değer verme",
+        "letters": "TKRDİA",
+        "removed": "T"
+      },
+      {
+        "word": "idrak",
+        "clue": "Anlama yeteneği, anlayış, akıl erdirme",
+        "letters": "KRDİA",
+        "removed": "K"
+      },
+      {
+        "word": "dair",
+        "clue": "Bir konu üzerine olan, üzerine, konusunda, ... ile ilgili, üstüne",
+        "letters": "RDİA",
+        "removed": "R"
+      },
+      {
+        "word": "adi",
+        "clue": "Sıradan, hiçbir özelliği olmayan",
+        "letters": "DİA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "partner",
+        "clue": "Eş",
+        "letters": "RTAPNRE",
+        "removed": "R"
+      },
+      {
+        "word": "panter",
+        "clue": "Pars",
+        "letters": "TAPNRE",
+        "removed": "R"
+      },
+      {
+        "word": "paten",
+        "clue": "Buz üstünde kaymak için kullanılan, çoğunlukla tabanına, dar uzun bir çelik takılı ayakkabı",
+        "letters": "TAPNE",
+        "removed": "N"
+      },
+      {
+        "word": "etap",
+        "clue": "Bir yarışın belirli uzaklığı kapsayan bölümlerinden her biri, aşama, merhale",
+        "letters": "TAPE",
+        "removed": "E"
+      },
+      {
+        "word": "pat",
+        "clue": "Yassı, basık",
+        "letters": "TAP",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "kadınsı",
+        "clue": "Kadına özgü olan, kadına yaraşır",
+        "letters": "SINIKDA",
+        "removed": "I"
+      },
+      {
+        "word": "sandık",
+        "clue": "İçine çeşitli şeyler konulan, tahtadan, dört köşe, kapaklı ev eşyası",
+        "letters": "SNIKDA",
+        "removed": "N"
+      },
+      {
+        "word": "sadık",
+        "clue": "Doğru, gerçek",
+        "letters": "SIKDA",
+        "removed": "D"
+      },
+      {
+        "word": "kısa",
+        "clue": "Boyu, uzunluğu az olan, uzun karşıtı",
+        "letters": "SIKA",
+        "removed": "A"
+      },
+      {
+        "word": "sık",
+        "clue": "Benzerleri veya parçaları arasında çok az aralık bulunan, seyrek karşıtı",
+        "letters": "SIK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "plastik",
+        "clue": "Biçim verilmeye elverişli olan",
+        "letters": "KTAİPLS",
+        "removed": "P"
+      },
+      {
+        "word": "lastik",
+        "clue": "Kauçuktan yapılmış (şey)",
+        "letters": "KTAİLS",
+        "removed": "S"
+      },
+      {
+        "word": "katil",
+        "clue": "İnsan öldüren kimse, cani",
+        "letters": "KTAİL",
+        "removed": "L"
+      },
+      {
+        "word": "atik",
+        "clue": "Çabuk davranan, çevik",
+        "letters": "KTAİ",
+        "removed": "A"
+      },
+      {
+        "word": "tik",
+        "clue": "Herhangi bir kas kümesinin irade dışı hareketi",
+        "letters": "KTİ",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "sentaks",
+        "clue": "Cümle bilgisi, söz dizimi",
+        "letters": "SNESTKA",
+        "removed": "S"
+      },
+      {
+        "word": "sekant",
+        "clue": "Kesen",
+        "letters": "NESTKA",
+        "removed": "N"
+      },
+      {
+        "word": "kaset",
+        "clue": "İçinde, görüntü ve seslerin kaydedildiği, gerektiğinde yeniden kullanılmasını sağlayan bir manyetik şeridin bulunduğu küçük kutu",
+        "letters": "ESTKA",
+        "removed": "T"
+      },
+      {
+        "word": "kase",
+        "clue": "Cam, çini, toprak vb. den yapılmış derince çanak",
+        "letters": "ESKA",
+        "removed": "A"
+      },
+      {
+        "word": "kes",
+        "clue": "Genellikle yakmak için kullanılan iri saman",
+        "letters": "ESK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "pösteki",
+        "clue": "Koyun veya keçi postu",
+        "letters": "SPEKİÖT",
+        "removed": "Ö"
+      },
+      {
+        "word": "septik",
+        "clue": "Kuşkucu, şüpheci",
+        "letters": "SPEKİT",
+        "removed": "P"
+      },
+      {
+        "word": "kesit",
+        "clue": "Bir şeyi inceleyebilmek için, enlemesine veya boylamasına kesildiğinde ortaya çıkan yüzey",
+        "letters": "SEKİT",
+        "removed": "T"
+      },
+      {
+        "word": "eksi",
+        "clue": "Çıkarma işleminde - işaretinin adı, nakıs",
+        "letters": "SEKİ",
+        "removed": "İ"
+      },
+      {
+        "word": "sek",
+        "clue": "İçine su, başka bir içki veya bir sıvı karıştırılmamış (içki)",
+        "letters": "SEK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "dostane",
+        "clue": "Dostça",
+        "letters": "ONTAESD",
+        "removed": "O"
+      },
+      {
+        "word": "destan",
+        "clue": "Tarih öncesi tanrı, tanrıça, yarı tanrı ve kahramanlarla ilgili olağanüstü olayları konu alan şiir, epope",
+        "letters": "NTAESD",
+        "removed": "D"
+      },
+      {
+        "word": "saten",
+        "clue": "Atlas",
+        "letters": "NTAES",
+        "removed": "S"
+      },
+      {
+        "word": "tane",
+        "clue": "Herhangi bir sayıda olan (şey), adet",
+        "letters": "NTAE",
+        "removed": "A"
+      },
+      {
+        "word": "net",
+        "clue": "Bütün çizgileri belirgin olan, gözün bütün ayrıntılarıyla algıladığı iyi görünen (şey)",
+        "letters": "NTE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "tamirci",
+        "clue": "Bir şeyi onaran kimse",
+        "letters": "İTARMİC",
+        "removed": "M"
+      },
+      {
+        "word": "ticari",
+        "clue": "Ticaretle ilgili, ticarete ilişkin",
+        "letters": "İTARİC",
+        "removed": "İ"
+      },
+      {
+        "word": "tacir",
+        "clue": "Ticaretle uğraşan kimse, tüccar",
+        "letters": "TARİC",
+        "removed": "R"
+      },
+      {
+        "word": "icat",
+        "clue": "Yeni bir şey yaratma, bulma",
+        "letters": "TAİC",
+        "removed": "C"
+      },
+      {
+        "word": "ait",
+        "clue": "İlgilendiren, ilişkin, ilişik, ilgili, için, -e düşen",
+        "letters": "TAİ",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "yaşamak",
+        "clue": "Canlılığını, hayatını sürdürmek; sağ olmak",
+        "letters": "AŞYMAAK",
+        "removed": "A"
+      },
+      {
+        "word": "yaşmak",
+        "clue": "Kadınların ferace ile birlikte kullandıkları, gözleri açıkta bırakan, ince yüz örtüsü",
+        "letters": "ŞYMAAK",
+        "removed": "Y"
+      },
+      {
+        "word": "akşam",
+        "clue": "Gündüzün son ve gecenin ilk saatleri",
+        "letters": "ŞMAAK",
+        "removed": "M"
+      },
+      {
+        "word": "şaka",
+        "clue": "Güldürmek, eğlendirmek amacıyla karşısındakini kırmadan yapılan hareket veya söylenen söz, lâtife",
+        "letters": "ŞAAK",
+        "removed": "A"
+      },
+      {
+        "word": "aşk",
+        "clue": "Aşırı sevgi ve bağlılık duygusu, sevi",
+        "letters": "ŞAK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "kelepir",
+        "clue": "Değerinden çok aşağı bir fiyatla alınan veya alınabilecek olan (şey)",
+        "letters": "PKİERLE",
+        "removed": "E"
+      },
+      {
+        "word": "replik",
+        "clue": "Oyuncunun sözü karşısındakine bırakırken söyleyeceği son söz",
+        "letters": "PKİRLE",
+        "removed": "P"
+      },
+      {
+        "word": "kiler",
+        "clue": "Yiyecek, içecek ve erzakın saklandığı oda, ambar veya dolap",
+        "letters": "KİRLE",
+        "removed": "L"
+      },
+      {
+        "word": "erik",
+        "clue": "Gülgillerden, beyaz çiçekli bir ağaç (Ğrunus domestica)",
+        "letters": "KİRE",
+        "removed": "E"
+      },
+      {
+        "word": "kir",
+        "clue": "Herhangi bir şeyin veya vücudun üzerinde oluşan, biriken pislik",
+        "letters": "KİR",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "uyruklu",
+        "clue": "Uyruktan olan",
+        "letters": "UKUULYR",
+        "removed": "Y"
+      },
+      {
+        "word": "kurulu",
+        "clue": "Kurulmuş olan, yerleşmiş, oturmuş",
+        "letters": "UKUULR",
+        "removed": "U"
+      },
+      {
+        "word": "kurul",
+        "clue": "Bir işi yapmak veya yönetmek için görevlendirilmiş kişilerden oluşmuş topluluk, heyet, konsey",
+        "letters": "KUULR",
+        "removed": "L"
+      },
+      {
+        "word": "kuru",
+        "clue": "Suyu, nemi olmayan, yaş ve nemli karşıtı",
+        "letters": "KUUR",
+        "removed": "U"
+      },
+      {
+        "word": "kur",
+        "clue": "Yabancı paraların ulusal para cinsinden değeri",
+        "letters": "KUR",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "ihracat",
+        "clue": "Bir ülkenin ürettiği malları başka bir ülkeye veya ülkelere satması, dış satım",
+        "letters": "CRHAAİT",
+        "removed": "C"
+      },
+      {
+        "word": "harita",
+        "clue": "Coğrafya, tarih, dil, nüfus vb. olgularla ilgili yeryüzünün veya bir parçasının, belli bir orana göre küçültülerek düzlem üzerine çizilen taslağı",
+        "letters": "RHAAİT",
+        "removed": "İ"
+      },
+      {
+        "word": "rahat",
+        "clue": "İnsanda üzüntü, sıkıntı, tedirginlik olmama durumu, huzur",
+        "letters": "RHAAT",
+        "removed": "R"
+      },
+      {
+        "word": "hata",
+        "clue": "Yanlış, yanlışlık, yanılgı",
+        "letters": "HAAT",
+        "removed": "H"
+      },
+      {
+        "word": "ata",
+        "clue": "Baba",
+        "letters": "AAT",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "kinetik",
+        "clue": "Hareketle ilgili, hareket sebebiyle oluşan",
+        "letters": "İEİKTKN",
+        "removed": "İ"
+      },
+      {
+        "word": "teknik",
+        "clue": "Bir sanat, bir bilim, bir meslek dalında kullanılan yöntemlerin hepsi",
+        "letters": "EİKTKN",
+        "removed": "K"
+      },
+      {
+        "word": "etnik",
+        "clue": "Kavimle ilgili, budunsal, kavmî",
+        "letters": "EİTKN",
+        "removed": "T"
+      },
+      {
+        "word": "ekin",
+        "clue": "Tahılın tarlaya atıldığı andan harman oluncaya kadar aldığı duruma verilen ad",
+        "letters": "EİKN",
+        "removed": "E"
+      },
+      {
+        "word": "kin",
+        "clue": "Öç almayı amaçlayan gizli düşmanlık, garez",
+        "letters": "İKN",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "umarsız",
+        "clue": "Çaresiz",
+        "letters": "ARMUIZS",
+        "removed": "Z"
+      },
+      {
+        "word": "muasır",
+        "clue": "Aynı yüzyıl içinde olan",
+        "letters": "ARMUIS",
+        "removed": "U"
+      },
+      {
+        "word": "mısra",
+        "clue": "Manzumenin satırlarından her biri, dize",
+        "letters": "ARMIS",
+        "removed": "M"
+      },
+      {
+        "word": "asır",
+        "clue": "Yüzyıl",
+        "letters": "ARIS",
+        "removed": "A"
+      },
+      {
+        "word": "sır",
+        "clue": "Bazı nesnelere parlaklık vermek, dış etkilerden korumak, sızmalarını önlemek gibi amaçlarla sürülen, saydam veya donuk vernik",
+        "letters": "RIS",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "bakteri",
+        "clue": "Toprakta, suda, canlılarda bulunan, çürüme, mayalanma veya hastalıklara yol açan, küresel, silindirimsi, kıvrık biçimde olan, bölünerek çoğalan, klorofilsiz, tek hücre canlı",
+        "letters": "İERKBAT",
+        "removed": "A"
+      },
+      {
+        "word": "tekbir",
+        "clue": "Müslümanlıkta Tanrı'nın büyüklüğünü, yüceliğini anmak için söylenen ve Allahuekber sözü ile başlayan duanın adı",
+        "letters": "İERKBT",
+        "removed": "K"
+      },
+      {
+        "word": "ibret",
+        "clue": "Yanlış, kötü davranışlardan sakınmayı sağlayan olgu veya bu gibi olgulardan alınması gereken sonuç, ders",
+        "letters": "İERBT",
+        "removed": "T"
+      },
+      {
+        "word": "ibre",
+        "clue": "Ölçü aletlerinde sayı veya işaret göstermeye yarayan hareketli iğne",
+        "letters": "İERB",
+        "removed": "E"
+      },
+      {
+        "word": "bir",
+        "clue": "Sayıların ilki",
+        "letters": "İRB",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "tesirli",
+        "clue": "Etkili",
+        "letters": "İESLTRİ",
+        "removed": "İ"
+      },
+      {
+        "word": "steril",
+        "clue": "Verimsiz, kısır",
+        "letters": "ESLTRİ",
+        "removed": "L"
+      },
+      {
+        "word": "tesir",
+        "clue": "Etki",
+        "letters": "ESTRİ",
+        "removed": "İ"
+      },
+      {
+        "word": "rest",
+        "clue": "Pokerde, bir oyuncunun önündeki paranın tümü",
+        "letters": "ESTR",
+        "removed": "R"
+      },
+      {
+        "word": "set",
+        "clue": "Toprağın kayıp akmasını veya suyun yayılmasını önlemek için yapılan kalın duvar",
+        "letters": "EST",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "temenni",
+        "clue": "Dileme, dilek",
+        "letters": "NNEMİET",
+        "removed": "E"
+      },
+      {
+        "word": "minnet",
+        "clue": "Yapılan bir iyiliğe karşı kendini borçlu sayma, gönül borcu",
+        "letters": "NNMİET",
+        "removed": "N"
+      },
+      {
+        "word": "metin",
+        "clue": "(eser, yasa, belge için) Bir yazıyı biçim, anlatım ve noktalama özellikleriyle oluşturan kelimelerin bütünü, tekst",
+        "letters": "NMİET",
+        "removed": "T"
+      },
+      {
+        "word": "emin",
+        "clue": "İnanılır, güvenilir",
+        "letters": "NMİE",
+        "removed": "İ"
+      },
+      {
+        "word": "men",
+        "clue": "Yasaklama, izin vermeme",
+        "letters": "NME",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "sterlin",
+        "clue": "İngiliz lirası",
+        "letters": "SLRTEİN",
+        "removed": "N"
+      },
+      {
+        "word": "steril",
+        "clue": "Verimsiz, kısır",
+        "letters": "SLRTEİ",
+        "removed": "S"
+      },
+      {
+        "word": "litre",
+        "clue": "Sıvıları ölçmede kullanılan, bir desimetre küp hacminde ölçü birimi",
+        "letters": "LRTEİ",
+        "removed": "R"
+      },
+      {
+        "word": "elti",
+        "clue": "Kardeş karılarından her birinin ötekine göre adı",
+        "letters": "LTEİ",
+        "removed": "İ"
+      },
+      {
+        "word": "tel",
+        "clue": "Türlü metallerden yapılmış, kopmaya karşı bir direnç gösteren ince uzun nesne",
+        "letters": "LTE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "raptiye",
+        "clue": "Düz, geniş başlı, kısa bir çivi görünüşünde, kâğıt veya karton gibi şeyleri bir yere tutturmak için kullanılan araç",
+        "letters": "İEPYRTA",
+        "removed": "Y"
+      },
+      {
+        "word": "terapi",
+        "clue": "İyileştirme, sağaltım, tedavi",
+        "letters": "İEPRTA",
+        "removed": "E"
+      },
+      {
+        "word": "parti",
+        "clue": "Ortak düşünce ve görüşteki kişilerin oluşturdukları siyasî topluluk, fırka",
+        "letters": "İPRTA",
+        "removed": "R"
+      },
+      {
+        "word": "pati",
+        "clue": "(kedi, köpek için) Ön ayak",
+        "letters": "İPTA",
+        "removed": "A"
+      },
+      {
+        "word": "tip",
+        "clue": "Aynı cinsten bütün varlıkların veya nesnelerin temel özelliklerini büyük ölçüde kendinde toplayan örnek",
+        "letters": "İPT",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "filanca",
+        "clue": "Falanca",
+        "letters": "CNAFALİ",
+        "removed": "C"
+      },
+      {
+        "word": "fanila",
+        "clue": "Genellikle ince pamuk ipliğinden dokunmuş, ten üzerine giyilen iç çamaşırı",
+        "letters": "NAFALİ",
+        "removed": "A"
+      },
+      {
+        "word": "final",
+        "clue": "Sona eren, biten",
+        "letters": "NFALİ",
+        "removed": "F"
+      },
+      {
+        "word": "ilan",
+        "clue": "Duyuru",
+        "letters": "NALİ",
+        "removed": "N"
+      },
+      {
+        "word": "ali",
+        "clue": "Kişi adı olarak aşağıdaki deyimlerde geçer",
+        "letters": "ALİ",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "rantiye",
+        "clue": "Bankada bulunan paranın faiziyle veya sahibi bulunduğu değerli evrakın (hisse senedi vb.) geliriyle yaşayan kimse, getirimci",
+        "letters": "NTRYİEA",
+        "removed": "Y"
+      },
+      {
+        "word": "entari",
+        "clue": "Genellikle tek parçalı kadın giyeceği",
+        "letters": "NTRİEA",
+        "removed": "A"
+      },
+      {
+        "word": "tiner",
+        "clue": "Boyanın yoğunluğunu azaltmak için kullanılan terebentin gibi sıvı inceltici",
+        "letters": "NTRİE",
+        "removed": "İ"
+      },
+      {
+        "word": "tren",
+        "clue": "Bir veya birkaç lokomotif tarafından çekilen vagonlar dizisi, katar, şimendifer",
+        "letters": "NTRE",
+        "removed": "R"
+      },
+      {
+        "word": "ten",
+        "clue": "İnsan vücudunun dış yüzü",
+        "letters": "NTE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "hilafet",
+        "clue": "Halifelik",
+        "letters": "TİLAFEH",
+        "removed": "H"
+      },
+      {
+        "word": "latife",
+        "clue": "Şaka",
+        "letters": "TİLAFE",
+        "removed": "A"
+      },
+      {
+        "word": "telif",
+        "clue": "Uzlaştırma",
+        "letters": "TİLFE",
+        "removed": "F"
+      },
+      {
+        "word": "elit",
+        "clue": "Seçkin",
+        "letters": "TİLE",
+        "removed": "İ"
+      },
+      {
+        "word": "tel",
+        "clue": "Türlü metallerden yapılmış, kopmaya karşı bir direnç gösteren ince uzun nesne",
+        "letters": "TLE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "seramik",
+        "clue": "Yüksek ısıda pişirilmiş toprak, fayans, porselen yapımıyla ilgili olan",
+        "letters": "MİEKSAR",
+        "removed": "A"
+      },
+      {
+        "word": "mikser",
+        "clue": "Çeşitli yiyecek maddelerini karıştırmaya yarayan elektrikli alet, karıştırıcı",
+        "letters": "MİEKSR",
+        "removed": "M"
+      },
+      {
+        "word": "sirke",
+        "clue": "Bit, tahta kurusu gibi asalak böceklerin yumurtası",
+        "letters": "İEKSR",
+        "removed": "E"
+      },
+      {
+        "word": "risk",
+        "clue": "Riziko",
+        "letters": "İKSR",
+        "removed": "S"
+      },
+      {
+        "word": "kir",
+        "clue": "Herhangi bir şeyin veya vücudun üzerinde oluşan, biriken pislik",
+        "letters": "İKR",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "kristal",
+        "clue": "Billûr",
+        "letters": "LASTKRİ",
+        "removed": "R"
+      },
+      {
+        "word": "lastik",
+        "clue": "Kauçuktan yapılmış (şey)",
+        "letters": "LASTKİ",
+        "removed": "S"
+      },
+      {
+        "word": "katil",
+        "clue": "İnsan öldüren kimse, cani",
+        "letters": "LATKİ",
+        "removed": "L"
+      },
+      {
+        "word": "atik",
+        "clue": "Çabuk davranan, çevik",
+        "letters": "ATKİ",
+        "removed": "İ"
+      },
+      {
+        "word": "kat",
+        "clue": "Bir yapıda iki döşeme arasında yer alan daire veya odaların bütünü",
+        "letters": "ATK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "atletik",
+        "clue": "Atletleri ilgilendiren",
+        "letters": "İTLTEKA",
+        "removed": "E"
+      },
+      {
+        "word": "taklit",
+        "clue": "Belli bir örneğe benzemeye veya benzetmeye çalışma",
+        "letters": "İTLTKA",
+        "removed": "T"
+      },
+      {
+        "word": "katil",
+        "clue": "İnsan öldüren kimse, cani",
+        "letters": "İLTKA",
+        "removed": "L"
+      },
+      {
+        "word": "atik",
+        "clue": "Çabuk davranan, çevik",
+        "letters": "İTKA",
+        "removed": "A"
+      },
+      {
+        "word": "tik",
+        "clue": "Herhangi bir kas kümesinin irade dışı hareketi",
+        "letters": "İTK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "besmele",
+        "clue": "\"Acıyan ve esirgeyen Tanrı'nın adı ile\" anlamına gelen ve bir işe başlarken söylenilen Arapça bismillahirrahmanirrahim sözünün kısaltması",
+        "letters": "SMBEELE",
+        "removed": "B"
+      },
+      {
+        "word": "mesele",
+        "clue": "Sorun",
+        "letters": "SMEELE",
+        "removed": "E"
+      },
+      {
+        "word": "mesel",
+        "clue": "Örnek alınacak söz",
+        "letters": "SMELE",
+        "removed": "M"
+      },
+      {
+        "word": "sele",
+        "clue": "Yayvan sepet",
+        "letters": "SELE",
+        "removed": "E"
+      },
+      {
+        "word": "sel",
+        "clue": "Sürekli yağmurlardan veya eriyen karlardan oluşan, geçtiği yerlere zarar veren taşkın su",
+        "letters": "SLE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "amonyak",
+        "clue": "Azot ve hidrojen birleşimi olan, keskin kokulu bir gaz (NH3)",
+        "letters": "NOKMAAY",
+        "removed": "O"
+      },
+      {
+        "word": "manyak",
+        "clue": "Maniye (I) uğramış (hasta)",
+        "letters": "NKMAAY",
+        "removed": "K"
+      },
+      {
+        "word": "yaman",
+        "clue": "(güç, etki veya beceri) Alışılmışın üzerinde olan",
+        "letters": "NMAAY",
+        "removed": "M"
+      },
+      {
+        "word": "ayna",
+        "clue": "Işığı yansıtan, varlıkların görüntüsünü veren, cilâlı ve sırlı cam",
+        "letters": "NAAY",
+        "removed": "A"
+      },
+      {
+        "word": "yan",
+        "clue": "(bir şeyin) Ön, arka, alt ve üst dışında kalan bölümü",
+        "letters": "NAY",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "kesinti",
+        "clue": "Kesilen parça, kırpıntı",
+        "letters": "TNEKSİİ",
+        "removed": "K"
+      },
+      {
+        "word": "esinti",
+        "clue": "Belli belirsiz hissedilen hafif yel, nefha",
+        "letters": "TNESİİ",
+        "removed": "İ"
+      },
+      {
+        "word": "tenis",
+        "clue": "Ağla ortasından ikiye bölünen bir alanda tek veya çift oyuncuların raketle karşılıklı vurdukları veya çeldikleri topu, belli kurallara göre, karşılanamayacak biçimde birbirlerinin alanına düşürerek sayı kazanmaları esasına dayanan oyun, alan topu",
+        "letters": "TNESİ",
+        "removed": "T"
+      },
+      {
+        "word": "esin",
+        "clue": "Etkilenme, çağrışım veya içe doğmayla akla gelen yaratıcı duygu, düşünce, ilham",
+        "letters": "NESİ",
+        "removed": "İ"
+      },
+      {
+        "word": "sen",
+        "clue": "Teklik ikinci kişiyi gösteren zamir",
+        "letters": "NES",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "mastika",
+        "clue": "Sakızla tatlandırılmış rakı, sakız rakısı",
+        "letters": "AİMKAST",
+        "removed": "A"
+      },
+      {
+        "word": "taksim",
+        "clue": "Parçalara bölme, bölüştürme",
+        "letters": "İMKAST",
+        "removed": "T"
+      },
+      {
+        "word": "imsak",
+        "clue": "Bir şeyden el çekerek nefsine hâkim olma, perhiz",
+        "letters": "İMKAS",
+        "removed": "K"
+      },
+      {
+        "word": "sima",
+        "clue": "Yüz, çehre",
+        "letters": "İMAS",
+        "removed": "A"
+      },
+      {
+        "word": "sim",
+        "clue": "Gümüş",
+        "letters": "İMS",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "okyanus",
+        "clue": "Kıtaları birbirinden ayıran engin, açık deniz, ana deniz, umman",
+        "letters": "UOSYKAN",
+        "removed": "A"
+      },
+      {
+        "word": "yoksun",
+        "clue": "Belli bir şeyden kendisinde olmayan, belli bir şeyin yokluğunu çeken, mahrum",
+        "letters": "UOSYKN",
+        "removed": "S"
+      },
+      {
+        "word": "koyun",
+        "clue": "Geviş getirenlerden, eti, sütü, yapağısı ve derisi için yetiştirilen evcil hayvan (Ovis aries)",
+        "letters": "UOYKN",
+        "removed": "N"
+      },
+      {
+        "word": "oyuk",
+        "clue": "Oyulmuş, içi boş ve çukur olan",
+        "letters": "UOYK",
+        "removed": "U"
+      },
+      {
+        "word": "yok",
+        "clue": "Bulunmayan, mevcut olmayan nesne, kimse vb., var karşıtı",
+        "letters": "OYK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "eritmek",
+        "clue": "Erimesini sağlamak, erimesine yol açmak",
+        "letters": "TEİKMER",
+        "removed": "E"
+      },
+      {
+        "word": "termik",
+        "clue": "Isı ile, sıcaklıkla ilgili, ısıl",
+        "letters": "TİKMER",
+        "removed": "M"
+      },
+      {
+        "word": "tekir",
+        "clue": "Postu siyah çubuklarla ve beneklerle süslü, kül renginde veya boz olan (kedi)",
+        "letters": "TİKER",
+        "removed": "R"
+      },
+      {
+        "word": "etki",
+        "clue": "Bir kimse veya nesnenin başka bir kişi veya şey üzerindeki gücü, tesir",
+        "letters": "TİKE",
+        "removed": "E"
+      },
+      {
+        "word": "tik",
+        "clue": "Herhangi bir kas kümesinin irade dışı hareketi",
+        "letters": "TİK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "harekat",
+        "clue": "Davranışlar, işler",
+        "letters": "AKTARHE",
+        "removed": "H"
+      },
+      {
+        "word": "karate",
+        "clue": "Ayak ve yumruk vuruşları üzerine kurulu, Japon kökenli bir dövüş yöntemi",
+        "letters": "AKTARE",
+        "removed": "E"
+      },
+      {
+        "word": "aktar",
+        "clue": "Baharat, ev ilâçları, gereçleri satan kimse veya dükkân, attar",
+        "letters": "AKTAR",
+        "removed": "R"
+      },
+      {
+        "word": "atak",
+        "clue": "Düşüncesizce her işe atılan, cür'etkâr",
+        "letters": "AKTA",
+        "removed": "A"
+      },
+      {
+        "word": "kat",
+        "clue": "Bir yapıda iki döşeme arasında yer alan daire veya odaların bütünü",
+        "letters": "KTA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "erişmek",
+        "clue": "Varılması zamana, emeğe bağlı olan veya uzakta bulunan bir amaca varmak, ulaşmak",
+        "letters": "EŞRİEMK",
+        "removed": "R"
+      },
+      {
+        "word": "işemek",
+        "clue": "İdrar torbasında biriken idrarı dışarı atmak, çiş yapmak",
+        "letters": "EŞİEMK",
+        "removed": "İ"
+      },
+      {
+        "word": "eşmek",
+        "clue": "Toprağı veya toprak gibi yumuşak bir şeyi biraz kazmak",
+        "letters": "EŞEMK",
+        "removed": "M"
+      },
+      {
+        "word": "eşek",
+        "clue": "Atgillerden, uzun kulaklı binek ve hizmet hayvam, merkep (Equus asinus)",
+        "letters": "EŞEK",
+        "removed": "E"
+      },
+      {
+        "word": "keş",
+        "clue": "Yağı alınmış sütten veya yoğurttan yapılan peynir",
+        "letters": "ŞEK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "sürtmek",
+        "clue": "Bir şeyi bastırarak diğer bir şeyin üzerinden geçirmek",
+        "letters": "RÜETKSM",
+        "removed": "R"
+      },
+      {
+        "word": "tümsek",
+        "clue": "Küçük tepe",
+        "letters": "ÜETKSM",
+        "removed": "T"
+      },
+      {
+        "word": "kümes",
+        "clue": "Tavuk, hindi gibi evcil hayvanların barınmasına yarayan kapalı yer",
+        "letters": "ÜEKSM",
+        "removed": "S"
+      },
+      {
+        "word": "küme",
+        "clue": "Tümsek biçimindeki yığın",
+        "letters": "ÜEKM",
+        "removed": "Ü"
+      },
+      {
+        "word": "kem",
+        "clue": "Noksan, eksik",
+        "letters": "EKM",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "latince",
+        "clue": "Lâtin dili",
+        "letters": "NETLACİ",
+        "removed": "C"
+      },
+      {
+        "word": "taneli",
+        "clue": "Tanelerden oluşmuş",
+        "letters": "NETLAİ",
+        "removed": "E"
+      },
+      {
+        "word": "latin",
+        "clue": "İtalya'da Lâtium bölgesi halkından olan kimse",
+        "letters": "NTLAİ",
+        "removed": "T"
+      },
+      {
+        "word": "ilan",
+        "clue": "Duyuru",
+        "letters": "NLAİ",
+        "removed": "L"
+      },
+      {
+        "word": "ani",
+        "clue": "Bir anda oluveren, apansız",
+        "letters": "NAİ",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "derslik",
+        "clue": "Sınıf, dershane",
+        "letters": "RDSEİLK",
+        "removed": "L"
+      },
+      {
+        "word": "dirsek",
+        "clue": "Kol ile ön kol arasındaki eklemin arka yanı",
+        "letters": "RDSEİK",
+        "removed": "D"
+      },
+      {
+        "word": "sirke",
+        "clue": "Bit, tahta kurusu gibi asalak böceklerin yumurtası",
+        "letters": "RSEİK",
+        "removed": "R"
+      },
+      {
+        "word": "eski",
+        "clue": "Çoktan beri var olan, üzerinden çok zaman geçmiş bulunan",
+        "letters": "SEİK",
+        "removed": "İ"
+      },
+      {
+        "word": "kes",
+        "clue": "Genellikle yakmak için kullanılan iri saman",
+        "letters": "SEK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "talihli",
+        "clue": "Talihi iyi olan, bahtı açık olan, bahtlı, şanslı",
+        "letters": "LİLİTAH",
+        "removed": "İ"
+      },
+      {
+        "word": "tahlil",
+        "clue": "Çeşitli yönlerden veya maddelerden oluşan bir şeyi çözümleme",
+        "letters": "LLİTAH",
+        "removed": "L"
+      },
+      {
+        "word": "ithal",
+        "clue": "İçine alma",
+        "letters": "LİTAH",
+        "removed": "İ"
+      },
+      {
+        "word": "halt",
+        "clue": "Bir şeyi başka bir şeyle karıştırma",
+        "letters": "LTAH",
+        "removed": "L"
+      },
+      {
+        "word": "hat",
+        "clue": "Çizgi",
+        "letters": "TAH",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "stresli",
+        "clue": "Stresi olan",
+        "letters": "LSETSRİ",
+        "removed": "S"
+      },
+      {
+        "word": "steril",
+        "clue": "Verimsiz, kısır",
+        "letters": "LETSRİ",
+        "removed": "S"
+      },
+      {
+        "word": "litre",
+        "clue": "Sıvıları ölçmede kullanılan, bir desimetre küp hacminde ölçü birimi",
+        "letters": "LETRİ",
+        "removed": "R"
+      },
+      {
+        "word": "elti",
+        "clue": "Kardeş karılarından her birinin ötekine göre adı",
+        "letters": "LETİ",
+        "removed": "İ"
+      },
+      {
+        "word": "tel",
+        "clue": "Türlü metallerden yapılmış, kopmaya karşı bir direnç gösteren ince uzun nesne",
+        "letters": "LET",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "sürekli",
+        "clue": "Kesintisiz olarak süren, devamlı",
+        "letters": "ÜESRİKL",
+        "removed": "K"
+      },
+      {
+        "word": "süreli",
+        "clue": "Belirli aralıklarla yapılan, çıkan, mevkut, periyodik",
+        "letters": "ÜESRİL",
+        "removed": "İ"
+      },
+      {
+        "word": "ülser",
+        "clue": "Sindirim organlarında ve özellikle mide ile onikiparmak bağırsağında görülen yara, karha",
+        "letters": "ÜESRL",
+        "removed": "L"
+      },
+      {
+        "word": "süre",
+        "clue": "Bir olayın başı ile sonu arasında geçen zaman parçası, zaman aralığı, zaman bölümü, müddet",
+        "letters": "ÜESR",
+        "removed": "S"
+      },
+      {
+        "word": "üre",
+        "clue": "Azotlu besinlerin vücutta yanmasıyla oluşan, erimiş bir durumda idrarla dışarı atılan azotlu madde",
+        "letters": "ÜER",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "şekilci",
+        "clue": "Alışılmış kural, tutum veya davranış dışına çıkamayan, biçimci, formaliteci, formalist",
+        "letters": "EİLKŞİC",
+        "removed": "C"
+      },
+      {
+        "word": "şikeli",
+        "clue": "Danışıklı (spor karşılaşması)",
+        "letters": "EİLKŞİ",
+        "removed": "İ"
+      },
+      {
+        "word": "klişe",
+        "clue": "Baskıda kullanılmak amacıyla, üzerine kabartma resim, şekil, yazı çıkarılmış metal levha",
+        "letters": "ELKŞİ",
+        "removed": "L"
+      },
+      {
+        "word": "eşik",
+        "clue": "Kapı boşluğunun alt yanında bulunan alçak basamak",
+        "letters": "EKŞİ",
+        "removed": "İ"
+      },
+      {
+        "word": "keş",
+        "clue": "Yağı alınmış sütten veya yoğurttan yapılan peynir",
+        "letters": "EKŞ",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "kusurlu",
+        "clue": "Kusuru olan",
+        "letters": "RSKUUUL",
+        "removed": "S"
+      },
+      {
+        "word": "kurulu",
+        "clue": "Kurulmuş olan, yerleşmiş, oturmuş",
+        "letters": "RKUUUL",
+        "removed": "U"
+      },
+      {
+        "word": "kurul",
+        "clue": "Bir işi yapmak veya yönetmek için görevlendirilmiş kişilerden oluşmuş topluluk, heyet, konsey",
+        "letters": "RKUUL",
+        "removed": "L"
+      },
+      {
+        "word": "kuru",
+        "clue": "Suyu, nemi olmayan, yaş ve nemli karşıtı",
+        "letters": "RKUU",
+        "removed": "U"
+      },
+      {
+        "word": "kur",
+        "clue": "Yabancı paraların ulusal para cinsinden değeri",
+        "letters": "RKU",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "pencüse",
+        "clue": "Tavla oyununda zarların üst yüzünün birinin beşli, öbürünün üçlü gelmesi",
+        "letters": "CENÜSPE",
+        "removed": "C"
+      },
+      {
+        "word": "sünepe",
+        "clue": "Kılıksız ve uyuşuk, sümsük",
+        "letters": "ENÜSPE",
+        "removed": "Ü"
+      },
+      {
+        "word": "pense",
+        "clue": "Çeşitli biçim ve büyüklükte maşa veya kıskaç",
+        "letters": "ENSPE",
+        "removed": "P"
+      },
+      {
+        "word": "sene",
+        "clue": "Yıl",
+        "letters": "ENSE",
+        "removed": "E"
+      },
+      {
+        "word": "sen",
+        "clue": "Teklik ikinci kişiyi gösteren zamir",
+        "letters": "NSE",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "iletken",
+        "clue": "Akım, ısı, ses vb. geçiren (madde), nakil, yalıtkan karşıtı",
+        "letters": "TEİKLNE",
+        "removed": "E"
+      },
+      {
+        "word": "kentli",
+        "clue": "Şehirli",
+        "letters": "TİKLNE",
+        "removed": "L"
+      },
+      {
+        "word": "tekin",
+        "clue": "Boş, içinde kimse bulunmayan",
+        "letters": "TİKNE",
+        "removed": "T"
+      },
+      {
+        "word": "iken",
+        "clue": "Esnasında, ...-dığı / -diği hâlde, ...-dığı / -diği zaman",
+        "letters": "İKNE",
+        "removed": "E"
+      },
+      {
+        "word": "kin",
+        "clue": "Öç almayı amaçlayan gizli düşmanlık, garez",
+        "letters": "İKN",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "nihayet",
+        "clue": "Son",
+        "letters": "AEİNTHY",
+        "removed": "Y"
+      },
+      {
+        "word": "ihanet",
+        "clue": "Hıyanet, hainlik",
+        "letters": "AEİNTH",
+        "removed": "E"
+      },
+      {
+        "word": "tahin",
+        "clue": "Öğütülmüş susamın koyu sıvı durumu",
+        "letters": "AİNTH",
+        "removed": "T"
+      },
+      {
+        "word": "hain",
+        "clue": "Hıyanet eden (kimse)",
+        "letters": "AİNH",
+        "removed": "H"
+      },
+      {
+        "word": "ani",
+        "clue": "Bir anda oluveren, apansız",
+        "letters": "AİN",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "tutarlı",
+        "clue": "Aralarında çelişme bulunmayan, uygun, her yönden bağdaşmış, dengeli, insicamlı",
+        "letters": "TLATRIU",
+        "removed": "U"
+      },
+      {
+        "word": "tartıl",
+        "clue": "Tartıya dayanan",
+        "letters": "TLATRI",
+        "removed": "R"
+      },
+      {
+        "word": "tatlı",
+        "clue": "Şeker tadında olan",
+        "letters": "TLATI",
+        "removed": "T"
+      },
+      {
+        "word": "altı",
+        "clue": "Beşten sonra gelen sayının adı ve bu sayıyı gösteren rakam, 6, Vl",
+        "letters": "LATI",
+        "removed": "I"
+      },
+      {
+        "word": "alt",
+        "clue": "Bir şeyin yere bakan yanı, üst karşıtı",
+        "letters": "LAT",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "sırıtık",
+        "clue": "Sürekli olarak sırıtan",
+        "letters": "IITRKIS",
+        "removed": "T"
+      },
+      {
+        "word": "ısırık",
+        "clue": "Isırılan yerde kalan iz",
+        "letters": "IIRKIS",
+        "removed": "I"
+      },
+      {
+        "word": "sırık",
+        "clue": "Değnekten uzun ve kalınca ağaç",
+        "letters": "IRKIS",
+        "removed": "R"
+      },
+      {
+        "word": "sıkı",
+        "clue": "Dar",
+        "letters": "IKIS",
+        "removed": "I"
+      },
+      {
+        "word": "sık",
+        "clue": "Benzerleri veya parçaları arasında çok az aralık bulunan, seyrek karşıtı",
+        "letters": "KIS",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "sahiden",
+        "clue": "Gerçek olarak, gerçekten",
+        "letters": "SHAİDNE",
+        "removed": "N"
+      },
+      {
+        "word": "hadise",
+        "clue": "Olay",
+        "letters": "SHAİDE",
+        "removed": "E"
+      },
+      {
+        "word": "hadis",
+        "clue": "Hz. Muhammed'in genel kural değerindeki söz ve davranışları",
+        "letters": "SHAİD",
+        "removed": "D"
+      },
+      {
+        "word": "sahi",
+        "clue": "Gerçekten, gerçek olarak",
+        "letters": "SHAİ",
+        "removed": "H"
+      },
+      {
+        "word": "asi",
+        "clue": "Baş kaldıran, isyan eden",
+        "letters": "SAİ",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "kumanya",
+        "clue": "Yolculuk için hazırlanan yiyecek, azık",
+        "letters": "UYNAMAK",
+        "removed": "U"
+      },
+      {
+        "word": "manyak",
+        "clue": "Maniye (I) uğramış (hasta)",
+        "letters": "YNAMAK",
+        "removed": "K"
+      },
+      {
+        "word": "yaman",
+        "clue": "(güç, etki veya beceri) Alışılmışın üzerinde olan",
+        "letters": "YNAMA",
+        "removed": "M"
+      },
+      {
+        "word": "ayna",
+        "clue": "Işığı yansıtan, varlıkların görüntüsünü veren, cilâlı ve sırlı cam",
+        "letters": "YNAA",
+        "removed": "A"
+      },
+      {
+        "word": "yan",
+        "clue": "(bir şeyin) Ön, arka, alt ve üst dışında kalan bölümü",
+        "letters": "YNA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "kaplıca",
+        "clue": "Ilıca",
+        "letters": "PCLIAAK",
+        "removed": "C"
+      },
+      {
+        "word": "kapalı",
+        "clue": "Kapanmış olan, açılmamış, mestur",
+        "letters": "PLIAAK",
+        "removed": "I"
+      },
+      {
+        "word": "plaka",
+        "clue": "Metal yaprak",
+        "letters": "PLAAK",
+        "removed": "A"
+      },
+      {
+        "word": "kalp",
+        "clue": "Göğüs boşluğunda, iki akciğer arasında, vücudun her yanından gelen kanı akciğerlere ve oradan gelen temiz kanı da vücuda dağıtan organ, yürek",
+        "letters": "PLAK",
+        "removed": "L"
+      },
+      {
+        "word": "pak",
+        "clue": "Temiz",
+        "letters": "PAK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "tefrika",
+        "clue": "Gazete veya dergilerde çıkan, birbirini tamamlayan yazılardan oluşan dizi",
+        "letters": "TAERİFK",
+        "removed": "E"
+      },
+      {
+        "word": "trafik",
+        "clue": "Ulaşım araçlarının yola çıkması için gerekli işlemleri yapan ve ulaşım yollarını denetleyen resmî kurum veya görevli kişiler",
+        "letters": "TARİFK",
+        "removed": "R"
+      },
+      {
+        "word": "aktif",
+        "clue": "Etkin, canlı, hareketli, çalışkan",
+        "letters": "TAİFK",
+        "removed": "T"
+      },
+      {
+        "word": "kafi",
+        "clue": "Yeterli, yetecek ölçüde olan",
+        "letters": "AİFK",
+        "removed": "K"
+      },
+      {
+        "word": "ifa",
+        "clue": "Bir işi yapma, yerine getirme",
+        "letters": "AİF",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "kabahat",
+        "clue": "Uygunsuz hareket, çirkin, yakışıksız davranış, suç, kusur, töhmet",
+        "letters": "KAHTAAB",
+        "removed": "H"
+      },
+      {
+        "word": "tabaka",
+        "clue": "Katman, kat",
+        "letters": "KATAAB",
+        "removed": "A"
+      },
+      {
+        "word": "tabak",
+        "clue": "Yiyecek koymaya yarar, az derin ve yayvan kap",
+        "letters": "KTAAB",
+        "removed": "B"
+      },
+      {
+        "word": "taka",
+        "clue": "Doğu Karadeniz bölgesine özgü yelkenli bir tür kıyı teknesi",
+        "letters": "KTAA",
+        "removed": "K"
+      },
+      {
+        "word": "ata",
+        "clue": "Baba",
+        "letters": "TAA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "sendika",
+        "clue": "İşçilerin veya iş verenlerin iş, kazanç, toplumsal ve kültürel konular bakımından çıkarlarını korumak ve daha da geliştirmek için aralarında kurdukları birlik",
+        "letters": "NİDESKA",
+        "removed": "A"
+      },
+      {
+        "word": "indeks",
+        "clue": "Dizin",
+        "letters": "NİDESK",
+        "removed": "D"
+      },
+      {
+        "word": "kesin",
+        "clue": "Şüphe ve duraksamaya yer bırakmayan veya geri dönülmeyen, değişmez, kat'i, maktu",
+        "letters": "NİESK",
+        "removed": "S"
+      },
+      {
+        "word": "inek",
+        "clue": "Dişi sığır",
+        "letters": "NİEK",
+        "removed": "E"
+      },
+      {
+        "word": "kin",
+        "clue": "Öç almayı amaçlayan gizli düşmanlık, garez",
+        "letters": "NİK",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "merdane",
+        "clue": "Erkeğe yakışır biçimde, mertçe, yiğitçe",
+        "letters": "NDEMAER",
+        "removed": "E"
+      },
+      {
+        "word": "derman",
+        "clue": "Güç, takat, mecal",
+        "letters": "NDMAER",
+        "removed": "R"
+      },
+      {
+        "word": "maden",
+        "clue": "Yer kabuğunun bazı bölgelerinde çeşitli iç ve dış doğal etkenlerle oluşan, ekonomik yönden değer taşıyan mineral",
+        "letters": "NDMAE",
+        "removed": "D"
+      },
+      {
+        "word": "nema",
+        "clue": "Büyüme, gelişme, çoğalma",
+        "letters": "NMAE",
+        "removed": "E"
+      },
+      {
+        "word": "nam",
+        "clue": "Ad",
+        "letters": "NMA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "talimat",
+        "clue": "Bir iş yerinde, üst makamdan asta verilen, çalışma sırasında uyulması gerekli noktaları bildiren resmî yazı, yönerge, direktif",
+        "letters": "MLAİTAT",
+        "removed": "T"
+      },
+      {
+        "word": "imalat",
+        "clue": "Ham madde işlenerek yapılan her türlü mal",
+        "letters": "MLAİAT",
+        "removed": "A"
+      },
+      {
+        "word": "milat",
+        "clue": "İsa Peygamberin doğduğu gün",
+        "letters": "MLİAT",
+        "removed": "T"
+      },
+      {
+        "word": "mail",
+        "clue": "Eğilimi olan",
+        "letters": "MLİA",
+        "removed": "M"
+      },
+      {
+        "word": "ali",
+        "clue": "Kişi adı olarak aşağıdaki deyimlerde geçer",
+        "letters": "LİA",
+        "removed": null
+      }
+    ]
+  },
+  {
+    "height": 5,
+    "levels": [
+      {
+        "word": "kaçamak",
+        "clue": "Hoş görülmeyen bir şeyi ara sıra yapma",
+        "letters": "KKAMÇAA",
+        "removed": "A"
+      },
+      {
+        "word": "kaçmak",
+        "clue": "Kimseye bildirmeden bulunduğu yerden ayrılmak, firar etmek",
+        "letters": "KKMÇAA",
+        "removed": "K"
+      },
+      {
+        "word": "açmak",
+        "clue": "Bir şeyi kapalı durumdan kurtarmak",
+        "letters": "KMÇAA",
+        "removed": "K"
+      },
+      {
+        "word": "amaç",
+        "clue": "Erişilmek istenilen sonuç, maksat",
+        "letters": "MÇAA",
+        "removed": "A"
+      },
+      {
+        "word": "maç",
+        "clue": "Bazı spor dallarında iki takım, iki kişi, iki taraf arasında yapılan karşılaşma",
+        "letters": "MÇA",
+        "removed": null
+      }
+    ]
+  }
+]
