@@ -148,11 +148,14 @@ $ink: #eaf2f4;
 .letter-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(38px, 1fr));
-  gap: 6px;
-  margin-bottom: 16px;
+  gap: 10px;
+  /* Seçili hücrenin halkası + büyümesi kırpılmasın diye nefes payı */
+  padding: 6px 6px 12px;
+  margin-bottom: 10px;
 }
 
 .cell {
+  position: relative;
   aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
@@ -164,7 +167,8 @@ $ink: #eaf2f4;
   font-weight: 700;
   cursor: pointer;
   padding: 0;
-  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
 
   &.solved {
     background: $green;
@@ -189,14 +193,50 @@ $ink: #eaf2f4;
   }
 
   &:focus-visible {
-    outline: none;
-    border-color: #fff;
+    outline: 2px solid #fff;
+    outline-offset: 2px;
   }
 
+  /* Seçili harf: küçülmek yerine BÜYÜR ve panel renginde bir boşlukla
+     ayrılmış beyaz halka + gölge alır. Halka arka plan renginden bağımsız
+     çalışsın diye iki katmanlı box-shadow kullanıyoruz. */
   &.active {
-    border-color: #fff;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.16);
-    transform: translateY(-2px);
+    z-index: 2;
+    transform: translateY(-3px) scale(1.14);
+    box-shadow: 0 0 0 2px $panel, 0 0 0 4px rgba(255, 255, 255, 0.92),
+      0 8px 18px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Seçili harfin üstünde küçük bir işaretçi */
+  &.active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    transform: translateX(-50%);
+  }
+}
+
+/* Bir seçim varken diğerleri geri çekilsin ki aktif olan öne çıksın */
+.letter-grid:has(.cell.active) .cell:not(.active) {
+  opacity: 0.55;
+}
+
+.letter-grid:has(.cell.active) .cell:not(.active):hover {
+  opacity: 1;
+}
+
+/* Hareket azaltma tercihi olan kullanıcılarda büyüme yerine sadece halka */
+@media (prefers-reduced-motion: reduce) {
+  .cell {
+    transition: box-shadow 0.2s ease, opacity 0.2s ease;
+  }
+  .cell.active {
+    transform: none;
   }
 }
 
