@@ -38,12 +38,34 @@
 <!-- <button mat-button (click)="startCountdown()">Open dialog</button> -->
 
   <div class="input-container">
-    <form (submit)="submit()">
-      <mat-form-field>
-        <mat-label>Cevap</mat-label>
-        <input [(ngModel)]="userInput" [ngModelOptions]="{standalone: true}" matInput #first>
-      </mat-form-field>
-      <button mat-raised-button class="answer-btn">Evet Abi</button>
+    <form class="answer-form" (submit)="submit(); $event.preventDefault()">
+      <div class="answer-shell">
+        <span class="letter-badge" aria-hidden="true">
+          {{ letters[selectedIndex] }}
+        </span>
+
+        <input
+          #first
+          class="answer-input"
+          type="text"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          [attr.aria-label]="letters[selectedIndex] + ' harfiyle başlayan cevabın'"
+          [placeholder]="letters[selectedIndex] + ' ile başlayan cevabın…'"
+          [(ngModel)]="userInput"
+          [ngModelOptions]="{ standalone: true }" />
+
+        <button
+          type="button"
+          class="pass-btn"
+          title="Bu soruyu pas geç (sonra dönebilirsin)"
+          (click)="pass()">
+          Pas
+        </button>
+
+        <button type="submit" class="answer-btn">Evet Abi</button>
+      </div>
     </form>
   </div>
 

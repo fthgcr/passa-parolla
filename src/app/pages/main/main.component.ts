@@ -144,6 +144,16 @@ export class MainComponent implements OnInit, OnDestroy {
     this.userInput = '';
   }
 
+  /** Pas butonu — yazıyla "pas" göndermekle aynı işi yapar */
+  pass(): void {
+    if (this.isGameOver || !this.questions[this.selectedIndex]) {
+      return;
+    }
+    this.userInput = '';
+    this.passSound();
+    this.changeQuestionSituation('p');
+  }
+
   changeQuestionSituation(situation: any) {
     this.questions[this.selectedIndex].situation = situation;
     if (this.questions[this.selectedIndex].situation === 'w') {

@@ -12,11 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatButtonModule } from '@angular/material/button';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { EndGameComponent } from './pages/end-game/end-game.component';
-import { MatExpansionModule } from '@angular/material/expansion';
 import { StartGameComponent } from './pages/start-game/start-game.component';
 import { PyramidComponent } from './pages/pyramid/pyramid.component';
 import { MenuComponent } from './pages/menu/menu.component';
@@ -29,11 +26,8 @@ import { MenuComponent } from './pages/menu/menu.component';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    MatFormFieldModule,
-    MatInputModule,
     MatButtonModule,
-    MatDialogModule,
-    MatExpansionModule
+    MatDialogModule
   ],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
