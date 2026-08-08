@@ -1,4 +1,5 @@
-import { Component, OnDestroy, OnInit, inject } from '@angular/core';
+import { Component, NgZone, OnDestroy, OnInit, PLATFORM_ID, inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import {
   trigger,
   transition,
@@ -61,18 +62,31 @@ import { PyramidService } from '../../services/pyramid.service';
     ]),
   ],
 })
-export class MainComponent implements OnInit {
+export class MainComponent implements OnInit, OnDestroy {
   constructor(private service: WordsService, private pyramid: PyramidService) {}
 
   readonly dialog = inject(MatDialog);
   private _snackBar = inject(MatSnackBar);
   private destroy$ = new Subject<void>();
+  private zone = inject(NgZone);
+  private platformId = inject(PLATFORM_ID);
   dialogRef: MatDialogRef<any>;
 
   letters: string[] = 'ABCÇDEFGHIJKLMNOÖPRSŞTUÜVYZ'.split('');
   selectedIndex: number = 0;
+
+  /** Oyunun toplam süresi (saniye). Başlangıç ekranından seçilir. */
+  totalSeconds: number = 300;
+  /** Kalan süre (saniye) — her zaman gerçek geçen süreden türetilir. */
   timer: number = 300;
-  timeCounter : string = "05:00";
+  timeCounter: string = '05:00';
+
+  /** Süre bitiş anı (epoch ms). Tek doğruluk kaynağı budur. */
+  private deadline: number = 0;
+  private intervalId: ReturnType<typeof setInterval> | null = null;
+  private countdownStarted: boolean = false;
+  private warningShown: boolean = false;
+
   questions: any[] = [];
   userInput: String = '';
   isGameOver: boolean = false;
@@ -81,6 +95,13 @@ export class MainComponent implements OnInit {
     this.getQuestions();
     this.openStartDialog();
     //this.test();
+  }
+
+  ngOnDestroy(): void {
+    // Sayfadan çıkıldığında sayaç arka planda çalışmaya devam etmesin
+    this.stopCountdown();
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 
 
@@ -140,13 +161,20 @@ export class MainComponent implements OnInit {
       return;
     }
     this.isGameOver = true;
+    this.stopCountdown();
     const dialogRef = this.dialog.open(EndGameComponent, {
       data: this.questions,
+      panelClass: 'game-dialog',
+      maxWidth: '560px',
+      width: '92vw',
     });
-    dialogRef.afterClosed().subscribe((result) => {
-      // Ana menüye dön (tam yeniden yükleme ile oyun durumu sıfırlanır)
-      window.location.href = '/';
-    });
+    dialogRef
+      .afterClosed()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((result) => {
+        // Tam yeniden yükleme ile oyun durumu (sorular, sayaç) sıfırlanır
+        window.location.href = result === 'restart' ? '/passaparola' : '/';
+      });
   }
 
   getQuestions() {
@@ -218,36 +246,85 @@ export class MainComponent implements OnInit {
     }
   }
 
+  /** Saniyeyi mm:ss biçimine çevirir (10 dakika üstünde de doğru çalışır). */
+  private formatTime(totalSeconds: number): string {
+    const safe = Math.max(0, totalSeconds);
+    const minutes = Math.floor(safe / 60);
+    const seconds = safe % 60;
+    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+  }
+
   startCountdown(): void {
-    setTimeout(() => {
-      this.timer--;
-      if(this.timer === 0){
-        this.endGame();
-      } else {
-        if(this.timer % 60 < 10){
-          this.timeCounter = "0"+(this.timer / 60).toString().charAt(0)+":0"+this.timer % 60;
-        } else {
-          this.timeCounter = "0"+(this.timer / 60).toString().charAt(0)+":"+this.timer % 60;
-        }
-          //this.timeCounter = "0"+(this.timer / 60).toString().charAt(0)+":"+this.timer % 60;
-        
-        this.startCountdown();
+    // Çift başlatmaya karşı koruma: ikinci bir sayaç zinciri süreyi hızlandırırdı
+    if (this.countdownStarted || this.isGameOver) {
+      return;
+    }
+    if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
+
+    this.countdownStarted = true;
+    this.warningShown = false;
+    this.timer = this.totalSeconds;
+    this.timeCounter = this.formatTime(this.timer);
+    this.deadline = Date.now() + this.totalSeconds * 1000;
+
+    // Duvar saatine göre hesapladığımız için sekme arka plana atılsa,
+    // tarayıcı zamanlayıcıyı kıssa bile ekrandaki süre gerçek süreyle aynı kalır.
+    this.zone.runOutsideAngular(() => {
+      this.intervalId = setInterval(() => this.tick(), 250);
+    });
+  }
+
+  private tick(): void {
+    const remaining = Math.max(0, Math.ceil((this.deadline - Date.now()) / 1000));
+
+    if (remaining === this.timer) {
+      return; // Görünen değer değişmedi, change detection tetiklemeye gerek yok
+    }
+
+    this.zone.run(() => {
+      this.timer = remaining;
+      this.timeCounter = this.formatTime(remaining);
+
+      if (!this.warningShown && remaining > 0 && remaining <= Math.floor(this.totalSeconds / 2)) {
+        this.warningShown = true;
+        this.openSnackBar('Süre bitiyor. Oyalanma.', 'Devaam');
       }
 
-      if(this.timer === 150){
-        this.openSnackBar("Süre bitiyor. Oyalanma.", "Devaam");
+      if (remaining === 0) {
+        this.stopCountdown();
+        this.endGame();
       }
-    
-    }, 1500);
+    });
+  }
+
+  private stopCountdown(): void {
+    if (this.intervalId !== null) {
+      clearInterval(this.intervalId);
+      this.intervalId = null;
+    }
   }
 
   openStartDialog() {
-    this.dialogRef = this.dialog.open(StartGameComponent,{ disableClose: true });
-    this.dialogRef.afterClosed().subscribe((result) => {
-      this.startCountdown();
+    this.dialogRef = this.dialog.open(StartGameComponent, {
+      disableClose: true,
+      panelClass: 'game-dialog',
+      maxWidth: '520px',
+      width: '92vw',
     });
-
-  } 
+    this.dialogRef
+      .afterClosed()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((result) => {
+        // Dialog seçilen süreyi (saniye) döndürür; yoksa varsayılan 5 dakika
+        const chosen = Number(result);
+        if (Number.isFinite(chosen) && chosen > 0) {
+          this.totalSeconds = chosen;
+        }
+        this.startCountdown();
+      });
+  }
 
   correctSound(){
     const audio = new Audio();
