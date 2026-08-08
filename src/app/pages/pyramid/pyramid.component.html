@@ -9,16 +9,34 @@
   <ng-container *ngIf="pyramid">
     <!-- Piramit gövdesi: tepe (kısa) üstte, taban (uzun) altta -->
     <div class="pyramid">
-      <div
-        class="row"
-        *ngFor="let level of displayRows; let d = index"
-        [ngClass]="rowState(realIndex(d))"
-        [@rowPulse]="rowState(realIndex(d))">
-        <div class="tile" *ngFor="let ch of tilesFor(realIndex(d))" [@tileIn]>
-          {{ ch }}
+      <ng-container *ngFor="let level of displayRows; let d = index">
+        <!-- Bu satırdan bir üst satıra çıkarken düşen harf -->
+        <div
+          class="drop-link"
+          *ngIf="droppedLetter(realIndex(d)) as dropped"
+          [@dropIn]
+          [attr.aria-label]="dropped + ' harfi çıktı'">
+          <span class="drop-chip">
+            <span class="drop-letter">{{ dropped }}</span>
+            <span class="drop-x" aria-hidden="true">✕</span>
+          </span>
         </div>
-      </div>
+
+        <div
+          class="row"
+          [ngClass]="rowState(realIndex(d))"
+          [@rowPulse]="rowState(realIndex(d))">
+          <div class="tile" *ngFor="let ch of tilesFor(realIndex(d))" [@tileIn]>
+            {{ ch }}
+          </div>
+        </div>
+      </ng-container>
     </div>
+
+    <p class="drop-legend" *ngIf="!won && currentLevel > 0">
+      <span class="legend-dot" aria-hidden="true"></span>
+      Çarpılı harf, bir üst kelimeye taşınmayan harftir.
+    </p>
 
     <!-- İpucu ve giriş -->
     <div class="panel" *ngIf="!won" [@shake]="shakeState">

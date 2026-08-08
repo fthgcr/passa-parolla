@@ -47,6 +47,100 @@
   margin-bottom: 8px;
 }
 
+/* Satırlar arasındaki "düşen harf" göstergesi */
+.drop-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  /* Satır aralığından çalıyoruz ki piramit dikeyde şişmesin */
+  margin: clamp(-6px, -0.6vh, -2px) 0;
+  position: relative;
+}
+
+/* Rozetin iki yanına uzanan ince kılavuz çizgiler */
+.drop-link::before,
+.drop-link::after {
+  content: '';
+  width: clamp(18px, 2vw, 34px);
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(218, 81, 81, 0),
+    rgba(218, 81, 81, 0.45)
+  );
+}
+.drop-link::after {
+  transform: rotate(180deg);
+}
+
+.drop-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(22px, 1.3vw, 30px);
+  height: clamp(22px, 1.3vw, 30px);
+  border-radius: 7px;
+  background: rgba(218, 81, 81, 0.16);
+  border: 1px solid rgba(218, 81, 81, 0.5);
+  font-weight: 800;
+  font-size: clamp(12px, 0.8vw, 16px);
+  color: #ff9d9d;
+  line-height: 1;
+}
+
+/* Harfin üstünden geçen çapraz çizgi */
+.drop-letter {
+  position: relative;
+}
+.drop-letter::after {
+  content: '';
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  top: 50%;
+  height: 2px;
+  border-radius: 2px;
+  background: #ff7b7b;
+  transform: rotate(-16deg);
+}
+
+.drop-x {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 13px;
+  height: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #da5151;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.drop-legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 0;
+  font-size: clamp(11px, 0.75vw, 13px);
+  color: rgba(207, 233, 234, 0.55);
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  background: rgba(218, 81, 81, 0.16);
+  border: 1px solid rgba(218, 81, 81, 0.5);
+  flex-shrink: 0;
+}
+
 .row {
   display: flex;
   gap: clamp(6px, 0.7vw, 14px);

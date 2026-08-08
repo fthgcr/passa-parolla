@@ -49,6 +49,16 @@ interface Pyramid {
         ),
       ]),
     ]),
+    // Düşen harf rozeti: satırlar arasında yukarı doğru süzülerek belirir
+    trigger('dropIn', [
+      transition(':enter', [
+        style({ opacity: 0, transform: 'translateY(10px) scale(0.6)' }),
+        animate(
+          '420ms 120ms cubic-bezier(0.34, 1.56, 0.64, 1)',
+          style({ opacity: 1, transform: 'translateY(0) scale(1)' })
+        ),
+      ]),
+    ]),
     // Yanlış cevapta sallanma
     trigger('shake', [
       transition('* => *', [
@@ -139,6 +149,18 @@ export class PyramidComponent implements OnInit {
       return this.levels[realIdx].letters.split('');
     }
     return new Array(this.levels[realIdx].word.length).fill('');
+  }
+
+  /**
+   * levels[i].removed = i. seviyeden bir üst seviyeye çıkarken düşen harf.
+   * Sadece o satır çözülmüş/açılmışsa gösterilir; yoksa bir üst kelime hakkında
+   * bilgi sızdırmış oluruz.
+   */
+  droppedLetter(realIdx: number): string | null {
+    const level = this.levels[realIdx];
+    if (!level || !level.removed) return null;
+    if (!this.solved[realIdx] && !this.revealed[realIdx]) return null;
+    return level.removed;
   }
 
   submit(): void {
