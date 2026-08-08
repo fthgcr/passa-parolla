@@ -1,32 +1,175 @@
-h4 {
-    color: white;
+$green: #3baea0;
+$yellow: #ffe79a;
+$red: #da5151;
+$panel: #3c4f63;
+$ink: #eaf2f4;
+
+/* Dialog yüzeyi global .game-dialog ile koyulaştırılıyor; yine de bileşen
+   kendi rengini taşısın ki başka bir yerde kullanılsa da okunur kalsın. */
+:host {
+  display: block;
+  color: $ink;
+}
+
+.start-dialog {
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.start-title {
+  margin: 0 0 4px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+
+.start-body {
+  max-height: 58vh;
+  overflow-y: auto;
+}
+
+.rule {
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: $ink;
+
+  &.muted {
+    color: rgba(234, 242, 244, 0.68);
+  }
+
+  b {
+    color: #fff;
+  }
+}
+
+.legend {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(234, 242, 244, 0.85);
+
+    + li {
+      margin-top: 8px;
+    }
+
+    b {
+      color: #fff;
+    }
+  }
+}
+
+.dot {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  margin-top: 3px;
+  border-radius: 4px;
+
+  &.solved {
+    background: $green;
+  }
+  &.wrong {
+    background: $red;
+  }
+  &.passed {
+    background: $yellow;
+  }
+}
+
+.section-label {
+  margin: 20px 0 0;
+  font-size: 11px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: rgba(234, 242, 244, 0.5);
 }
 
 .duration-picker {
-    display: flex;
-    gap: 10px;
-    margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .duration-option {
-    flex: 1;
-    padding: 10px 0;
-    border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.35);
-    background: transparent;
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+  flex: 1;
+  padding: 11px 0;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.04);
+  color: $ink;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease,
+    transform 0.15s ease, color 0.2s ease;
 
-    &:hover {
-        border-color: rgba(255, 255, 255, 0.7);
-        transform: translateY(-1px);
-    }
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-1px);
+  }
 
-    &.selected {
-        background: #3baea0;
-        border-color: #3baea0;
-    }
+  &:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+
+  &.selected {
+    background: $green;
+    border-color: $green;
+    color: #06312c;
+  }
+}
+
+.start-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.start-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 11px 22px;
+  background: $green;
+  color: #06312c;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+
+  &:hover {
+    background: lighten($green, 6%);
+    transform: translateY(-1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .start-title {
+    font-size: 19px;
+  }
+  .rule,
+  .legend li {
+    font-size: 14px;
+  }
 }

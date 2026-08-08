@@ -1,37 +1,47 @@
 <div class="start-dialog">
-  <h2 mat-dialog-title style="color: white;">Nasıl Oynanır?</h2>
-  <mat-dialog-content>
-    <h4>
+  <h2 mat-dialog-title class="start-title">Nasıl Oynanır?</h2>
+
+  <mat-dialog-content class="start-body">
+    <p class="rule">
       Her karaktere karşılık gelen sorunun cevabını bulmalısın, cevap o karakter
       ile başlar.
-    </h4>
-    <br />
-    <h4>
-      Örneğin: Bal yapan hayvan? sorusunda aktif karakter A ve bunun cevabı
-      Arı'dır gibi.
-    </h4>
-    <br />
-    <h4>Cevabın 🟩 Doğru ya da 🟥 Yanlış olabilir.</h4>
-    <h4>
-      Eğer cevabı bilmiyorsan 🟨 PAS butonuna bas ya da pas yazıp gönder. Daha
-      sonra o soruya dönebileceksin. Pasladığın soruları süren bitene kadar
-      cevaplayabilirsin.
-    </h4>
-    <br />
-    <h4>Süreni seç:</h4>
+    </p>
+    <p class="rule muted">
+      Örneğin: <em>Bal yapan hayvan?</em> sorusunda aktif karakter <b>A</b> ve
+      bunun cevabı <b>Arı</b>'dır.
+    </p>
+
+    <ul class="legend">
+      <li><span class="dot solved"></span> Cevabın <b>doğru</b> olabilir.</li>
+      <li><span class="dot wrong"></span> Cevabın <b>yanlış</b> olabilir.</li>
+      <li>
+        <span class="dot passed"></span> Bilmiyorsan <b>PAS</b> butonuna bas ya
+        da "pas" yazıp gönder. Pasladığın sorulara süren bitene kadar
+        dönebilirsin.
+      </li>
+    </ul>
+
+    <p class="section-label">Süreni seç</p>
     <div class="duration-picker">
       <button
         type="button"
         *ngFor="let d of durations"
         class="duration-option"
         [class.selected]="d.seconds === selectedSeconds"
+        [attr.aria-pressed]="d.seconds === selectedSeconds"
         (click)="selectDuration(d.seconds)">
         {{ d.label }}
       </button>
     </div>
   </mat-dialog-content>
-  <mat-dialog-actions align="end">
-    <!-- <button mat-button mat-dialog-close>No</button> -->
-    <button mat-button [mat-dialog-close]="selectedSeconds" cdkFocusInitial style="color: white;">Let's Go Abe</button>
+
+  <mat-dialog-actions class="start-actions">
+    <button
+      type="button"
+      class="start-btn"
+      [mat-dialog-close]="selectedSeconds"
+      cdkFocusInitial>
+      Hadi Başlayalım
+    </button>
   </mat-dialog-actions>
 </div>
