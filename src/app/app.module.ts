@@ -19,9 +19,10 @@ import { EndGameComponent } from './pages/end-game/end-game.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { StartGameComponent } from './pages/start-game/start-game.component';
 import { PyramidComponent } from './pages/pyramid/pyramid.component';
+import { MenuComponent } from './pages/menu/menu.component';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, EndGameComponent, StartGameComponent, PyramidComponent],
+  declarations: [AppComponent, MainComponent, EndGameComponent, StartGameComponent, PyramidComponent, MenuComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

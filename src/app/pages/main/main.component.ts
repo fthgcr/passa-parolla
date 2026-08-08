@@ -144,8 +144,8 @@ export class MainComponent implements OnInit {
       data: this.questions,
     });
     dialogRef.afterClosed().subscribe((result) => {
-      //window.location.reload();
-      window.location.href = 'https://passa-parolla.onrender.com/';
+      // Ana menüye dön (tam yeniden yükleme ile oyun durumu sıfırlanır)
+      window.location.href = '/';
     });
   }
 

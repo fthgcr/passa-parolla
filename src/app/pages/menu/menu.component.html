@@ -1,0 +1,38 @@
+<div class="menu-page">
+  <header class="head" [@titleIn]>
+    <h1 class="brand">Passaparola</h1>
+    <p class="tagline">Bir mod seç ve başla</p>
+  </header>
+
+  <div class="cards" [@cardsIn]>
+    <a class="card classic" routerLink="/passaparola">
+      <div class="icon">
+        <span class="ring">A</span>
+        <span class="ring">B</span>
+        <span class="ring">C</span>
+      </div>
+      <h2>Passaparola</h2>
+      <p>
+        A'dan Z'ye her harf için bir soru. Bilemediğine <strong>pas</strong> de,
+        süre dolmadan çemberi tamamla.
+      </p>
+      <span class="play">Oyna →</span>
+    </a>
+
+    <a class="card pyramid" routerLink="/piramit">
+      <div class="icon">
+        <span class="bar b1"></span>
+        <span class="bar b2"></span>
+        <span class="bar b3"></span>
+      </div>
+      <h2>Piramit</h2>
+      <p>
+        Her doğru cevapta bir harf eksilir. Tabandaki uzun kelimeden tepedeki
+        üç harfliye tırman.
+      </p>
+      <span class="play">Oyna →</span>
+    </a>
+  </div>
+
+  <div class="designer">by <a href="https://github.com/fthgcr">Fatih GOCER</a></div>
+</div>
