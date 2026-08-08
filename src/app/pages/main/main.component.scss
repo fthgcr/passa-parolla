@@ -3,6 +3,19 @@ html, body {
   margin: 0; /* Remove default margin */
 }
 
+/* Sayfayı dikeyde dolduran, büyük ekranda ortalanan ve ölçeklenen kapsayıcı */
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: clamp(16px, 2.5vh, 48px) clamp(16px, 4vw, 64px);
+  box-sizing: border-box;
+}
+
 .mode-link {
   position: absolute;
   top: 14px;
@@ -22,25 +35,25 @@ html, body {
 
 .letter-container {
   display: flex;
-  gap: 10px;
+  gap: clamp(8px, 1vw, 22px);
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  min-height: 90px;
+  padding: clamp(12px, 2vh, 32px);
+  min-height: clamp(70px, 8vh, 140px);
   overflow: hidden;
   perspective: 600px;
 }
 
 .letter {
-  width: 50px;
-  height: 50px;
+  width: clamp(46px, 4.5vw, 96px);
+  height: clamp(46px, 4.5vw, 96px);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   background-color: white;
-  font-size: 20px;
+  font-size: clamp(18px, 2vw, 42px);
   color: white;
   will-change: transform;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -59,28 +72,64 @@ html, body {
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-top: 2%;
+  margin-top: clamp(8px, 1.5vh, 24px);
+  transform-origin: top center;
+}
+/* Timer sabit px ile kurulu; büyük ekranlarda düz sayı ile ölçeklenir */
+@media (min-width: 1800px) {
+  .timer-countdown { transform: scale(1.4); }
+}
+@media (min-width: 2600px) {
+  .timer-countdown { transform: scale(1.9); }
 }
 
+.timer-text {
+  font-weight: bold;
+  color: white;
+  margin-top: 25%;
+}
+
+/* Soru alanı kalan boşluğu kaplar ve dikeyde ortalar → giriş aşağıya iner */
 .question-container{
+  flex: 1 1 auto;
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: xx-large;
+  text-align: center;
+  width: 100%;
+  padding: clamp(16px, 4vh, 60px) 0;
 }
 
 .input-container {
-  padding: 20px; /* Optional padding for better spacing */
+  padding: clamp(12px, 2vh, 24px);
   display: flex;
-  justify-content: center; /* Center the input-container horizontally */
-  align-items: flex-end; 
-  margin-top: 13%;/* Align items to the bottom */
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 0;
 }
 
 .input-container form {
   display: flex;
-  flex-direction: row; /* Align form items in a row */
-  align-items: center; /* Center items vertically */
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(8px, 1vw, 18px);
+  width: min(92%, 640px);
+}
+
+.input-container mat-form-field {
+  flex: 1 1 auto;
+  font-size: clamp(15px, 1.1vw, 20px);
+}
+
+.answer-btn {
+  margin: 0 !important;
+  white-space: nowrap;
+  color: white;
+  background-color: #2c5d63;
+  padding: clamp(8px, 0.8vw, 16px) clamp(16px, 1.6vw, 30px) !important;
+  font-size: clamp(14px, 1vw, 19px);
+  height: auto !important;
 }
 
 .mat-form-field {
@@ -126,15 +175,20 @@ h1 {
   font-weight: bolder;
   letter-spacing: 1px;
   color: white;
-  margin: auto;  
-  padding: 5%;
+  margin: 0;
+  padding: 0 clamp(12px, 4vw, 80px);
+  font-size: clamp(24px, 3.2vw, 58px);
+  line-height: 1.35;
+  max-width: 22ch;
 }
 
 .designer {
-  justify-content: end;
+  width: 100%;
+  justify-content: flex-end;
   align-items: flex-end;
   display: flex;
-  margin-top: -1% !important;
+  margin-top: clamp(10px, 2vh, 24px);
+  font-size: clamp(12px, 0.9vw, 16px);
 }
 
 /////

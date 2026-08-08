@@ -1,11 +1,15 @@
 .pyramid-page {
   min-height: 100vh;
-  padding: 16px 16px 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(16px, 2.5vh, 48px) clamp(16px, 4vw, 64px) 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #fff;
   position: relative;
+  box-sizing: border-box;
 }
 
 .mode-link {
@@ -26,6 +30,7 @@
   margin: 10px 0 22px;
   letter-spacing: 1px;
   font-weight: 800;
+  font-size: clamp(22px, 2.4vw, 44px);
 }
 
 .loading {
@@ -38,26 +43,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: clamp(8px, 1vh, 16px);
   margin-bottom: 8px;
 }
 
 .row {
   display: flex;
-  gap: 8px;
+  gap: clamp(6px, 0.7vw, 14px);
   justify-content: center;
   will-change: transform;
 }
 
 .tile {
-  width: 46px;
-  height: 46px;
-  border-radius: 10px;
+  width: clamp(44px, 4vw, 80px);
+  height: clamp(44px, 4vw, 80px);
+  border-radius: clamp(8px, 0.8vw, 14px);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  font-size: 22px;
+  font-size: clamp(20px, 2vw, 38px);
   background: #2c3e50;
   border: 2px solid #46617a;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
@@ -109,14 +114,14 @@
 
 /* İpucu / giriş paneli */
 .panel {
-  margin-top: 22px;
+  margin-top: clamp(18px, 3vh, 40px);
   width: 100%;
-  max-width: 460px;
+  max-width: clamp(460px, 42vw, 720px);
   text-align: center;
 }
 
 .clue-label {
-  font-size: 12px;
+  font-size: clamp(12px, 0.9vw, 16px);
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #8fd6d8;
@@ -124,7 +129,7 @@
 }
 
 .clue {
-  font-size: 18px;
+  font-size: clamp(18px, 1.6vw, 30px);
   line-height: 1.4;
   margin: 0 0 18px;
   min-height: 50px;
@@ -133,8 +138,8 @@
 .answer-input {
   width: 100%;
   box-sizing: border-box;
-  padding: 12px 14px;
-  font-size: 18px;
+  padding: clamp(12px, 1vw, 18px) 14px;
+  font-size: clamp(18px, 1.4vw, 26px);
   text-align: center;
   border-radius: 10px;
   border: 2px solid #46617a;

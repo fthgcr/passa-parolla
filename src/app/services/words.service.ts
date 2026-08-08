@@ -9,7 +9,7 @@ export class WordsService {
   constructor(private http: HttpClient) {}
 
   getJsonData(): Observable<any> {
-    return this.http.get('/assets/words/words.json');
+    return this.http.get('/assets/words/kalan-kelimeler.json');
   }
 
   questions(words: any): any[] {

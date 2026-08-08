@@ -16,7 +16,7 @@
     <div class="container">
       <div class="box-4">
         <div class="loader-4" >
-          <p [@tickAnimation]="timeCounter" style="font-weight: bold; color: white; margin-top: 25%;" >{{timeCounter}}</p>
+          <p [@tickAnimation]="timeCounter" class="timer-text">{{timeCounter}}</p>
           <div class="dbl-spin-1"></div>
           <div class="dbl-spin-2"></div>
         </div>
@@ -43,7 +43,7 @@
         <mat-label>Cevap</mat-label>
         <input [(ngModel)]="userInput" [ngModelOptions]="{standalone: true}" matInput #first>
       </mat-form-field>
-      <button mat-raised-button style="margin-bottom: 10%; width: 20% !important; height: 300% !important; color: white; background-color: #2c5d63;">Evet Abi</button>
+      <button mat-raised-button class="answer-btn">Evet Abi</button>
     </form>
   </div>
 
