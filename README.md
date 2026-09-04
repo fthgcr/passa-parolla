@@ -1,9 +1,10 @@
 # Evet Abi
 
-Türkçe kelime oyunu. Üç mod var:
+Türkçe kelime oyunu. Dört mod var:
 
 - **Passaparola** — A'dan Z'ye her harf için bir soru. Bilemediğine pas de, süre dolmadan çemberi tamamla.
 - **Piramit** — her doğru cevapta bir harf eksilir; tabandaki uzun kelimeden tepedeki üç harfliye tırman.
+- **Klasik** — 6 denemede kelimeyi bul. Wordle kuralları: her harf yeşil/sarı/gri renklenir, tahminler sözlükte olmak zorunda, 4-7 harf seçilebilir, günlük ve serbest mod var.
 - **Gizli Kelime** — 8 denemede gizli kelimeyi bul. Word500 tarzı: hangi harfin doğru olduğu söylenmez, sadece kaç harfin doğru yerde / kelimede / kelimede olmadığı söylenir. 4-7 harf seçilebilir, günlük ve serbest mod var.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.

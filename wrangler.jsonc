@@ -1,0 +1,13 @@
+{
+  // Cloudflare Workers — statik varlık (assets) dağıtımı.
+  // Bu dosya olmadan `wrangler deploy` çerçeveyi kendi algılamaya çalışıyor
+  // ve Angular 17 için "en az 19.0.0 olmalı" hatası veriyor.
+  "name": "evet-abi",
+  "compatibility_date": "2026-01-01",
+  "assets": {
+    // `ng build` çıktısındaki tarayıcı klasörü (prerender edilmiş sayfalar dahil)
+    "directory": "./dist/evet-abi/browser",
+    // Bilinmeyen yollar index.html'e düşsün (Angular router devralsın)
+    "not_found_handling": "single-page-application"
+  }
+}

@@ -1,0 +1,161 @@
+<div class="kl-page">
+  <a class="mode-link" routerLink="/">← Ana Menü</a>
+
+  <header class="head">
+    <h2 class="title">🟩 Klasik</h2>
+    <p class="subtitle">6 denemede kelimeyi bul. Her tahminden sonra harflerin rengi neyi bildiğini söyler.</p>
+  </header>
+
+  <div class="loading" *ngIf="loading">Yükleniyor…</div>
+  <div class="loading" *ngIf="!loading && loadError">Kelime listesi yüklenemedi.</div>
+
+  <!-- ---------------------------------------------------------------- -->
+  <!-- Kurulum                                                          -->
+  <!-- ---------------------------------------------------------------- -->
+  <section class="panel setup" *ngIf="!loading && !loadError && phase === 'setup'" [@panelIn]>
+    <div class="field">
+      <span class="field-label">Kaç harf?</span>
+      <div class="chips">
+        <button
+          *ngFor="let len of lengths"
+          type="button"
+          class="chip"
+          [class.selected]="length === len"
+          (click)="selectLength(len)">
+          {{ len }}
+          <small>{{ poolSize(len) }} kelime</small>
+        </button>
+      </div>
+      <p class="field-note">Hak her uzunlukta 6 — uzun kelime daha zor.</p>
+    </div>
+
+    <div class="field">
+      <span class="field-label">Mod</span>
+      <div class="chips">
+        <button
+          type="button"
+          class="chip wide"
+          [class.selected]="mode === 'daily'"
+          (click)="selectMode('daily')">
+          Günlük
+          <small>Herkese aynı kelime</small>
+        </button>
+        <button
+          type="button"
+          class="chip wide"
+          [class.selected]="mode === 'free'"
+          (click)="selectMode('free')">
+          Serbest
+          <small>Sınırsız, rastgele</small>
+        </button>
+      </div>
+    </div>
+
+    <button type="button" class="btn primary big" (click)="start()">Başla</button>
+
+    <button type="button" class="link-btn" (click)="toggleRules()">
+      {{ showRules ? 'Kuralları gizle' : 'Nasıl oynanır?' }}
+    </button>
+
+    <div class="rules" *ngIf="showRules">
+      <ul>
+        <li>Gizli kelimeyi <strong>6 denemede</strong> bulmaya çalış.</li>
+        <li>
+          Tahminden sonra her harf renklenir:
+          <span class="pill green">yeşil</span> doğru harf doğru yerde,
+          <span class="pill yellow">sarı</span> kelimede var ama yeri yanlış,
+          <span class="pill gray">gri</span> kelimede yok.
+        </li>
+        <li>Tahminin <strong>sözlükte olan bir kelime</strong> olmalı; uydurma harf dizisi kabul edilmez.</li>
+        <li>Aynı harf kelimede <strong>birden fazla kez</strong> geçebilir.</li>
+        <li>Klavyedeki harfler bildiklerine göre kendiliğinden renklenir.</li>
+        <li>Günlük modda kelime herkes için aynıdır ve yarıda bıraksan da kaldığın yerden devam eder.</li>
+      </ul>
+      <p class="rules-note">
+        Daha zorunu arıyorsan <a routerLink="/gizli-kelime">Gizli Kelime</a> modunda hangi harfin
+        hangi renk olduğu söylenmiyor — sadece kaç tane olduğu.
+      </p>
+    </div>
+  </section>
+
+  <!-- ---------------------------------------------------------------- -->
+  <!-- Oyun                                                             -->
+  <!-- ---------------------------------------------------------------- -->
+  <ng-container *ngIf="phase !== 'setup'">
+    <div class="status">
+      <span class="badge">{{ mode === 'daily' ? 'Günlük' : 'Serbest' }}</span>
+      <span class="badge">{{ length }} harf</span>
+      <span class="badge" *ngIf="isPlaying">{{ attemptsLeft }} hak kaldı</span>
+    </div>
+
+    <!-- Tahta -->
+    <div class="board" [@shake]="shakeState">
+      <div class="board-row" *ngFor="let r of rows" [ngClass]="rowClass(r)">
+        <div class="tiles" [@rowIn]="rowClass(r)">
+          <div
+            class="tile"
+            *ngFor="let c of cols"
+            [ngClass]="tileState(r, c)"
+            [class.cursor]="isCursor(r, c)">
+            {{ tileAt(r, c) }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Klavye -->
+    <div class="keyboard" *ngIf="isPlaying">
+      <div class="kb-row" *ngFor="let row of keyboardRows">
+        <button
+          *ngFor="let letter of row"
+          type="button"
+          class="key"
+          [ngClass]="keyClass(letter)"
+          (click)="press(letter)">
+          {{ upper(letter) }}
+        </button>
+      </div>
+
+      <div class="kb-row actions">
+        <button type="button" class="key wide" (click)="backspace()">⌫ Sil</button>
+        <button type="button" class="key wide accent" (click)="submit()">↵ Onayla</button>
+      </div>
+    </div>
+
+    <div class="under-actions" *ngIf="isPlaying">
+      <button type="button" class="link-btn" (click)="giveUp()">Pes et</button>
+      <button type="button" class="link-btn" (click)="backToSetup()">Ayarlar</button>
+    </div>
+
+    <!-- Sonuç -->
+    <div class="panel result" *ngIf="phase === 'won' || phase === 'lost'" [@panelIn]>
+      <h3 *ngIf="phase === 'won'">🎉 Buldun!</h3>
+      <h3 *ngIf="phase === 'lost'">😔 Bu sefer olmadı</h3>
+
+      <p class="result-line" *ngIf="phase === 'won'">
+        {{ guesses.length }} / {{ maxAttempts }} denemede.
+      </p>
+
+      <div class="answer" *ngIf="secret">
+        <span class="answer-word">{{ upper(secret.w) }}</span>
+        <p class="answer-meaning">{{ secret.m }}</p>
+      </div>
+
+      <div class="result-actions">
+        <button type="button" class="btn primary" (click)="playAgain()">
+          {{ mode === 'daily' ? 'Başka bir oyun' : 'Yeni Kelime' }}
+        </button>
+        <button type="button" class="btn ghost" (click)="share()">Sonucu kopyala</button>
+      </div>
+    </div>
+  </ng-container>
+
+  <div class="designer">
+    <a class="gh-badge" href="https://github.com/fthgcr" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16" aria-hidden="true">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+      </svg>
+      <span class="gh-name">Fatih GÖCER</span>
+    </a>
+  </div>
+</div>

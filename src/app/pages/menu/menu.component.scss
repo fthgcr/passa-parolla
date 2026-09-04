@@ -200,6 +200,48 @@
   width: clamp(80px, 6.7vw, 126px);
 }
 
+/* Klasik ikonu: renkli harf karoları */
+.klasik .icon {
+  gap: 7px;
+}
+
+.box {
+  width: clamp(30px, 2vw, 42px);
+  height: clamp(30px, 2vw, 42px);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: clamp(14px, 0.95vw, 19px);
+  color: #0d2119;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.box.g {
+  background: #3fa87a;
+}
+.box.y {
+  background: #d9a441;
+  color: #241a05;
+}
+.box.x {
+  background: #5b6b7a;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.card:hover .box.g {
+  transform: rotateX(360deg);
+}
+.card:hover .box.y {
+  transform: rotateX(360deg);
+  transition-delay: 0.08s;
+}
+.card:hover .box.x {
+  transform: rotateX(360deg);
+  transition-delay: 0.16s;
+}
+
 /* Gizli Kelime ikonu: sayısal geri bildirim karoları */
 .secret .icon {
   gap: 7px;
