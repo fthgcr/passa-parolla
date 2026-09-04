@@ -17,9 +17,18 @@ import { EndGameComponent } from './pages/end-game/end-game.component';
 import { StartGameComponent } from './pages/start-game/start-game.component';
 import { PyramidComponent } from './pages/pyramid/pyramid.component';
 import { MenuComponent } from './pages/menu/menu.component';
+import { GizliKelimeComponent } from './pages/gizli-kelime/gizli-kelime.component';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, EndGameComponent, StartGameComponent, PyramidComponent, MenuComponent],
+  declarations: [
+    AppComponent,
+    MainComponent,
+    EndGameComponent,
+    StartGameComponent,
+    PyramidComponent,
+    MenuComponent,
+    GizliKelimeComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
