@@ -40,3 +40,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# TDK ham verisi ve frekans listesi (build girdisi, repoya girmez)
+data/

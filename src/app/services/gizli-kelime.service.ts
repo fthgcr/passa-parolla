@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, forkJoin, map, of } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 
 /** Havuzdaki tek bir kelime: w = kelime, m = anlamı */
 export interface SecretWord {
@@ -26,6 +27,18 @@ export interface Guess {
 
 export type WordPool = { [length: string]: SecretWord[] };
 
+/**
+ * Günlük kelime takvimi — build sırasında üretiliyor (scripts/generate-takvim.js).
+ * Havuz burada client'ta kalmak zorunda (hint / remainingCount tüm adayları
+ * tarıyor); takvim yalnızca günün kelimesini sabitlemek için.
+ */
+export interface Takvim {
+  uretildi: string;
+  baslangic: string;
+  sayilar: { [length: string]: number };
+  gunler: { [dateKey: string]: { [length: string]: SecretWord } };
+}
+
 export const TR_ALPHABET = 'abcçdefgğhıijklmnoöprsştuüvyz'.split('');
 /** Bilinmeyen harf yer tutucusu (boşluk tuşu) */
 export const BLANK = '_';
@@ -34,8 +47,22 @@ export const BLANK = '_';
 export class GizliKelimeService {
   constructor(private http: HttpClient) {}
 
+  /** getPool() sırasında dolar; pickDaily buradan okur */
+  private takvim: Takvim | null = null;
+
   getPool(): Observable<WordPool> {
-    return this.http.get<WordPool>('/assets/words/gizli-kelime.json');
+    return forkJoin({
+      pool: this.http.get<WordPool>('/assets/words/gizli-kelime.json'),
+      // Takvim yoksa oyun eski yönteme düşsün, patlamasın.
+      takvim: this.http
+        .get<Takvim>('/assets/words/gizli-takvim.json')
+        .pipe(catchError(() => of(null))),
+    }).pipe(
+      map(({ pool, takvim }) => {
+        this.takvim = takvim;
+        return pool || {};
+      })
+    );
   }
 
   // --- Geri bildirim -------------------------------------------------------
@@ -126,8 +153,22 @@ export class GizliKelimeService {
     return Math.abs(h) % poolSize;
   }
 
+  /**
+   * Günün kelimesi. Önce takvime bakılır; takvim yoksa ya da o gün
+   * programlanmamışsa eski hash yöntemine düşülür.
+   */
   pickDaily(pool: SecretWord[], length: number, dateKey = this.todayKey()): SecretWord {
+    const planlanan = this.takvim?.gunler?.[dateKey]?.[String(length)];
+    if (planlanan) return planlanan;
     return pool[this.dailyIndex(dateKey, length, pool.length)];
+  }
+
+  /** Takvimin son günü — bitmeden yenisini üretmek için */
+  takvimSonGun(): string | null {
+    const gunler = this.takvim?.gunler;
+    if (!gunler) return null;
+    const keys = Object.keys(gunler);
+    return keys.length ? keys[keys.length - 1] : null;
   }
 
   pickRandom(pool: SecretWord[]): SecretWord {

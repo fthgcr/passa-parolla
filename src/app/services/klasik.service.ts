@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, forkJoin, map } from 'rxjs';
+import { Observable, forkJoin, map, of } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 import {
   TR_ALPHABET,
   isTrLetter,
@@ -27,10 +28,23 @@ export interface KlasikGuess {
 export type AnswerPool = { [length: string]: KlasikWord[] };
 export type ValidPool = { [length: string]: string[] };
 
+/**
+ * Günlük kelime takvimi — build sırasında üretiliyor (scripts/generate-takvim.js).
+ * Kelime artık havuzdan hash ile seçilmiyor: havuzu yenilediğimizde programlanmış
+ * günler oynamasın ve aynı kelime yıl içinde tekrar etmesin diye.
+ */
+export interface Takvim {
+  uretildi: string;
+  baslangic: string;
+  sayilar: { [length: string]: number };
+  gunler: { [dateKey: string]: { [length: string]: KlasikWord } };
+}
+
 export interface KlasikData {
   answers: AnswerPool;
   valid: { [length: string]: Set<string> };
   validCount: { [length: string]: number };
+  takvim: Takvim | null;
 }
 
 export { TR_ALPHABET };
@@ -39,20 +53,28 @@ export { TR_ALPHABET };
 export class KlasikService {
   constructor(private http: HttpClient) {}
 
-  /** Cevap havuzu + geçerli tahmin sözlüğü birlikte yüklenir */
+  /** load() sırasında dolar; pickDaily buradan okur */
+  private takvim: Takvim | null = null;
+
+  /** Cevap havuzu + geçerli tahmin sözlüğü + günlük takvim birlikte yüklenir */
   load(): Observable<KlasikData> {
     return forkJoin({
       answers: this.http.get<AnswerPool>('/assets/words/klasik.json'),
       valid: this.http.get<ValidPool>('/assets/words/klasik-gecerli.json'),
+      // Takvim yoksa oyun eski yönteme düşsün, patlamasın.
+      takvim: this.http
+        .get<Takvim>('/assets/words/klasik-takvim.json')
+        .pipe(catchError(() => of(null))),
     }).pipe(
-      map(({ answers, valid }) => {
+      map(({ answers, valid, takvim }) => {
         const sets: { [length: string]: Set<string> } = {};
         const counts: { [length: string]: number } = {};
         for (const len of Object.keys(valid || {})) {
           sets[len] = new Set(valid[len]);
           counts[len] = valid[len].length;
         }
-        return { answers: answers || {}, valid: sets, validCount: counts };
+        this.takvim = takvim;
+        return { answers: answers || {}, valid: sets, validCount: counts, takvim };
       })
     );
   }
@@ -123,8 +145,22 @@ export class KlasikService {
     return seededIndex(`klasik#${dateKey}#${length}`, poolSize);
   }
 
+  /**
+   * Günün kelimesi. Önce takvime bakılır; takvim yoksa ya da o gün
+   * programlanmamışsa eski hash yöntemine düşülür.
+   */
   pickDaily(pool: KlasikWord[], length: number, dateKey = this.todayKey()): KlasikWord {
+    const planlanan = this.takvim?.gunler?.[dateKey]?.[String(length)];
+    if (planlanan) return planlanan;
     return pool[this.dailyIndex(dateKey, length, pool.length)];
+  }
+
+  /** Takvimin son günü — bitmeden yenisini üretmek için */
+  takvimSonGun(): string | null {
+    const gunler = this.takvim?.gunler;
+    if (!gunler) return null;
+    const keys = Object.keys(gunler);
+    return keys.length ? keys[keys.length - 1] : null;
   }
 
   pickRandom(pool: KlasikWord[]): KlasikWord {

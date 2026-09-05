@@ -7,7 +7,12 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:evet-abi": "node dist/evet-abi/server/server.mjs"
+    "serve:ssr:evet-abi": "node dist/evet-abi/server/server.mjs",
+    "sozluk:cek": "node scripts/tdk-fetch.js",
+    "sozluk:kur": "node scripts/build-sozluk.js",
+    "sozluk:havuz": "node scripts/generate-klasik.js && node scripts/generate-gizli-kelime.js && node scripts/generate-pyramids.js && node scripts/generate-takvim.js",
+    "sozluk:hepsi": "npm run sozluk:cek && npm run sozluk:kur && npm run sozluk:havuz",
+    "sozluk:takvim": "node scripts/generate-takvim.js"
   },
   "private": true,
   "dependencies": {
