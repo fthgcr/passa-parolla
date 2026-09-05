@@ -37,6 +37,8 @@ const STORAGE_PREFIX = 'evetabi:gizli-kelime';
 interface SavedGame {
   guesses: Guess[];
   marks: { [letter: string]: Mark };
+  /** Tahtadaki kutu notlari: anahtar "satir:sutun" */
+  tileMarks?: { [cell: string]: Mark };
   phase: Phase;
 }
 
@@ -121,6 +123,8 @@ export class GizliKelimeComponent implements OnInit {
   guesses: Guess[] = [];
   input: string[] = [];
   marks: { [letter: string]: Mark } = {};
+  /** Oyuncunun tahtadaki kutulara verdigi renk notu; anahtar "satir:sutun" */
+  tileMarks: { [cell: string]: Mark } = {};
 
   shakeState = 0;
   hintWord: string | null = null;
@@ -181,6 +185,7 @@ export class GizliKelimeComponent implements OnInit {
       if (saved) {
         this.guesses = saved.guesses;
         this.marks = saved.marks || {};
+        this.tileMarks = saved.tileMarks || {};
         this.phase = saved.phase;
         this.refreshRemaining();
         return;
@@ -209,6 +214,7 @@ export class GizliKelimeComponent implements OnInit {
     this.guesses = [];
     this.input = [];
     this.marks = {};
+    this.tileMarks = {};
     this.hintWord = null;
     this.hintCount = 0;
     this.cols = Array.from({ length: this.length }, (_, i) => i);
@@ -353,11 +359,51 @@ export class GizliKelimeComponent implements OnInit {
 
   clearMarks(): void {
     this.marks = {};
+    this.tileMarks = {};
     this.save();
   }
 
   markClass(letter: string): string {
     return ['none', 'red', 'yellow', 'green'][this.markOf(letter)];
+  }
+
+  // --- Tahtada kutu boyama (Word500 tarzi) ---------------------------------
+
+  private tileKey(row: number, col: number): string {
+    return `${row}:${col}`;
+  }
+
+  /** Sadece onaylanmis tahmin satirlarindaki gercek harfler boyanabilir */
+  canMarkTile(row: number, col: number): boolean {
+    if (row >= this.guesses.length) return false;
+    return this.guesses[row].letters[col] !== BLANK;
+  }
+
+  tileMarkOf(row: number, col: number): Mark {
+    return this.tileMarks[this.tileKey(row, col)] || 0;
+  }
+
+  tileMarkClass(row: number, col: number): string {
+    return ['mark-none', 'mark-red', 'mark-yellow', 'mark-green'][this.tileMarkOf(row, col)];
+  }
+
+  /**
+   * Kutuya tiklayinca renk sirayla doner: renksiz -> yesil -> sari -> kirmizi.
+   * Gizli kelimede ayni harf iki kez gecmedigi icin harfin durumu evrenseldir;
+   * bu yuzden alttaki alfabe notu da ayni renge cekilir.
+   */
+  cycleTileMark(row: number, col: number): void {
+    if (!this.canMarkTile(row, col)) return;
+    const order: Mark[] = [0, 3, 2, 1];
+    const current = this.tileMarkOf(row, col);
+    const next = order[(order.indexOf(current) + 1) % order.length];
+
+    this.tileMarks = { ...this.tileMarks, [this.tileKey(row, col)]: next };
+
+    const letter = this.guesses[row].letters[col];
+    this.marks = { ...this.marks, [letter]: next };
+
+    this.save();
   }
 
   // --- Klavye --------------------------------------------------------------
@@ -403,6 +449,7 @@ export class GizliKelimeComponent implements OnInit {
       const data: SavedGame = {
         guesses: this.guesses,
         marks: this.marks,
+        tileMarks: this.tileMarks,
         phase: this.phase,
       };
       localStorage.setItem(this.storageKey(), JSON.stringify(data));

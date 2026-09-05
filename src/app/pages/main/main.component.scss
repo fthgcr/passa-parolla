@@ -102,7 +102,7 @@ html, body {
   /* Sayaç çemberin ortasına oturuyor ve orada büyük görünmeli.
      Loader kutusunun kendi iç boşlukları yüzünden görsel merkez biraz
      yukarıda kalıyor; --timer-shift onu çemberin tam ortasına indiriyor. */
-  --timer-scale: 1.9;
+  --timer-scale: 1.4;
   --timer-shift: 23px;
 
   display: grid;
@@ -664,7 +664,7 @@ background: red;
 
   .stage.ring-mode {
     --ring-size: min(92vw, 44vh, 400px);
-    --timer-scale: 1.5;
+    --timer-scale: 1.15;
     --timer-shift: 15px;
   }
 

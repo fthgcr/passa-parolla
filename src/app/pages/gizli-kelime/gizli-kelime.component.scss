@@ -312,7 +312,7 @@ $red: #da5151;
   font-weight: 800;
   font-size: clamp(17px, 1.1vw, 24px);
   box-sizing: border-box;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.12s ease;
 
   &.blank {
     color: rgba(207, 233, 234, 0.45);
@@ -322,6 +322,45 @@ $red: #da5151;
     border-color: $accent;
     box-shadow: 0 0 0 3px rgba(53, 188, 191, 0.18);
   }
+
+  /* Onaylanmis tahmin harfleri: oyuncu tiklayarak kendi rengini verebilir */
+  &.markable {
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+    &:hover {
+      border-color: rgba(127, 227, 229, 0.65);
+    }
+
+    &:active {
+      transform: scale(0.94);
+    }
+  }
+
+  &.mark-green {
+    background: rgba(63, 168, 122, 0.3);
+    border-color: rgba(63, 168, 122, 0.85);
+  }
+
+  &.mark-yellow {
+    background: rgba(217, 164, 65, 0.28);
+    border-color: rgba(217, 164, 65, 0.85);
+  }
+
+  &.mark-red {
+    background: rgba(218, 81, 81, 0.28);
+    border-color: rgba(218, 81, 81, 0.8);
+  }
+}
+
+/* Tahtanin altindaki kisa aciklama */
+.board-legend {
+  margin: -6px 0 14px;
+  font-size: 12px;
+  text-align: center;
+  color: rgba(207, 233, 234, 0.55);
+  line-height: 1.9;
 }
 
 /* Sayısal geri bildirim: hangi harf olduğu değil, kaç tane olduğu */

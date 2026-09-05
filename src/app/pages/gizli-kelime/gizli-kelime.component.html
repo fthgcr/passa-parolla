@@ -67,6 +67,7 @@
         </li>
         <li><strong>Hangi harfin</strong> hangi renk olduğu söylenmez — onu sen çözeceksin.</li>
         <li>Bilmediğin harf yerine <strong>boşluk tuşu</strong> ile <code>_</code> koyabilirsin; o kutu hiçbir sayıya girmez.</li>
+        <li>Tahmin ettikten sonra <strong>tahtadaki harflere tıklayarak</strong> kendi renk notunu tut: yeşil → sarı → kırmızı → renksiz.</li>
         <li>Alttaki alfabede harflere tıklayarak kendi notunu tut: kırmızı → sarı → yeşil.</li>
         <li>Gizli kelimede aynı harf iki kez geçmez.</li>
       </ul>
@@ -91,8 +92,12 @@
           <div
             class="tile"
             *ngFor="let c of cols"
+            [ngClass]="tileMarkClass(r, c)"
             [class.blank]="tileAt(r, c) === blank"
-            [class.cursor]="isCursor(r, c)">
+            [class.cursor]="isCursor(r, c)"
+            [class.markable]="canMarkTile(r, c)"
+            [attr.title]="canMarkTile(r, c) ? 'Tıkla: yeşil, sarı, kırmızı' : null"
+            (click)="cycleTileMark(r, c)">
             {{ tileAt(r, c) }}
           </div>
         </div>
@@ -110,6 +115,13 @@
         </div>
       </div>
     </div>
+
+    <p class="board-legend" *ngIf="isPlaying && guesses.length">
+      Tahmin harflerine tıkla → kendi renk notun:
+      <span class="pill green">yeşil</span>
+      <span class="pill yellow">sarı</span>
+      <span class="pill red">kırmızı</span>
+    </p>
 
     <!-- İpucu -->
     <div class="hint-bar" *ngIf="isPlaying">
