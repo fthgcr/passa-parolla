@@ -91,10 +91,12 @@ export class KlasikComponent implements OnInit {
   readonly maxAttempts = MAX_ATTEMPTS;
   readonly lengths = LENGTHS;
   readonly alphabet = TR_ALPHABET;
+  // Türkçe Q klavye dizilimi. Fiziksel Q klavyedeki q/w/x tuşları Türk
+  // alfabesinde olmadığı için yer almıyor; kalan 29 harf aynı sırada.
   readonly keyboardRows = [
-    'abcçdefgğh'.split(''),
-    'ıijklmnoöp'.split(''),
-    'rsştuüvyz'.split(''),
+    'ertyuıopğü'.split(''),
+    'asdfghjklşi'.split(''),
+    'zcvbnmöç'.split(''),
   ];
   readonly rows: number[] = Array.from({ length: MAX_ATTEMPTS }, (_, i) => i);
 
@@ -275,12 +277,8 @@ export class KlasikComponent implements OnInit {
 
     if (this.service.isWin(states)) {
       this.phase = 'won';
-      this.play('correct');
     } else if (this.guesses.length >= MAX_ATTEMPTS) {
       this.phase = 'lost';
-      this.play('incorrect');
-    } else {
-      this.play('incorrect');
     }
 
     this.save();
@@ -417,16 +415,5 @@ export class KlasikComponent implements OnInit {
 
   toggleRules(): void {
     this.showRules = !this.showRules;
-  }
-
-  private play(kind: 'correct' | 'incorrect'): void {
-    if (!this.isBrowser) return;
-    const audio = new Audio();
-    audio.src =
-      kind === 'correct'
-        ? '../assets/sound/correct.mp3'
-        : '../assets/sound/incorrect.wav';
-    audio.load();
-    audio.play().catch(() => {});
   }
 }

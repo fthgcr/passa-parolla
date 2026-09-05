@@ -101,10 +101,12 @@ export class GizliKelimeComponent implements OnInit {
   readonly blank = BLANK;
   readonly alphabet = TR_ALPHABET;
   /** Ekran klavyesi satırları (Türkçe alfabe, okunur şekilde bölünmüş) */
+  // Türkçe Q klavye dizilimi. Fiziksel Q klavyedeki q/w/x tuşları Türk
+  // alfabesinde olmadığı için yer almıyor; kalan 29 harf aynı sırada.
   readonly keyboardRows = [
-    'abcçdefgğh'.split(''),
-    'ıijklmnoöp'.split(''),
-    'rsştuüvyz'.split(''),
+    'ertyuıopğü'.split(''),
+    'asdfghjklşi'.split(''),
+    'zcvbnmöç'.split(''),
   ];
 
   phase: Phase = 'setup';
@@ -287,12 +289,8 @@ export class GizliKelimeComponent implements OnInit {
 
     if (feedback.green === this.length) {
       this.phase = 'won';
-      this.play('correct');
     } else if (this.guesses.length >= MAX_ATTEMPTS) {
       this.phase = 'lost';
-      this.play('incorrect');
-    } else {
-      this.play('incorrect');
     }
 
     this.refreshRemaining();
@@ -481,16 +479,5 @@ export class GizliKelimeComponent implements OnInit {
 
   toggleRules(): void {
     this.showRules = !this.showRules;
-  }
-
-  private play(kind: 'correct' | 'incorrect'): void {
-    if (!this.isBrowser) return;
-    const audio = new Audio();
-    audio.src =
-      kind === 'correct'
-        ? '../assets/sound/correct.mp3'
-        : '../assets/sound/incorrect.wav';
-    audio.load();
-    audio.play().catch(() => {});
   }
 }

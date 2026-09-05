@@ -1,9 +1,11 @@
 .pyramid-page {
+  --page-pad: clamp(16px, 4vw, 64px);
+
   min-height: 100vh;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: clamp(16px, 2.5vh, 48px) clamp(16px, 4vw, 64px) 40px;
+  padding: clamp(16px, 2.5vh, 48px) var(--page-pad) 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,6 +42,18 @@
 
 /* Piramit gövdesi */
 .pyramid {
+  /* --cols şablondan geliyor: en uzun (taban) kelimenin harf sayısı.
+     Taş boyutu buna göre hesaplanır ki taban satırı hiçbir ekranda taşmasın. */
+  --cols: 8;
+  --tile-gap: clamp(4px, 0.7vw, 14px);
+  --tile-size: min(
+    clamp(42px, 2.3vw, 62px),
+    calc(
+      (100vw - 2 * var(--page-pad, 16px) - 6px - (var(--cols) - 1) * var(--tile-gap)) /
+        var(--cols)
+    )
+  );
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,20 +157,24 @@
 
 .row {
   display: flex;
-  gap: clamp(6px, 0.7vw, 14px);
+  gap: var(--tile-gap);
   justify-content: center;
+  max-width: 100%;
   will-change: transform;
 }
 
 .tile {
-  width: clamp(42px, 2.3vw, 62px);
-  height: clamp(42px, 2.3vw, 62px);
+  width: var(--tile-size);
+  height: var(--tile-size);
+  flex: 0 0 auto;
+  /* Kenarlık genişliğe dahil olsun — yoksa satır hesaplanandan 2px/karo taşıyor */
+  box-sizing: border-box;
   border-radius: clamp(8px, 0.6vw, 12px);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  font-size: clamp(19px, 1.1vw, 28px);
+  font-size: min(clamp(19px, 1.1vw, 28px), calc(var(--tile-size) * 0.5));
   background: #2c3e50;
   border: 2px solid #46617a;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
@@ -210,7 +228,7 @@
 .panel {
   margin-top: clamp(18px, 3vh, 40px);
   width: 100%;
-  max-width: clamp(460px, 42vw, 720px);
+  max-width: min(100%, clamp(460px, 42vw, 720px));
   text-align: center;
 }
 
@@ -295,4 +313,47 @@
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+/* --- Mobil --- */
+@media (max-width: 560px) {
+  .pyramid-page {
+    padding-bottom: 24px;
+  }
+
+  .mode-link {
+    top: 12px;
+    left: 12px;
+    font-size: 13px;
+  }
+
+  .title {
+    margin: 6px 0 14px;
+    font-size: 20px;
+  }
+
+  .clue {
+    font-size: 16px;
+    margin-bottom: 14px;
+    min-height: 0;
+  }
+
+  .clue-label {
+    font-size: 11px;
+  }
+
+  .answer-input {
+    /* 16px altı yazı tipi iOS'ta odaklanınca sayfayı zoomluyor */
+    font-size: 17px;
+    padding: 12px 14px;
+  }
+
+  .btn {
+    flex: 1 1 0;
+    padding: 12px 12px;
+  }
+
+  .designer {
+    padding-top: 18px;
+  }
 }

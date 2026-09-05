@@ -133,6 +133,11 @@ export class PyramidComponent implements OnInit {
     return this.levels.slice().reverse();
   }
 
+  /** Taban satırındaki harf sayısı — taş boyutu CSS'te buna göre hesaplanıyor. */
+  get baseCols(): number {
+    return this.levels.reduce((max, l) => Math.max(max, l.word.length), 3);
+  }
+
   realIndex(displayIdx: number): number {
     return this.levels.length - 1 - displayIdx;
   }

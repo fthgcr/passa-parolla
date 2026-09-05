@@ -75,6 +75,10 @@ export class MainComponent implements OnInit, OnDestroy {
   letters: string[] = 'ABCÇDEFGHIJKLMNOÖPRSŞTUÜVYZ'.split('');
   selectedIndex: number = 0;
 
+  /** Harf görünümü: 'strip' kayan şerit, 'ring' klasik rosco çemberi. */
+  viewMode: 'strip' | 'ring' = 'strip';
+  private readonly viewKey = 'evetabi.passaparola.view';
+
   /** Oyunun toplam süresi (saniye). Başlangıç ekranından seçilir. */
   totalSeconds: number = 300;
   /** Kalan süre (saniye) — her zaman gerçek geçen süreden türetilir. */
@@ -97,9 +101,49 @@ export class MainComponent implements OnInit, OnDestroy {
     if (!isPlatformBrowser(this.platformId)) {
       return;
     }
+    this.restoreViewMode();
     this.getQuestions();
     this.openStartDialog();
     //this.test();
+  }
+
+  // --- Harf görünümü ------------------------------------------------------
+
+  setViewMode(mode: 'strip' | 'ring'): void {
+    if (this.viewMode === mode) return;
+    this.viewMode = mode;
+    if (!isPlatformBrowser(this.platformId)) return;
+    try {
+      localStorage.setItem(this.viewKey, mode);
+    } catch {
+      // Gizli sekmede / depolama kapalıysa sessizce geç
+    }
+  }
+
+  private restoreViewMode(): void {
+    try {
+      const saved = localStorage.getItem(this.viewKey);
+      if (saved === 'ring' || saved === 'strip') {
+        this.viewMode = saved;
+      }
+    } catch {
+      // Depolama okunamıyorsa varsayılan görünümde kal
+    }
+  }
+
+  /** Paslanan harfin zemini açık sarı; beyaz yazı okunmuyor, koyulaştırıyoruz. */
+  isPassed(letter: string): boolean {
+    const q = this.questions.find((question) => question.mainKey === letter);
+    return q?.situation === 'p';
+  }
+
+  /**
+   * Çemberdeki i. harfin yerleşimi. Harf, merkezden dışa doğru itiliyor;
+   * ikinci rotate ile tekrar dikleştirilerek yazı düz kalıyor.
+   */
+  ringTransform(index: number): string {
+    const angle = (360 / this.letters.length) * index - 90;
+    return `rotate(${angle}deg) translate(var(--ring-r)) rotate(${-angle}deg)`;
   }
 
   ngOnDestroy(): void {

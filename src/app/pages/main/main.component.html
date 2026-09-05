@@ -1,24 +1,81 @@
 <a class="mode-link" routerLink="/">← Ana Menü</a>
 
-<div class="letter-container">
+<!-- Harf görünümü seçici: şerit (varsayılan) / çember (klasik rosco) -->
+<div class="view-switch" role="group" aria-label="Harf görünümü">
+  <button
+    type="button"
+    class="vs-btn"
+    [class.on]="viewMode === 'strip'"
+    [attr.aria-pressed]="viewMode === 'strip'"
+    title="Şerit görünüm"
+    (click)="setViewMode('strip')">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="5" cy="12" r="2.4" />
+      <circle cx="12" cy="12" r="3.4" />
+      <circle cx="19" cy="12" r="2.4" />
+    </svg>
+    <span class="vs-label">Şerit</span>
+  </button>
+  <button
+    type="button"
+    class="vs-btn"
+    [class.on]="viewMode === 'ring'"
+    [attr.aria-pressed]="viewMode === 'ring'"
+    title="Çember görünüm"
+    (click)="setViewMode('ring')">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="4.2" r="2" />
+      <circle cx="17.5" cy="6.5" r="2" />
+      <circle cx="19.8" cy="12" r="2" />
+      <circle cx="17.5" cy="17.5" r="2" />
+      <circle cx="12" cy="19.8" r="2" />
+      <circle cx="6.5" cy="17.5" r="2" />
+      <circle cx="4.2" cy="12" r="2" />
+      <circle cx="6.5" cy="6.5" r="2" />
+    </svg>
+    <span class="vs-label">Çember</span>
+  </button>
+</div>
+
+<div class="stage" [class.ring-mode]="viewMode === 'ring'">
+  <!-- Şerit görünüm: aktif harfin çevresindeki 7 harf kayar -->
+  <div class="letter-container" *ngIf="viewMode === 'strip'">
     <div
       class="letter"
       *ngFor="let letter of getVisibleLetters(); let i = index; trackBy: trackByFn"
       [@slideAnimation]
-      [style.background-color]="setBackground(letter)" 
+      [style.background-color]="setBackground(letter)"
+      [class.passed]="isPassed(letter)"
       [ngClass]="{ active: letter === letters[selectedIndex]}">
       {{ letter }}
     </div>
-</div>
+  </div>
 
-<div class="timer-countdown">
-  <div class="frame">
-    <div class="container">
-      <div class="box-4">
-        <div class="loader-4" >
-          <p [@tickAnimation]="timeCounter" class="timer-text">{{timeCounter}}</p>
-          <div class="dbl-spin-1"></div>
-          <div class="dbl-spin-2"></div>
+  <!-- Çember görünüm: bütün alfabe rosco düzeninde, sayaç ortada -->
+  <div class="rosco" *ngIf="viewMode === 'ring'">
+    <div
+      class="ring-slot"
+      *ngFor="let letter of letters; let i = index; trackBy: trackByFn"
+      [style.transform]="ringTransform(i)">
+      <div
+        class="ring-letter"
+        [style.background-color]="setBackground(letter)"
+        [class.passed]="isPassed(letter)"
+        [class.active]="i === selectedIndex">
+        {{ letter }}
+      </div>
+    </div>
+  </div>
+
+  <div class="timer-countdown">
+    <div class="frame">
+      <div class="container">
+        <div class="box-4">
+          <div class="loader-4" >
+            <p [@tickAnimation]="timeCounter" class="timer-text">{{timeCounter}}</p>
+            <div class="dbl-spin-1"></div>
+            <div class="dbl-spin-2"></div>
+          </div>
         </div>
       </div>
     </div>

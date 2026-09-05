@@ -287,3 +287,61 @@
   justify-content: center;
   width: 100%;
 }
+
+/* --------------------------------------------------------------- Mobil */
+
+@media (max-width: 560px) {
+  .menu-page {
+    justify-content: flex-start;
+    padding: 22px 16px 24px;
+  }
+
+  .head {
+    margin-bottom: 20px;
+  }
+
+  .brand {
+    font-size: 30px;
+  }
+
+  .tagline {
+    margin-top: 8px;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+  }
+
+  /* Kartlar tek sütun ve daha derli toplu — ekranda birden fazlası görünsün */
+  .cards {
+    gap: 12px;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    max-width: none;
+    padding: 16px 16px 18px;
+    border-radius: 16px;
+  }
+
+  .icon {
+    height: 42px;
+  }
+
+  .card h2 {
+    margin: 10px 0 6px;
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .play {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .designer {
+    margin-top: 22px;
+  }
+}

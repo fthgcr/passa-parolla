@@ -27,8 +27,13 @@ $ink: #eaf2f4;
 }
 
 .start-body {
-  max-height: 58vh;
+  max-height: 52vh;
   overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.duration-section {
+  flex-shrink: 0;
 }
 
 .rule {
@@ -54,10 +59,12 @@ $ink: #eaf2f4;
   background: rgba(0, 0, 0, 0.18);
   border: 1px solid rgba(255, 255, 255, 0.07);
 
+  /* Not: satırı flex yapmayın — metin düğümleri ayrı flex item'a dönüşüp
+     uzun cümle dar bir sütuna sıkışıyordu (mobilde 8 satıra kadar taşıyordu). */
   li {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
+    display: block;
+    position: relative;
+    padding-left: 24px;
     font-size: 14px;
     line-height: 1.5;
     color: rgba(234, 242, 244, 0.85);
@@ -73,10 +80,11 @@ $ink: #eaf2f4;
 }
 
 .dot {
-  flex-shrink: 0;
+  position: absolute;
+  left: 0;
+  top: 4px;
   width: 14px;
   height: 14px;
-  margin-top: 3px;
   border-radius: 4px;
 
   &.solved {
@@ -171,5 +179,28 @@ $ink: #eaf2f4;
   .rule,
   .legend li {
     font-size: 14px;
+  }
+
+  .start-body {
+    max-height: 46vh;
+  }
+
+  .section-label {
+    margin-top: 16px;
+  }
+
+  .duration-option {
+    padding: 13px 0;
+  }
+
+  /* Tam genişlik buton — başparmakla rahat basılır */
+  .start-actions {
+    justify-content: stretch;
+  }
+
+  .start-btn {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
   }
 }

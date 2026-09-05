@@ -8,7 +8,7 @@
 
   <ng-container *ngIf="pyramid">
     <!-- Piramit gövdesi: tepe (kısa) üstte, taban (uzun) altta -->
-    <div class="pyramid">
+    <div class="pyramid" [style.--cols]="baseCols">
       <ng-container *ngFor="let level of displayRows; let d = index">
         <!-- Bu satırdan bir üst satıra çıkarken düşen harf -->
         <div

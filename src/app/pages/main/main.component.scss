@@ -33,6 +33,147 @@ html, body {
   transform: translateY(-1px);
 }
 
+/* Görünüm seçici (şerit / çember) */
+.view-switch {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  z-index: 5;
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(207, 233, 234, 0.18);
+}
+
+.vs-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(207, 233, 234, 0.65);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    color: #cfe9ea;
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  &.on {
+    background: rgba(53, 188, 191, 0.18);
+    color: #7fe3e5;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #35bcbf;
+    outline-offset: 2px;
+  }
+}
+
+/* Şerit ve çember aynı alanı paylaşır; çemberde sayaç ortaya biner */
+.stage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stage.ring-mode {
+  /* 27 harf için: komşu iki harf arası mesafe 2r·sin(π/27) ≈ 0.232r.
+     Harf çapı bunun ~%85'i olursa halka sıkışmadan tam oturuyor. */
+  --ring-size: min(88vw, 46vh, 440px);
+  --letter-size: clamp(22px, calc(var(--ring-size) * 0.098), 54px);
+  --ring-r: calc((var(--ring-size) - var(--letter-size)) / 2);
+  /* Sayaç çemberin ortasına oturuyor ve orada büyük görünmeli.
+     Loader kutusunun kendi iç boşlukları yüzünden görsel merkez biraz
+     yukarıda kalıyor; --timer-shift onu çemberin tam ortasına indiriyor. */
+  --timer-scale: 1.9;
+  --timer-shift: 23px;
+
+  display: grid;
+  place-items: center;
+
+  > * {
+    grid-area: 1 / 1;
+  }
+
+  .timer-countdown {
+    margin-top: 0;
+  }
+
+  .box-4 {
+    transform: scale(var(--timer-scale)) translateY(var(--timer-shift));
+  }
+}
+
+/* --- Çember (rosco) --- */
+.rosco {
+  position: relative;
+  width: var(--ring-size);
+  height: var(--ring-size);
+  margin: 4px 0;
+}
+
+.ring-slot {
+  position: absolute;
+  left: calc(50% - var(--letter-size) / 2);
+  top: calc(50% - var(--letter-size) / 2);
+  width: var(--letter-size);
+  height: var(--letter-size);
+}
+
+.ring-letter {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-weight: 800;
+  font-size: calc(var(--letter-size) * 0.46);
+  color: #fff;
+  background-color: #2c5d63;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  transition:
+    transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+    background-color 0.45s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Paslanan harfin zemini açık sarı → yazı koyu olmalı */
+.letter.passed,
+.ring-letter.passed {
+  color: #4a3705;
+}
+
+.ring-letter.active {
+  transform: scale(1.22);
+  border: 2px solid #35bcbf;
+  box-shadow: 0 0 0 4px rgba(53, 188, 191, 0.25),
+    0 0 18px rgba(53, 188, 191, 0.75);
+  animation: activePulse 2s ease-in-out infinite;
+}
+
+.ring-slot:has(.ring-letter.active) {
+  z-index: 2;
+}
+
 .letter-container {
   display: flex;
   gap: clamp(8px, 1vw, 22px);
@@ -40,6 +181,9 @@ html, body {
   align-items: center;
   padding: clamp(12px, 2vh, 32px);
   min-height: clamp(70px, 8vh, 140px);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   overflow: hidden;
   perspective: 600px;
 }
@@ -102,6 +246,7 @@ html, body {
 
 .input-container {
   padding: clamp(12px, 2vh, 24px);
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -215,24 +360,7 @@ html, body {
   background: #4fd3d6;
 }
 
-/* Dar ekranda kapsül dikeye açılır */
-@media (max-width: 560px) {
-  .answer-shell {
-    flex-wrap: wrap;
-    border-radius: 22px;
-    row-gap: 10px;
-  }
 
-  .answer-input {
-    flex: 1 1 100%;
-    order: 2;
-    padding: 4px 8px;
-  }
-
-  .letter-badge { order: 1; }
-  .pass-btn { order: 3; flex: 1 1 30%; }
-  .answer-btn { order: 4; flex: 1 1 55%; }
-}
 
 .letter.active {
   border: 2px solid #35bcbf;
@@ -493,4 +621,127 @@ background: red;
   from {opacity: 0;}
   50% {opacity: 1;}
   to {-webkit-transform: translateY(350px);}
+}
+
+/* Dar ekranda kapsül dikeye açılır */
+@media (max-width: 560px) {
+  :host {
+    padding: 12px 12px 8px;
+  }
+
+  .mode-link {
+    top: 10px;
+    left: 12px;
+    font-size: 13px;
+  }
+
+  /* Üstteki "Ana Menü" ve görünüm seçicinin altından başlasın */
+  .stage {
+    margin-top: 30px;
+  }
+
+  .view-switch {
+    top: 8px;
+    right: 10px;
+    padding: 3px;
+  }
+
+  .vs-btn {
+    padding: 6px 8px;
+  }
+
+  /* Dar ekranda sadece ikon */
+  .vs-label {
+    display: none;
+  }
+
+  /* Harf şeridi: 7 daire + aktif harfin büyümesi ekrana sığmalı. */
+  .letter-container {
+    gap: 6px;
+    padding: 8px 2px;
+    min-height: 54px;
+  }
+
+  .stage.ring-mode {
+    --ring-size: min(92vw, 44vh, 400px);
+    --timer-scale: 1.5;
+    --timer-shift: 15px;
+  }
+
+  .rosco {
+    margin: 0;
+  }
+
+  .letter {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .letter.active {
+    transform: scale(1.16);
+  }
+
+  /* Timer: mobilde daha az dikey yer kaplasın */
+  .timer-countdown {
+    margin-top: 0;
+  }
+
+  .box-4 {
+    height: 96px;
+    width: 96px;
+  }
+
+  .loader-4 {
+    margin: 22px auto;
+  }
+
+  .question-container {
+    padding: 10px 0;
+  }
+
+  h1 {
+    font-size: 20px;
+    line-height: 1.38;
+    letter-spacing: 0.3px;
+    padding: 0 4px;
+  }
+
+  .input-container {
+    padding: 8px 0;
+    margin-bottom: 12px;
+  }
+
+  .answer-form {
+    width: 100%;
+  }
+
+  .answer-shell {
+    flex-wrap: wrap;
+    border-radius: 22px;
+    row-gap: 10px;
+  }
+
+  /* Rozet + input üstte, Pas/Evet Abi altta — kapsül boşa yer harcamasın */
+  .answer-input {
+    flex: 1 1 60%;
+    order: 2;
+    padding: 6px 8px;
+    /* 16px altı yazı tipi iOS'ta odaklanınca sayfayı zoomluyor */
+    font-size: 16px;
+  }
+
+  .letter-badge { order: 1; }
+  .pass-btn { order: 3; flex: 1 1 30%; }
+  .answer-btn { order: 4; flex: 1 1 55%; }
+
+  .pass-btn,
+  .answer-btn {
+    padding-block: 12px;
+    font-size: 15px;
+  }
+
+  .designer {
+    padding-top: 10px;
+  }
 }

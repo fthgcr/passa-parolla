@@ -460,6 +460,14 @@ $red: #da5151;
   border: 1px solid rgba(255, 255, 255, 0.35);
   background: transparent;
 
+  /* Görünen nokta küçük kalsın ama dokunma alanı parmak için büyüsün */
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+  }
+
   .key.red & {
     background: $red;
     border-color: $red;
@@ -547,6 +555,30 @@ $red: #da5151;
 /* --------------------------------------------------------------- Mobil */
 
 @media (max-width: 560px) {
+  .gk-page {
+    padding-bottom: 24px;
+  }
+
+  .mode-link {
+    top: 12px;
+    left: 12px;
+    font-size: 13px;
+  }
+
+  /* Başlık, sol üstteki "Ana Menü" bağlantısının altından başlamalı */
+  .head {
+    margin: 22px 0 12px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    margin-top: 6px;
+    font-size: 12px;
+  }
+
   .board-row {
     gap: 6px;
   }
@@ -569,11 +601,100 @@ $red: #da5151;
 
   .key {
     min-width: 28px;
-    height: 42px;
+    height: 46px;
     font-size: 14px;
   }
 
   .key.wide {
     min-width: 84px;
+  }
+
+  /* Parmakla nota geçiş için biraz daha büyük hedef */
+  .mark-dot {
+    width: 11px;
+    height: 11px;
+
+    &::after {
+      inset: -7px;
+    }
+  }
+
+  .kb-legend {
+    line-height: 1.9;
+  }
+
+  .designer {
+    padding-top: 16px;
+  }
+
+  /* Türkçe Q dizilimi: en uzun satır 11 tuş. Tüm tuşlar aynı genişlikte
+     olsun ve kısa satırlar ortalansın diye genişlik 11'e göre hesaplanıyor. */
+  .keyboard {
+    --kb-gap: 4px;
+  }
+
+  .kb-row {
+    gap: var(--kb-gap);
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .key {
+    flex: 0 0 calc((100% - 10 * var(--kb-gap)) / 11);
+    min-width: 0;
+    padding: 0 2px;
+  }
+
+  .kb-row.actions {
+    flex-wrap: wrap;
+  }
+
+  .kb-row.actions .key {
+    flex: 1 1 auto;
+    min-width: 84px;
+    padding: 0 10px;
+  }
+}
+
+/* Alçak ekranlarda (küçük telefon) daha da sıkı yerleşim */
+@media (max-width: 560px) and (max-height: 700px) {
+  .head {
+    margin: 20px 0 10px;
+  }
+
+  .subtitle {
+    display: none;
+  }
+
+  .status {
+    margin-bottom: 10px;
+  }
+
+  .board {
+    margin-bottom: 12px;
+  }
+
+  .tile {
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+  }
+
+  .chip-score {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+
+  .score {
+    min-width: 76px;
+  }
+
+  .key {
+    height: 42px;
+  }
+
+  .designer {
+    padding-top: 10px;
   }
 }
